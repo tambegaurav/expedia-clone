@@ -59,6 +59,17 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 40px;
+  display: flex;
+}
+
+.hero-cont {
+  width: 70%;
+  height: auto;
+  background-color: #fff;
+  margin: auto;
+  border: 3px solid #005aeb;
+  align-self: center;
+  margin-top: 70px;
 }
 
 /* cont */
@@ -107,6 +118,10 @@ a:hover {
   width: 33%;
   height: 80px;
   border-radius: 5px;
+  padding-left: 20px;
+}
+.covid-card > .icon {
+  font-size: 30px;
 }
 
 .covid-text {
@@ -292,4 +307,26 @@ a:hover {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.qr-input {
+  width: 150px;
+  height: 40px;
+  padding-left: 5px;
+  outline: none;
+  border-radius: 7px;
+  border: 1px solid #465280;
+}
+.qr-input:focus {
+  border: 2px solid #005aeb;
+}
+.qr-button {
+  background-color: #005aeb;
+  color: white;
+  border: none;
+}
+.qr-end {
+  font-size: 10px;
+  margin-left: 2px;
+  margin-top: 5px;
 }

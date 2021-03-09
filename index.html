@@ -10,6 +10,16 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./all.min.css" />
 
     <title>Expedia Travel</title>
@@ -62,7 +72,117 @@
       </div>
     </nav>
     <!-- herobox -->
-    <div class="hero-box"></div>
+    <div class="hero-box">
+      <div id="wrapper" class="hero-cont m-10 max-w-screen-lg mx-auto">
+        <div
+          class="p-6"
+          x-data="{openTab: 1, activeClasses: 'bg-gray-100 text-black', inactiveClasses: 'bg-white text-gray-500 hover:text-black'}"
+        >
+          <ul class="flex space-x-1">
+            <li @click="openTab = 1" :class="{ '-mb-px': openTab === 1 }">
+              <a
+                :class="openTab === 1 ? activeClasses : inactiveClasses"
+                class="inline-block py-3 px-5 font-medium transition transition-colors duration-500"
+                href="#"
+                >Stays</a
+              >
+            </li>
+            <li @click="openTab = 2" :class="{ '-mb-px': openTab === 2 }">
+              <a
+                :class="openTab === 2 ? activeClasses : inactiveClasses"
+                class="inline-block py-3 px-5 font-medium transition transition-colors duration-500"
+                href="#"
+                >Flights</a
+              >
+            </li>
+            <li @click="openTab = 3" :class="{ '-mb-px': openTab === 3 }">
+              <a
+                :class="openTab === 3 ? activeClasses : inactiveClasses"
+                class="inline-block py-3 px-5 font-medium transition transition-colors duration-500"
+                href="#"
+                >Cars</a
+              >
+            </li>
+            <li @click="openTab = 4" :class="{ '-mb-px': openTab === 4 }">
+              <a
+                :class="openTab === 4 ? activeClasses : inactiveClasses"
+                class="inline-block py-3 px-5 font-medium transition transition-colors duration-500"
+                href="#"
+                >Pakages</a
+              >
+            </li>
+
+            <li @click="openTab = 5" :class="{ '-mb-px': openTab === 5 }">
+              <a
+                :class="openTab === 5 ? activeClasses : inactiveClasses"
+                class="inline-block py-3 px-4 font-medium transition transition-colors duration-500"
+                href="#"
+                >Things to do</a
+              >
+            </li>
+            <li @click="openTab = 6" :class="{ '-mb-px': openTab === 6 }">
+              <a
+                :class="openTab === 6 ? activeClasses : inactiveClasses"
+                class="inline-block py-3 px-5 font-medium transition transition-colors duration-500"
+                href="#"
+                >Cruises</a
+              >
+            </li>
+          </ul>
+          <div class="p-0 w-full text-black bg-gray-100">
+            <div x-show="openTab === 1">
+              ut. Nullam luctus dapibus tempus. Aenean tincidunt, justo vel
+              consectetur dictum, ex libero vestibulum mi, et fermentum justo
+              justo viverra neque. Aliquam ut justo mi #3. Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Eaque illum a vel, accusamus
+              atmi, et fermentum justo justo viverra neque. Aliquam ut justo mi
+              #3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              illum a vel, accusamus atque rmentum justo justo viverra neque.
+              essi 1
+            </div>
+            <div x-show="openTab === 2">
+              entum justo justo viverra neque. Aliquam ut justo mi #2.
+            </div>
+            <div x-show="openTab === 3">
+              ut. Nullam luctus dapibus tempus. Aenean tincidunt, justo vel
+              consectetur dictum, ex libero vestibulum mi, et fermentum justo
+              juspisicing elit. Eaque illum a vel, accusamus atque quae voluptas
+              cumque saepe dolorum facere molestiae fugit, corporis voluptatum
+              voluptatibus, iusto dicta necessitatibus iste quam.
+            </div>
+            <div x-show="openTab === 4">
+              entum justo justo viverra neque. Aliquam ut jusdasdadasdasdasdas
+              das wwdqw dto mi #2.
+            </div>
+            <div x-show="openTab === 5">
+              entum justo justo vivconsectetur dictum, ex libero vestibulum mi,
+              et fermentum justo justo viverra neque. Aliquam ut justo mi #3.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              illum a vel, accusamus atmi, et fermentum justo justo viverra
+              neque. Aliquam ut justo mi #3. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Eaque illum a vel, accusamus atque
+              rmentum justoconsectetur dictum, ex libero vestibulum mi, et
+              fermentum justo justo viverra neque. Aliquam ut justo mi #3. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Eaque illum a
+              vel, accusamus atmi, et fermentum justo justo viverra neque.
+              Aliquam ut justo mi #3. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Eaque illum a vel, accusamus atque rmentum
+              justoconsectetur dictum, ex libero vestibulum mi, et fermentum
+              justo justo viverra neque. Aliquam ut justo mi #3. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Eaque illum a vel,
+              accusamus atmi, et fermentum justo justo viverra neque. Aliquam ut
+              justo mi #3. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Eaque illum a vel, accusamus atque rmentum justoerra neque.
+              Aliquam qwdqdqw edqwd qeree werweqdqw ut justo mi #2.
+            </div>
+            <div x-show="openTab === 6">
+              entum justo justo viverra neque. Aliquam ut ju qd q q qdqwdqd
+              qwdqw sto mi #2.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
       <!-- has covid affected you -->
@@ -71,7 +191,7 @@
         <div class="covid-title">Has COVID-19 affected your travel plans?</div>
         <div class="covid-cards">
           <div class="covid-card">
-            <div class="icon"><i class="fas fa-search"></i></div>
+            <div class="icon"><i class="fas fa-calendar-week"></i></div>
             <div class="covid-text">Change or cancel a trip</div>
           </div>
           <div class="covid-card">
@@ -79,7 +199,7 @@
             <div class="covid-text">Use a credit or a coupon</div>
           </div>
           <div class="covid-card">
-            <div class="icon"><i class="fas fa-car"></i></div>
+            <div class="icon"><i class="fas fa-shield-alt"></i></div>
             <div class="covid-text">Track your refund</div>
           </div>
         </div>
@@ -133,9 +253,24 @@
             mobile-only deals.
           </div>
           <div class="qr-sub-title">Text yourself a download link</div>
-          <input type="text" value="" />
-          <input type="text" value="" />
-          <input type="button" value="Get the app" />
+          <input
+            class="qr-input"
+            type="text"
+            value=""
+            placeholder="Country code"
+          />
+          <input
+            class="qr-input"
+            type="text"
+            value=""
+            placeholder="Mobile number"
+          />
+          <input class="qr-input qr-button" type="button" value="Get the app" />
+          <p class="qr-end">
+            By providing your number, you agree to receive a one-time automated
+            text message with a link to get the app. Standard text message rates
+            may apply.
+          </p>
         </div>
         <img
           src="https://a.travel-assets.com/mad-service/footer/marquee/qrcode/qr_code_1.png"
@@ -150,6 +285,11 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
     ></script>
   </body>
 </html>
