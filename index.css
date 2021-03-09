@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Centra No1", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* navbar */
+
+nav {
+  height: 80px;
+}
+a {
+  text-decoration: none;
+  color: #465280;
+}
+a:hover {
+  color: #005aeb;
+}
+.container-fluid {
+  padding-left: 150px !important;
+  padding-right: 150px !important;
+}
+
+.logo {
+  height: 2rem;
+}
+
+.dropdown-nav {
+  color: #465280;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.dropdown-nav:hover,
+.dropdown-nav:focus {
+  color: #005aeb;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.dropdown-item {
+  color: #465280;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+/* navbar end  */
+
+.hero-box {
+  width: 100%;
+  height: 500px;
+  background: url("https://wallpaperaccess.com/full/436964.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+
+/* cont */
+.container {
+  width: 80%;
+  height: 800px;
+  margin: auto;
+}
+
+.covid-box {
+  width: 100%;
+  height: 200px;
+  background-color: #d5e7fb;
+  border-radius: 3px;
+}
+
+.covid-title {
+  color: #001959;
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-left: 30px;
+}
