@@ -1,0 +1,18 @@
+.mainCont {
+    background-color: lightgray;
+    width: 110%;
+    height: 100vh;
+}
+
+#header {
+    width: 92%;
+    height: 20vh;
+    background-color: white;
+}
+#viewImgs {
+    width: 81%;
+    height: 77vh;
+    margin: 1% 1% 1% 6%;
+    background-color: white;
+    float: left;
+}
