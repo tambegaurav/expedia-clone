@@ -79,6 +79,217 @@ a:hover {
   color: #001959;
   font-size: 28px;
   font-weight: 600;
-  margin-top: 30px;
+  padding-top: 30px;
   margin-left: 30px;
+}
+
+.covid-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 95%;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  margin-top: 20px;
+  height: fit-content;
+}
+
+.covid-card {
+  background-color: white;
+  color: #001959;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  gap: 40px;
+  padding: 10px;
+  width: 33%;
+  height: 80px;
+  border-radius: 5px;
+}
+
+.covid-text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* -----------------Ideas For Your Next Trip {Started} ----------- */
+
+.ideas_trip {
+  width: 100%;
+  margin: auto;
+  height: 400px;
+  margin-top: 40px;
+}
+
+.ideas_heading {
+  width: 100%;
+}
+.ideas_cont {
+  display: flex;
+  width: 100%;
+  height: 78%;
+  /* background-color: aliceblue; */
+}
+
+.ideas_left {
+  width: 65%;
+  height: 100%;
+}
+.ideas_left_long {
+  height: 70%;
+  background-color: antiquewhite;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.ideas_left_small {
+  height: 15%;
+}
+.ideas_right {
+  width: 35%;
+  height: 100%;
+}
+.ideas_right_top {
+  display: flex;
+  height: 47.25%;
+  margin: 0 3% 3% 3%;
+  /* margin-top: 0%; */
+}
+.ideas_right_bottom {
+  display: flex;
+  height: 47.25%;
+  margin: 3% 3% 3% 3%;
+}
+.ideas_right_top_left {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: burlywood;
+  width: 30%;
+}
+.text-col {
+  color: #001959;
+}
+
+.bordering {
+  border: 0.5px solid#bed1ce;
+  border-radius: 10px;
+}
+
+.text_gapping {
+  padding: 10px;
+}
+.text_styling {
+  font-family: "Centra No1", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media only screen and (max-width: 990px) {
+  .ideas_trip {
+    width: 92%;
+    margin: auto;
+    height: 400px;
+  }
+
+  .ideas_heading {
+    width: 100%;
+  }
+  .ideas_cont {
+    /* display: flex; */
+    width: 100%;
+    height: 78%;
+    /* background-color: aliceblue; */
+  }
+
+  .ideas_left {
+    width: 65%;
+    height: 100%;
+  }
+  .ideas_left_long {
+    height: 70%;
+    background-color: antiquewhite;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .ideas_left_small {
+    height: 15%;
+  }
+  .ideas_right {
+    width: 35%;
+    height: 100%;
+  }
+  .ideas_right_top {
+    display: flex;
+    height: 47.25%;
+    margin: 0 3% 3% 3%;
+    /* margin-top: 0%; */
+  }
+  .ideas_right_bottom {
+    display: flex;
+    height: 47.25%;
+    margin: 3% 3% 3% 3%;
+  }
+  .ideas_right_top_left {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: burlywood;
+    width: 30%;
+  }
+  .text-col {
+    color: #001959;
+  }
+
+  .bordering {
+    border: 0.5px solid#bed1ce;
+    border-radius: 10px;
+  }
+
+  .ideas_gapping {
+    margin: 10px;
+  }
+  .text_styling {
+    font-family: "Centra No1", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+/* -----------------Ideas For Your Next Trip {Ended}----------- */
+
+/* Stay in the know with the Expedia app */
+
+.qr-section {
+  display: grid;
+  grid-template-columns: 35% 50% 15%;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  border: 1px solid #465280;
+  border-radius: 10px;
+  align-items: center;
+  padding: 2px;
+}
+
+.qr-content {
+  padding: 10px;
+}
+
+.qr-title {
+  font-size: 1.5rem;
+  color: #001959;
+  font-weight: 700;
+}
+
+.qr-sub {
+  color: #465280;
+  font-size: 15px;
+  margin-top: -5px;
+}
+
+.qr-sub-title {
+  font-size: 1.2rem;
+  color: #001959;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }

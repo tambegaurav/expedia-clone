@@ -10,6 +10,8 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./all.min.css" />
+
     <title>Expedia Travel</title>
     <link rel="stylesheet" href="./index.css" />
   </head>
@@ -39,7 +41,9 @@
             </a>
 
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Stays</a></li>
+              <li>
+                <a class="dropdown-item" href="./HotelList/index.html">Stays</a>
+              </li>
               <li><a class="dropdown-item" href="#">Flights</a></li>
               <li><a class="dropdown-item" href="#">Cars</a></li>
               <li><a class="dropdown-item" href="#">Pakages</a></li>
@@ -65,6 +69,79 @@
 
       <div class="covid-box">
         <div class="covid-title">Has COVID-19 affected your travel plans?</div>
+        <div class="covid-cards">
+          <div class="covid-card">
+            <div class="icon"><i class="fas fa-search"></i></div>
+            <div class="covid-text">Change or cancel a trip</div>
+          </div>
+          <div class="covid-card">
+            <div class="icon"><i class="fas fa-money-check"></i></div>
+            <div class="covid-text">Use a credit or a coupon</div>
+          </div>
+          <div class="covid-card">
+            <div class="icon"><i class="fas fa-car"></i></div>
+            <div class="covid-text">Track your refund</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ideas_trip text-col">
+        <div class="ideas_heading text_styling">
+          <h1>Ideas for your next trip</h1>
+        </div>
+        <div class="ideas_cont">
+          <div class="ideas_left bordering">
+            <div class="ideas_left_long"></div>
+            <div class="ideas_left_small text_gapping text_styling">
+              <h3>Book now, travel whenever</h3>
+              <p>Stays worth booking right now.</p>
+            </div>
+          </div>
+          <div class="ideas_right">
+            <div class="ideas_right_top bordering">
+              <div class="ideas_right_top_left"></div>
+              <div class="text_gapping text_styling">
+                <h3>Time to get away?</h3>
+                <p>Grab a deal on last-minute travel</p>
+              </div>
+            </div>
+            <div class="ideas_right_bottom bordering">
+              <div class="ideas_right_top_left"></div>
+              <div class="text_gapping text_styling">
+                <h3>Stay with flexibility</h3>
+                <p>See hotels with free cancellation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stay in the know with the Expedia app
+ -->
+
+      <div class="qr-section">
+        <img
+          src="https://thumbnails.trvl-media.com/nUg2hb7a-gOnRgOiUaJFnzp8PNk=/a.travel-assets.com/mad-service/footer/marquee/v2/BEX_US_EN_MQ.jpg"
+          alt="mobile"
+          width="100%"
+        />
+        <div class="qr-content">
+          <div class="qr-title">Stay in the know with the Expedia app</div>
+
+          <div class="qr-sub">
+            Get real-time notifications, view your trip details, and access
+            mobile-only deals.
+          </div>
+          <div class="qr-sub-title">Text yourself a download link</div>
+          <input type="text" value="" />
+          <input type="text" value="" />
+          <input type="button" value="Get the app" />
+        </div>
+        <img
+          src="https://a.travel-assets.com/mad-service/footer/marquee/qrcode/qr_code_1.png"
+          alt="qr-code"
+          width="100%"
+        />
       </div>
     </div>
 
