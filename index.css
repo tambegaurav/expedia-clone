@@ -63,13 +63,99 @@ a:hover {
 }
 
 .hero-cont {
-  width: 70%;
+  width: 80%;
   height: auto;
   background-color: #fff;
   margin: auto;
   border: 3px solid #005aeb;
   align-self: center;
   margin-top: 70px;
+}
+
+#stay-booking {
+  display: flex;
+  flex-direction: column;
+}
+
+.no-of-people {
+  align-self: flex-end;
+  font-size: 15px;
+  color: #005aeb;
+  cursor: pointer;
+}
+
+.place-and-date {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: space-around;
+}
+
+.place-search {
+  width: 50%;
+  outline: none;
+  height: 40px;
+  border-radius: 10px !important;
+  border: 1px solid #465280;
+  padding-left: 20px;
+}
+.place-search:focus {
+  border: 2px solid #005aeb;
+}
+
+.add-people-modal {
+  position: absolute;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  color: #001959;
+  background-color: #ffffff;
+  margin-top: 25px;
+  align-self: flex-end;
+  display: block;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 5px 10px rgb(51, 51, 51);
+}
+.nums-title {
+  font-size: 18px;
+  color: #001959;
+  font-weight: 700;
+}
+.room-no {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.adults,
+.children {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.person-cat {
+  font-size: 15px;
+  font-weight: 400;
+  color: #001959;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  text-align: center;
+}
+
+.done {
+  background-color: #005aeb;
+  width: 100%;
+  margin-top: 20px;
+  color: #fff;
+  padding: 7px;
+}
+
+.done:hover {
+  background-color: #005aebcb;
+  color: #fff;
 }
 
 /* cont */
