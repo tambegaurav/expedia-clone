@@ -10,6 +10,16 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./all.min.css" />
 
     <title>Expedia Travel</title>
@@ -46,7 +56,11 @@
               </li>
               <li><a class="dropdown-item" href="#">Flights</a></li>
               <li><a class="dropdown-item" href="#">Cars</a></li>
-              <li><a class="dropdown-item" href="#">Pakages</a></li>
+              <li>
+                <a class="dropdown-item" href="./HotelDetailsPage/index.html"
+                  >Pakages</a
+                >
+              </li>
               <li><a class="dropdown-item" href="#">Things to do</a></li>
               <li><a class="dropdown-item" href="#">Cruises</a></li>
             </ul>
@@ -57,12 +71,125 @@
           <a href="#"><div class="link">List your property</div></a>
           <a href="#"><div class="link">Support</div></a>
           <a href="#"><div class="link">Trips</div></a>
-          <a href="#"><div class="link">Sign In</div></a>
+          <a href="./SignUp/index.html"><div class="link">Sign In</div></a>
         </div>
       </div>
     </nav>
     <!-- herobox -->
-    <div class="hero-box"></div>
+    <div class="hero-box">
+      <div id="wrapper" class="hero-cont m-10 max-w-screen-lg mx-auto">
+        <div
+          class="p-6"
+          x-data="{openTab: 1, activeClasses: 'bg-white text-blue-700 border-b border-b-5 border-b-solid border-blue-700', inactiveClasses: 'bg-white text-gray-500 hover:text-black'}"
+        >
+          <ul class="flex space-x-1">
+            <li @click="openTab = 1" :class="{ '-mb-px': openTab === 1 }">
+              <a
+                :class="openTab === 1 ? activeClasses : inactiveClasses"
+                class="inline-block py-3 px-5 font-medium transition transition-colors duration-500"
+                href="#"
+                >Stays</a
+              >
+            </li>
+            <li @click="openTab = 2" :class="{ '-mb-px': openTab === 2  }">
+              <a
+                :class="openTab === 2 ? activeClasses : inactiveClasses"
+                class="inline-block py-3 px-5 font-medium transition transition-colors duration-500"
+                href="#"
+                >Flights</a
+              >
+            </li>
+            <li @click="openTab = 3" :class="{ '-mb-px': openTab === 3 }">
+              <a
+                :class="openTab === 3 ? activeClasses : inactiveClasses"
+                class="inline-block py-3 px-5 font-medium transition transition-colors duration-500"
+                href="#"
+                >Cars</a
+              >
+            </li>
+            <li @click="openTab = 4" :class="{ '-mb-px': openTab === 4 }">
+              <a
+                :class="openTab === 4 ? activeClasses : inactiveClasses"
+                class="inline-block py-3 px-5 font-medium transition transition-colors duration-500"
+                href="#"
+                >Pakages</a
+              >
+            </li>
+
+            <li @click="openTab = 5" :class="{ '-mb-px': openTab === 5 }">
+              <a
+                :class="openTab === 5 ? activeClasses : inactiveClasses"
+                class="inline-block py-3 px-4 font-medium transition transition-colors duration-500"
+                href="#"
+                >Things to do</a
+              >
+            </li>
+            <li @click="openTab = 6" :class="{ '-mb-px': openTab === 6 }">
+              <a
+                :class="openTab === 6 ? activeClasses : inactiveClasses"
+                class="inline-block py-3 px-5 font-medium transition transition-colors duration-500"
+                href="#"
+                >Cruises</a
+              >
+            </li>
+          </ul>
+          <div class="p-0 w-full text-black bg-white">
+            <div x-show="openTab === 1">
+              <div id="stay-booking">
+                <div onclick="changeNumbers()" class="no-of-people">
+                  1 room, 2 travellers
+                </div>
+                <div class="add-people-modal">
+                  <p class="nums-title">Travellers</p>
+                  <p class="nums-title room-no">Room 1</p>
+                  <div class="adults">
+                    <div class="person-cat">Adult</div>
+                    <div class="person-numbers numbers">
+                      <button onclick="subtract()">Minus</button>
+                      <div id="noOfAdults">2</div>
+                      <button onclick="add()">Add</button>
+                    </div>
+                  </div>
+                  <div class="children">
+                    <div class="person-cat">Children</div>
+                    <div class="children-numbers numbers">
+                      <button>Minus</button>
+                      <div id="noOfChildren">2</div>
+                      <button>Add</button>
+                    </div>
+                  </div>
+                  <button class="btn done" id="closeAddModal">Done</button>
+                </div>
+                <div class="place-and-date">
+                  <input
+                    class="place-search"
+                    type="text"
+                    placeholder="Going to"
+                  />
+                  <input class="date" type="date" />
+                  <input class="date" type="date" />
+                </div>
+              </div>
+            </div>
+            <div x-show="openTab === 2">
+              <div id="flight-booking">Flight</div>
+            </div>
+            <div x-show="openTab === 3">
+              <div id="car-booking">Cars</div>
+            </div>
+            <div x-show="openTab === 4">
+              <div id="pakage-booking">Pakages</div>
+            </div>
+            <div x-show="openTab === 5">
+              <div id="things-booking">Things to do</div>
+            </div>
+            <div x-show="openTab === 6">
+              <div id="cruise-booking">Cruises</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
       <!-- has covid affected you -->
@@ -71,7 +198,7 @@
         <div class="covid-title">Has COVID-19 affected your travel plans?</div>
         <div class="covid-cards">
           <div class="covid-card">
-            <div class="icon"><i class="fas fa-search"></i></div>
+            <div class="icon"><i class="fas fa-calendar-week"></i></div>
             <div class="covid-text">Change or cancel a trip</div>
           </div>
           <div class="covid-card">
@@ -79,7 +206,7 @@
             <div class="covid-text">Use a credit or a coupon</div>
           </div>
           <div class="covid-card">
-            <div class="icon"><i class="fas fa-car"></i></div>
+            <div class="icon"><i class="fas fa-shield-alt"></i></div>
             <div class="covid-text">Track your refund</div>
           </div>
         </div>
@@ -133,9 +260,24 @@
             mobile-only deals.
           </div>
           <div class="qr-sub-title">Text yourself a download link</div>
-          <input type="text" value="" />
-          <input type="text" value="" />
-          <input type="button" value="Get the app" />
+          <input
+            class="qr-input"
+            type="text"
+            value=""
+            placeholder="Country code"
+          />
+          <input
+            class="qr-input"
+            type="text"
+            value=""
+            placeholder="Mobile number"
+          />
+          <input class="qr-input qr-button" type="button" value="Get the app" />
+          <p class="qr-end">
+            By providing your number, you agree to receive a one-time automated
+            text message with a link to get the app. Standard text message rates
+            may apply.
+          </p>
         </div>
         <img
           src="https://a.travel-assets.com/mad-service/footer/marquee/qrcode/qr_code_1.png"
@@ -151,5 +293,11 @@
       integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
       crossorigin="anonymous"
     ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script>
+    <script src="./index.js"></script>
   </body>
 </html>

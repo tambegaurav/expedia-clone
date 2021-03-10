@@ -11,6 +11,9 @@
     
 </head>
 <body>
+    <div class="welcom_bar text_gapping text_styling">
+        <p>Welcome to Expedia.com. Continue to the India site at <a href="#"> Expedia.co.in.</a></p>
+    </div>
 
 
     <div class="search_stay text_styling text_gapping text-col">
@@ -141,6 +144,27 @@
                         </p>
                     </div>
                 </div>
+
+
+                <div class="weekend_box bordering weekend_bhopal">
+                    <div class="weekend_box_image weekend_bhopal_top">
+                        
+                        <div class="weekend_box_image_text text_gapping text_styling">
+                            Bhopal, India
+                        </div>
+                    </div>
+                    <div class=" weekend_bhopal_bottom text_gapping text_styling">
+                        <p>
+                            Come to Bhopal and enjoy its temples, lake views, and
+                            culture.
+                        </p>
+                    </div>
+                </div>
+
+
+                <a class="prev" onclick="weekprev()">&#10094;</a>
+                <a class="next" onclick="weeknext()">&#10095;</a>
+           
             </div>
         </div>
 
@@ -169,9 +193,11 @@
                 <div class="next_dest_box next_dest_box_sanfrancisco">
                     <div class="next_dest_text">Sanfrancisco</div>
                 </div>
-                <!-- <div class="next_dest_box next_dest_box_calgary">
+                <div class="next_dest_box next_dest_box_calgary">
                     <div class="next_dest_text">Calgary</div>
-                </div> -->
+                </div>
+                <a class="prev" onclick="plusSlidesprev()">&#10094;</a>
+                <a class="next" onclick="plusSlidesnext()">&#10095;</a>
             </div>
         </div>
 
@@ -199,4 +225,34 @@
 
 
 </body>
+<script>
+    function plusSlidesnext(){
+        // if(document.querySelector('.next_dest_box_calgary').style.display=="none"){
+            document.querySelector('.next_dest_box_toronto').style.display= "none"
+            document.querySelector('.next_dest_box_calgary').style.display= "block"
+    
+        // }
+ 
+    }
+    function plusSlidesprev(){
+            document.querySelector('.next_dest_box_toronto').style.display= "block"
+            document.querySelector('.next_dest_box_calgary').style.display= "none"
+        }
+
+
+        function weekprev(){
+            document.querySelector('.weekend_bhopal').style.display= "none"
+            document.querySelector('.weekend_guru').style.display= "block"
+       
+
+    }
+    function weeknext(){
+        document.querySelector('.weekend_bhopal').style.display= "block"
+        document.querySelector('.weekend_guru').style.display= "none"
+       
+    }
+</script>
 </html>
+
+
+
