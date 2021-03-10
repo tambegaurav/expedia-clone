@@ -417,11 +417,36 @@ html, body, .main-container{
 }
 
 .next_dest_box_calgary{
+    display: none;
     background-image:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("https://thumbnails.trvl-media.com/x_EtuWvXhhf2VsfDana44a5QT9I=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/Calgary.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 16px;
+    margin-top: 5%;
+    color: transparent;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 15px;
+    user-select: none;
+  }
+  
+  .next {
+    right: 50px;
+  }
+  
+  .prev:hover, .next:hover {
+    color: blue;
+    background-color: #ffffff;
+  }
+  
 
 /* ------------------Find your next destination {end}-------------- */
 
