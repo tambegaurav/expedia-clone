@@ -90,6 +90,7 @@ a:hover {
   flex-wrap: wrap;
   gap: 2%;
   justify-content: space-around;
+  margin-top: 20px;
 }
 
 .place-search {
