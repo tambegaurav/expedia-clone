@@ -126,19 +126,19 @@ margin-top: 20px;
     background-color: white;
 }
 .details-amenities{
-    border: 1px solid black;
     flex-grow: 2;
+    margin-left: 20px;
     display: grid;
-    grid-template-rows: 14% 17% 12% 5% 25% 5% 22%;
+    grid-template-rows: 14% 17% 12% 8% 30% 5% 10%;
+
 }
 .explore-area {
-    flex-grow: 3;
-    border: 1px solid black;
+    flex-grow: 5;
 }
 .details-amenities div {
     background-color: white;
-    margin-left: 25px;
     color: #001959;
+
 }
 #sagamore-text{
     font-size: 28px;
@@ -167,17 +167,90 @@ a {
 .popular-amenities {
     display: grid;
     font-size: 15px;
-    grid-template-rows: 70% 70%;
+    grid-template-rows: 30% 70%;
     grid-template-columns: 33% 33% 33%;
     grid-gap: 0%;
+}
+#reviews {
+    float:right;
+    width: 200px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-weight: normal;
+    background-color: white;
+    color: #005aeb
 }
 .popular-amenities i {
     font-size: 18px;
 }
-
 .cleaning-safety {
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 33% 33% 33%;
-   
+    display: flex;
+    flex-direction: row;
+    grid-gap: 100px;
+}
+.explore-area-cont {
+    height: 40vh;
+}
+ .mapCont {
+     height: 40vh;
+     display: flex;
+     flex-direction: column;
+ }
+ .map {
+     flex-grow: 1;
+
+ }
+
+ .map-loc-detail {
+     flex-shrink: 1;
+ }
+
+ .map-btn {
+    padding: 0px;
+    width: 110px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-weight: normal;
+    background-color: white;
+    color: #005aeb
+ }
+
+ #view-in-map {
+     float: right
+ }
+ .explore-area-cont {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: #001959;
+ }
+.explore-text-h{
+    flex-shrink: 2;
+ }
+ .explore-text{
+     flex-grow: 2;
+     display: flex;
+     flex-grow: row;
+ }
+.empty-space {
+    flex-grow: 6;
+}
+.explore-text div {
+    flex-grow: 1;
+    margin: 1px;
+}
+.address-text {
+    width: 50%;
+   -ms-flex-align: start;
+   color: #17337a;
+}
+.walk-text {
+    color: #17337a;
+}
+.all-text,a {
+    color: #17337a;
+    font-size: 15px;
+    padding: 0px;
 }
