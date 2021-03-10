@@ -333,6 +333,15 @@ html, body, .main-container{
 
 } */
 
+.weekend_bhopal{
+    display: none;
+}
+.weekend_bhopal_top{
+
+    background-image: url('https://thumbnails.expedia.com/y7pk6yNP5VqmTfumLhHLk7dMPXg=/1280x720/images.trvl-media.com/media/content/expus/graphics/deals/TE_Clouds_card_r1.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 
 /* ------------------Weekend Gateways{ End }---------------- */
 
