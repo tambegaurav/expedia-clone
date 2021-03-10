@@ -1,0 +1,181 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    height: 100vw ;
+    width: 100vw;
+    background-color: rgb(235,236,240);
+}
+.imgDiv{
+    background-image: url("https://a.travel-assets.com/findyours-php/viewfinder/images/res70/495000/495536-bellagio-casino.jpg");
+    margin-top: 13%;
+   height: 31%;
+   width: 75%;
+   margin-left: 11.5%;
+    border: 1px solid rgb(235,236,240);
+}
+.imgtxt{
+    color: aliceblue;
+    font-size: 3.4vw;
+    margin-left: 1vw;
+    margin-top: 12vw;
+}
+.p1{
+    background-color: rgb(255,255,255);
+    height: 4.5%;
+    width: 75%;
+    border: 1px solid rgb(235,236,240);
+    margin-left: 11.5%;
+    display: flex;
+    font-size: 14px;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    
+}
+.p1>div{
+    margin-top: 10px;
+   margin-left: 20px;
+   color: #00355f;
+
+}
+.cont{
+    width: 75%;
+    margin-left: 11.5%;
+    border: 1px solid rgb(235,236,240);
+    height: 60%;
+    display: flex;
+    
+}
+.leftcont{
+    margin-left: 20px;
+    margin-top: 25px;
+    width: 25%;
+    border: 1px solid rgb(235,236,240);
+}
+.rightcont{
+    margin-left: 30px;
+    margin-top: 25px;
+    width: 70%;
+    border: 1px solid rgb(235,236,240);
+}
+.date{
+    height: 22%;
+    border: 1px solid rgb(235,236,240);
+    padding-left: 10px; 
+    background-color: white;
+}
+.date>h3{
+    color: rgb(0,25,89);
+}
+.map{
+    margin-top: 20px;
+    height: 20%;
+    border: 1px solid rgb(235,236,240);
+    background-color: white;
+}
+.filter{
+    height: 70%;
+    border: 1px solid rgb(235,236,240);
+}
+span{
+   color:rgb(0,126,240) ; 
+    margin-left: 50px;
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:100px;
+    width:100px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:130px;
+    width:18.5vw;
+}
+.maptxt{
+  width: 18.5vw;
+   text-align: center;
+   margin-top: 20px;
+   
+}
+.maptxt>a{
+    color: rgb(0,126,240);
+    text-decoration: none;
+}
+.content{
+    height: 27%;
+    display: flex;
+
+    
+}
+.img1{
+    width: 33%;
+   
+}
+.detail{
+    width: 67%;
+   
+   background-color: white;
+}
+.wynn{
+    display: flex;
+    height: 150px;
+}
+.wynn>div>h3{
+    color: rgb(0,25,89);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-size: 17px;
+}
+.wynn>div>i{
+   color: rgb(107,116,153);
+  font-size: 11px;
+}
+.wynn>div>P{
+    color: rgb(107,116,153);
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+#wynn2{
+    padding-right: 5px;
+   text-align: right;
+   
+    width: 30%;
+    margin-left: 17%;
+    height: 100px;
+}
+#wynn2>h3{
+    color: rgb(0,25,89);
+    font-size: 24px;
+    
+}
+#wynn2>p{
+    font-size: 11px;
+    margin-top: -5px;
+}
+.review{
+  
+    margin-left: 10px;
+}
+.review>h4{
+    margin-top: 5px;
+    color: rgb(0,25,89);
+    font-size: 14px;
+}
+.review>h4>span{
+    color: rgb(107,116,153);
+    font-size: 14px;
+    margin-left: 10px;
+}
+.review>p{
+    margin-top: -10px;
+    color: rgb(107,116,153);
+    font-size: 14px; 
+}
+.date>p{
+    line-height: 0;
+}
