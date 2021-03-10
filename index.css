@@ -114,7 +114,7 @@ a:hover {
   background-color: #ffffff;
   margin-top: 25px;
   align-self: flex-end;
-  display: block;
+  display: none;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 1px 5px 10px rgb(51, 51, 51);
