@@ -144,6 +144,27 @@
                         </p>
                     </div>
                 </div>
+
+
+                <div class="weekend_box bordering weekend_bhopal">
+                    <div class="weekend_box_image weekend_bhopal_top">
+                        
+                        <div class="weekend_box_image_text text_gapping text_styling">
+                            Bhopal, India
+                        </div>
+                    </div>
+                    <div class=" weekend_bhopal_bottom text_gapping text_styling">
+                        <p>
+                            Come to Bhopal and enjoy its temples, lake views, and
+                            culture.
+                        </p>
+                    </div>
+                </div>
+
+
+                <a class="prev" onclick="weekprev()">&#10094;</a>
+                <a class="next" onclick="weeknext()">&#10095;</a>
+           
             </div>
         </div>
 
@@ -217,6 +238,19 @@
             document.querySelector('.next_dest_box_toronto').style.display= "block"
             document.querySelector('.next_dest_box_calgary').style.display= "none"
         }
+
+
+        function weekprev(){
+            document.querySelector('.weekend_bhopal').style.display= "none"
+            document.querySelector('.weekend_guru').style.display= "block"
+       
+
+    }
+    function weeknext(){
+        document.querySelector('.weekend_bhopal').style.display= "block"
+        document.querySelector('.weekend_guru').style.display= "none"
+       
+    }
 </script>
 </html>
 
