@@ -76,7 +76,7 @@
       <div id="wrapper" class="hero-cont m-10 max-w-screen-lg mx-auto">
         <div
           class="p-6"
-          x-data="{openTab: 1, activeClasses: 'bg-gray-100 text-black', inactiveClasses: 'bg-white text-gray-500 hover:text-black'}"
+          x-data="{openTab: 1, activeClasses: 'bg-white text-blue-700 border-b border-b-5 border-b-solid border-blue-700', inactiveClasses: 'bg-white text-gray-500 hover:text-black'}"
         >
           <ul class="flex space-x-1">
             <li @click="openTab = 1" :class="{ '-mb-px': openTab === 1 }">
@@ -87,7 +87,7 @@
                 >Stays</a
               >
             </li>
-            <li @click="openTab = 2" :class="{ '-mb-px': openTab === 2 }">
+            <li @click="openTab = 2" :class="{ '-mb-px': openTab === 2  }">
               <a
                 :class="openTab === 2 ? activeClasses : inactiveClasses"
                 class="inline-block py-3 px-5 font-medium transition transition-colors duration-500"
@@ -129,55 +129,58 @@
               >
             </li>
           </ul>
-          <div class="p-0 w-full text-black bg-gray-100">
+          <div class="p-0 w-full text-black bg-white">
             <div x-show="openTab === 1">
-              ut. Nullam luctus dapibus tempus. Aenean tincidunt, justo vel
-              consectetur dictum, ex libero vestibulum mi, et fermentum justo
-              justo viverra neque. Aliquam ut justo mi #3. Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Eaque illum a vel, accusamus
-              atmi, et fermentum justo justo viverra neque. Aliquam ut justo mi
-              #3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              illum a vel, accusamus atque rmentum justo justo viverra neque.
-              essi 1
+              <div id="stay-booking">
+                <div onclick="changeNumbers()" class="no-of-people">
+                  1 room, 2 travellers
+                </div>
+                <div class="add-people-modal">
+                  <p class="nums-title">Travellers</p>
+                  <p class="nums-title room-no">Room 1</p>
+                  <div class="adults">
+                    <div class="person-cat">Adult</div>
+                    <div class="person-numbers numbers">
+                      <button onclick="subtract()">Minus</button>
+                      <div id="noOfAdults">2</div>
+                      <button onclick="add()">Add</button>
+                    </div>
+                  </div>
+                  <div class="children">
+                    <div class="person-cat">Children</div>
+                    <div class="children-numbers numbers">
+                      <button>Minus</button>
+                      <div id="noOfChildren">2</div>
+                      <button>Add</button>
+                    </div>
+                  </div>
+                  <button class="btn done" id="closeAddModal">Done</button>
+                </div>
+                <div class="place-and-date">
+                  <input
+                    class="place-search"
+                    type="text"
+                    placeholder="Going to"
+                  />
+                  <input class="date" type="date" />
+                  <input class="date" type="date" />
+                </div>
+              </div>
             </div>
             <div x-show="openTab === 2">
-              entum justo justo viverra neque. Aliquam ut justo mi #2.
+              <div id="flight-booking">Flight</div>
             </div>
             <div x-show="openTab === 3">
-              ut. Nullam luctus dapibus tempus. Aenean tincidunt, justo vel
-              consectetur dictum, ex libero vestibulum mi, et fermentum justo
-              juspisicing elit. Eaque illum a vel, accusamus atque quae voluptas
-              cumque saepe dolorum facere molestiae fugit, corporis voluptatum
-              voluptatibus, iusto dicta necessitatibus iste quam.
+              <div id="car-booking">Cars</div>
             </div>
             <div x-show="openTab === 4">
-              entum justo justo viverra neque. Aliquam ut jusdasdadasdasdasdas
-              das wwdqw dto mi #2.
+              <div id="pakage-booking">Pakages</div>
             </div>
             <div x-show="openTab === 5">
-              entum justo justo vivconsectetur dictum, ex libero vestibulum mi,
-              et fermentum justo justo viverra neque. Aliquam ut justo mi #3.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              illum a vel, accusamus atmi, et fermentum justo justo viverra
-              neque. Aliquam ut justo mi #3. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Eaque illum a vel, accusamus atque
-              rmentum justoconsectetur dictum, ex libero vestibulum mi, et
-              fermentum justo justo viverra neque. Aliquam ut justo mi #3. Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Eaque illum a
-              vel, accusamus atmi, et fermentum justo justo viverra neque.
-              Aliquam ut justo mi #3. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Eaque illum a vel, accusamus atque rmentum
-              justoconsectetur dictum, ex libero vestibulum mi, et fermentum
-              justo justo viverra neque. Aliquam ut justo mi #3. Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Eaque illum a vel,
-              accusamus atmi, et fermentum justo justo viverra neque. Aliquam ut
-              justo mi #3. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Eaque illum a vel, accusamus atque rmentum justoerra neque.
-              Aliquam qwdqdqw edqwd qeree werweqdqw ut justo mi #2.
+              <div id="things-booking">Things to do</div>
             </div>
             <div x-show="openTab === 6">
-              entum justo justo viverra neque. Aliquam ut ju qd q q qdqwdqd
-              qwdqw sto mi #2.
+              <div id="cruise-booking">Cruises</div>
             </div>
           </div>
         </div>
@@ -291,5 +294,6 @@
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
