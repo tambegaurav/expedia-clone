@@ -24,11 +24,12 @@
     margin: 0%;
     padding: 0%;
 }
-.covid > p > button{
+.check-rest{
    border: none;
    background-color: #465280;
    color: white;
    line-height: 0px;
+   font-weight:lighter;
 }
 #covidCont > #bar1 {
     background-color:#465280 ;
@@ -54,13 +55,15 @@ height: 20px;
 margin: 10px;
 margin-top: 20px;
 }
-
-#bar2 > div button {
-    border: none;
-    background-color: white;
+#bar2 .see-properties-box {
     margin-top: 20px;
-    color: rgb(4, 113, 157);
-    font-size: 13px;
+} 
+.see-properties
+{
+    background-color: white;
+    margin-top: 40px;
+    color: rgb(27, 156, 207);
+    font-size: 15px;
 }
 
 #imgCont {
@@ -93,23 +96,31 @@ margin-top: 20px;
 
 .btns {
     flex-grow: 10;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 8% 8% 8% 8% 8% 8%;
 }
-.btns button {
-    margin: 10px;
-    margin-top: 20px;
+.btns > div {
+    margin: 1px;
+    padding-top: 19px;
+    font-weight:500;
+}
+.reserve-room-bar-btn {
+    margin: 16px;
     border: none;
-    width: 60px;
-    font-size: 13px;;
+    width: 100px;
+    font-size: 14px;
+    color: #092979;
     background-color: white;
     outline: none;
 }
-.reserve-room-btn {
+.reserve-room-btn2 > button {
     flex-grow: 1;
     background-color: white;
     margin-top: 12px;
 }
-.reserve-room-btn button {
-    width: 90%;
+.reserve-room-btn2 > button {
+    width: 100%;
     height: 6vh;
     border: none;
     border-radius: 8px;
@@ -146,7 +157,7 @@ margin-top: 20px;
     line-height: 75%;
 }
 .details-amenities button {
-    width: 9%;
+    width: 12%;
     height: 30px;
     background-color: #001959;
     color: white;
@@ -169,13 +180,14 @@ font-weight: bold;
 }
 #reviews {
     float:right;
-    width: 200px;
-    border: none;
-    outline: none;
-    font-size: 13px;
+    width: 120px;
+    margin-top: 30px;
+}
+.review-text {
+    color: #005aeb;
+    font-size: 15px;
     font-weight: normal;
-    background-color: white;
-    color: #005aeb
+    font-weight: 500;
 }
 .popular-amenities i {
     font-size: 18px;
@@ -183,7 +195,11 @@ font-weight: bold;
 .cleaning-safety {
     display: flex;
     flex-direction: row;
-    grid-gap: 100px;
+    grid-gap: 0px;
+}
+.cleaning-safety > div {
+    flex-grow: 1;
+    margin-top: 9px;
 }
 .explore-area-cont {
     height: 40vh;
