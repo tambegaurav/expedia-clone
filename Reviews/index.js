@@ -21,27 +21,6 @@ var arr = JSON.parse(localStorage.getItem('details'))
 // console.log(arr)
 
 for(var i=0;i<arr.length;i++){
-    // arr[i].review_type
-    // arr[i].verified_traveller
-    // arr[i].travel_type
-    //arr[i].date
-    // arr[i].feedback
-    // arr[i].feedback_category
-    // arr[i].feedback_comment
-    // arr[i].spent_time
-    // arr[i].like_counts
-
-    // console.log(arr[i].review_type)
-    // console.log(arr[i].verified_traveller)
-    // console.log(arr[i].travel_type)
-    // console.log(arr[i].feedback)
-    // console.log(arr[i].feedback_category)
-    // console.log(arr[i].feedback_comment)
-    // console.log(arr[i].spent_time)
-    // console.log(arr[i].like_counts)
-
-
-
     var parent = document.querySelector('.reviews_right_cont')
     var child_i =document.createElement('div')
     child_i.setAttribute('class','reviews_right')
@@ -129,4 +108,31 @@ for(var i=0;i<arr.length;i++){
     var child_in_8 =document.createElement('div')
     child_in_8.setAttribute('class','reviews_line')
     child_i.append(child_in_8)
+
+
+}
+
+var x=0;
+
+function filterData(event){
+   console.log(event.target.name)
+    if(event.target.checked){
+        document.querySelector('#traveler_h4').innerHTML =`Traveler type (${++x})`;
+        document.querySelector('.reviews_right_cont').innerHTML="";
+       var filarr = arr.filter((el)=>{
+            // el.review_type==event.target.name
+            el.travel_type=='Traveled with family'
+        })
+        console.log(filarr)
+
+    }
+  
+      else{
+        document.querySelector('#traveler_h4').innerHTML =`Traveler type (${--x})`;
+        
+    } 
+   
+   
+    
+ 
 }
