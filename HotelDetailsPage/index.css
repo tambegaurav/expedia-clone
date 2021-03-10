@@ -160,10 +160,6 @@ font-weight: bold;
 #sagamore-text > i{
     font-size: 10px;
 }
-a {
-    font-weight: bold;
-    font-size: 20px;
-}
 .popular-amenities {
     display: grid;
     font-size: 15px;
@@ -197,6 +193,11 @@ a {
      display: flex;
      flex-direction: column;
  }
+ #heading-text {
+     font-size: 18px;
+     color:  #001959;
+     font-weight: bold;
+ }
  .map {
      flex-grow: 1;
 
@@ -218,7 +219,7 @@ a {
  }
 
  #view-in-map {
-     float: right
+     float: right;
  }
  .explore-area-cont {
     display: flex;
