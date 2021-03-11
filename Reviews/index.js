@@ -37,9 +37,12 @@ function filterData(event,name){
         }        
     else
     {
-        document.querySelector('.reviews_right_cont').innerHTML="";
+        
+       
+        // document.querySelector('.reviews_right_cont').innerHTML="";
+        console.log(document.querySelector('.reviews_right_cont'))
         document.querySelector('#traveler_h4').innerHTML =`Traveler type (${--x})`;
-        Showreviews(arr) 
+        // Showreviews(arr) 
         
     }  
 }
@@ -156,7 +159,7 @@ function Showreviews(arr){
 function removeReviews(arr){
     for(var i=0;i<arr.length;i++){
         var parent = document.querySelector('.reviews_right')
-        console.log(parent.innerHTML="")
-        parent.innerHTML=""
+        // console.log(parent.innerHTML="")
+        // parent.innerHTML=""
     }
 }
