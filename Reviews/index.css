@@ -19,8 +19,11 @@ body{
     font-size: 14px;
     font-weight: 600;
 }
-.reviews_head>i{
+.reviews_head>a>i{
     color: blue;
+}
+.reviews_head>a>i:hover{
+    color: rgba(0, 0, 255, 0.151);
 }
 
 .reviews_main{
