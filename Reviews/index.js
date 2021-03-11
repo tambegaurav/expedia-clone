@@ -15,16 +15,21 @@ var newdata =
     localStorage.setItem('details', JSON.stringify(old));
     var arr = JSON.parse(localStorage.getItem('details'))
     Showreviews(arr)
+    
 
 
 var x=0;
-function filterData(event){
+function filterData(event,name){
+    if(x==0){
+        document.querySelector('.reviews_right_cont').innerHTML="";
+       
+    }
    console.log(event.target.name)
     if(event.target.checked){
-        document.querySelector('.reviews_right_cont').innerHTML="";
+        
         document.querySelector('#traveler_h4').innerHTML =`Traveler type (${++x})`;
           var args= arr.filter(el => {
-            if(el.travel_type==event.target.name){
+            if(el.travel_type==name){
                 return el
             }               
             });
@@ -34,9 +39,13 @@ function filterData(event){
     {
         document.querySelector('.reviews_right_cont').innerHTML="";
         document.querySelector('#traveler_h4').innerHTML =`Traveler type (${--x})`;
-        Showreviews(arr)  
+        Showreviews(arr) 
+        
     }  
 }
+
+
+
 
 
 
@@ -137,5 +146,17 @@ function Showreviews(arr){
         child_i.append(child_in_8)
     
     
+    }
+}
+
+
+
+
+
+function removeReviews(arr){
+    for(var i=0;i<arr.length;i++){
+        var parent = document.querySelector('.reviews_right')
+        console.log(parent.innerHTML="")
+        parent.innerHTML=""
     }
 }
