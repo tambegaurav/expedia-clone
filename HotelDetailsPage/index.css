@@ -1,7 +1,7 @@
 .mainCont {
     background-color:#ebecf0;
+    height: 800vh;
     width: 100%;
-    height: 500vh
 }
 
 #header {
@@ -279,17 +279,104 @@ font-weight: bold;
 }
 .vip-access-cont {
     width: 100%;
-   
+    background-color: white;
+    margin-top: 15px;
     height: 30vh
 }
 .sigin-signup-cont {
-
+    width: 100%;
+    height: 12vh;
+    background-color: white;
+    margin-top: 15px;
 }
 .choose-your-room-cont {
-
+    width: 100%;
+    height: 180vw;
+    background-color: grey;
+    margin-top: 25px;
 }
 .locationCont {
-    width: 80%;
-    height: 600px;
-   
+ width: 100%;
+ height: 150vh;
+ margin-top: 35px;
+ display: grid;
+ grid-template-rows: 50% 50%;
+ grid-template-columns: 35% 65%;
+}
+.map-loc {
+    height: 87%;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgb(226, 222, 222)
+}
+.view-in-map {
+    color: rgb(34, 127, 163);
+}
+.about-this-area {
+    display: grid;
+    grid-template-rows: 10% 8% 43% 7%;
+}
+.about-area-heading {
+    margin: 20px;
+    padding: 0%;
+    margin-top: 0%;
+    color: #001959;
+    font-weight: bolder;
+}
+.miami-text {
+    margin: 20px;
+    margin-top: 0%;
+    color: #001959;
+    font-weight: bolder;
+}
+#about-area-para{
+    margin: 20px;
+    margin-top: 0%;
+    color: #001959;
+    font-size: 15px;
+    line-height: 20px;
+}
+.visit-miami {
+    margin: 20px;
+    margin-top: 30px;
+    color: rgb(34, 127, 163);
+}
+.visit-miami-text {
+    color: rgb(34, 127, 163);
+}
+.nearby-rest-around {
+    display: grid;
+    grid-template-rows: 45% 30%;
+}
+
+.nearby-rest {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 40% 20% 40%;
+}
+.nearby-rest > div {
+    margin: 1px;
+}
+.nearby-rest  p {
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 20px;
+    color: #001959;
+}
+.nearby-rest h3 {
+    padding-left: 20px;
+    color: #001959;
+}
+.around p {
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 20px;
+    color: #001959;
+}
+.around h3 {
+    padding-left: 20px;
+    color: #001959;
+}
+.around {
+    padding-top: 0%;
 }
