@@ -8,12 +8,67 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
     <title>Sagamore Hotel South Beach</title>
 </head>
 
 <body>
     <div class="mainCont">
-        <div id="header"></div>
+        <div id="header">
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                  <div class="left">
+                    <a class="navbar-brand" href="#">
+                      <img
+                        src="https://www.expedia.com/_dms/header/logo.svg"
+                        alt=""
+                        class="d-inline-block align-top logo"
+                      />
+                    </a>
+                    <!-- dropdown -->
+                    <div class="dropdown">
+                      <a
+                        class="btn btn-secondary dropdown-toggle dropdown-nav"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        More Travel
+                      </a>
+          
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li>
+                          <a class="dropdown-item" href="./HotelList/index.html">Stays</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Flights</a></li>
+                        <li><a class="dropdown-item" href="#">Cars</a></li>
+                        <li>
+                          <a class="dropdown-item" href="./HotelDetailsPage/index.html"
+                            >Pakages</a
+                          >
+                        </li>
+                        <li><a class="dropdown-item" href="#">Things to do</a></li>
+                        <li><a class="dropdown-item" href="#">Cruises</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <a href="#"><div class="link">English</div></a>
+                    <a href="#"><div class="link">List your property</div></a>
+                    <a href="#"><div class="link">Support</div></a>
+                    <a href="#"><div class="link">Trips</div></a>
+                    <a href="./SignUp/index.html"><div class="link">Sign In</div></a>
+                  </div>
+                </div>
+              </nav>
+        </div>
         <div id="mainImgCont">
 
             <div id="covidCont">
@@ -309,6 +364,13 @@
                 </div>
             </div>
         </div>
+        
+    
+        <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
         <script>
         </script>
 </body>
