@@ -71,7 +71,7 @@
           <a href="#"><div class="link">List your property</div></a>
           <a href="#"><div class="link">Support</div></a>
           <a href="#"><div class="link">Trips</div></a>
-          <a href="./SignUp/index.html"><div class="link">Sign In</div></a>
+          <a href="./SignIn/index.html"><div class="link">Sign In</div></a>
         </div>
       </div>
     </nav>
@@ -685,6 +685,54 @@
           alt=""
         />
       </div>
+
+      <!-- chatbox -->
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom"
+        class="circle"
+        onclick="openChatbox()"
+      >
+        <p><i class="far fa-envelope"></i> Help</p>
+      </div>
+
+      <div class="chatbox">
+        <div class="chatbox_header">
+          <p>How can we help?</p>
+          <i class="fa fa-times" aria-hidden="true" onclick="hidechatbox()"></i>
+        </div>
+        <div class="chatbox_message">
+          <div><p>The very begining</p></div>
+          <div class="chatbox_message_line">
+            <div></div>
+            <h6>Today</h6>
+            <div></div>
+          </div>
+
+          <div class="msg_bot_join">
+            <div><img src="https://www.expedia.com/favicon.ico" alt="" /></div>
+            <p>Virtual Agent has joined the conversation</p>
+          </div>
+        </div>
+
+        <div class="chat_buttons">
+          <div class="chat_button_top">
+            <button>Cancel booking</button>
+            <button>Change booking</button>
+            <button>Get refund status</button>
+          </div>
+          <div class="chat_button_bottom">
+            <button>Use airline credit</button>
+            <button>Do something else</button>
+          </div>
+          <div class="msg_type">
+            <i class="fas fa-paperclip"></i>
+            <input type="text" name="" id="" placeholder="Typing is disabled" />
+
+            <i class="fas fa-reply"></i>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Bootstrap -->
@@ -699,5 +747,9 @@
       defer
     ></script>
     <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

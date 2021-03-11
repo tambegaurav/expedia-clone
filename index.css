@@ -566,3 +566,127 @@ h1 {
   margin: auto;
   margin-top: 20px;
 }
+
+/* chatbox */
+
+.circle {
+  display: none;
+  width: 100px;
+  height: 45px;
+  border-radius: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: #465280;
+  background-color: white;
+  border-radius: 35px;
+  text-align: center;
+  align-items: center;
+}
+.circle:hover {
+  background-color: #465280;
+  color: white;
+}
+.chatbox {
+  position: fixed;
+  display: none;
+  right: 50px;
+  bottom: 50px;
+  width: 400px;
+  background-color: rgba(128, 128, 128, 0.041);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #1d1d1d;
+  padding-bottom: 10px;
+}
+.circle > p {
+  padding-top: 10px;
+}
+
+.chatbox_header {
+  align-items: center;
+  display: flex;
+  gap: 60%;
+  padding-top: 0;
+  padding-left: 0;
+  background-color: #ffd500;
+  width: 100%;
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.chatbox_header > p {
+  padding-left: 10px;
+}
+
+.chatbox_message {
+  background-color: white;
+  overflow-y: scroll;
+  width: 100%;
+  height: 300px;
+}
+.chatbox_message > div > p {
+  text-align: center;
+  margin: 3% 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.chatbox_message_line {
+  display: flex;
+  margin-bottom: 5%;
+}
+.chatbox_message_line > div {
+  margin: auto;
+  height: 2px;
+  background-color: gainsboro;
+  width: 40%;
+}
+.msg_bot_join > div {
+  margin-left: 45%;
+}
+.msg_bot_join > p {
+  margin: top 0% !important;
+}
+
+.chat_buttons {
+  background-color: white;
+  height: 200px;
+  width: 100%;
+}
+
+.chat_buttons > div > button {
+  margin-top: 3%;
+  background: none;
+  width: 120px;
+  height: 30px;
+  border: 2px solid #465280;
+  color: #465280;
+  border-radius: 30px;
+  margin-left: 5px;
+}
+.chat_buttons > div > button:hover {
+  background-color: #465280;
+  color: white;
+}
+
+.chat_buttons button {
+  font-size: 12px;
+}
+
+.msg_type {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  margin-top: 10%;
+  margin-left: 3%;
+  color: rgb(63, 54, 54);
+}
+.msg_type > input {
+  background: none;
+  border-radius: 5px;
+  width: 80%;
+  height: 40px;
+  text-align: center;
+  outline: none;
+  border: 1px solid #465280;
+}
