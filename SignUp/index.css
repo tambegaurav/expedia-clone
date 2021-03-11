@@ -123,9 +123,9 @@ input {
   color: #1f1f1f;
   margin-top: 5px;
 }
-#input1 {
-  width: 380px;
-  height: 20px;
+.form-input {
+  width: 400px;
+  height: 35px;
   box-shadow: inset 0 1px 0 rgb(0 0 0 / 10%), inset 0 1px 1px rgb(0 0 0 / 5%);
   border-radius: 3px;
   border: 1px solid;
@@ -183,18 +183,15 @@ a:visited {
 .btn-primary {
   width: 40%;
   height: 50px;
-  margin: 0.70588235em 0.70588235em 0 0;
+  margin-left: 8px;
+  margin-top: 15px;
   border: 1px solid transparent;
   border-width: 1px 1px 2px;
   border-radius: 0.23529412em;
   font-size: 1em;
   line-height: 1.45;
   font-weight: 700;
-  cursor: pointer;
-  border-color: #d4a900 #aa8700 #aa8700;
-  background: #ffbe00;
-
-  color: #3d3100;
+ 
 }
 .google {
   float: left;
