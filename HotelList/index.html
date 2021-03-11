@@ -8,13 +8,71 @@
     <link rel = "icon" href ="https://filecache.mediaroom.com/mr5mr_expediabrand/177353/GLobe-medium.jpg" type = "logo.svg"> 
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    /> -->
     
 </head>
 <body>
     <div class="welcom_bar text_gapping text_styling">
-        <p>Welcome to Expedia.com. Continue to the India site at <a href="#"> Expedia.co.in.</a></p>
+        <p>Welcome to Expedia.com. Continue to the India site at <a href="../index.html"> Expedia.co.in.</a></p>
     </div>
+
+
+    <!-- <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="left">
+            <a class="navbar-brand" href="#">
+              <img
+                src="https://www.expedia.com/_dms/header/logo.svg"
+                alt=""
+                class="d-inline-block align-top logo"
+              />
+            </a>
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle dropdown-nav"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                More Travel
+              </a>
+  
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="./HotelList/index.html">Stays</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Flights</a></li>
+                <li><a class="dropdown-item" href="#">Cars</a></li>
+                <li>
+                  <a class="dropdown-item" href="./HotelDetailsPage/index.html"
+                    >Pakages</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Things to do</a></li>
+                <li><a class="dropdown-item" href="#">Cruises</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="right">
+            <a href="#"><div class="link">English</div></a>
+            <a href="#"><div class="link">List your property</div></a>
+            <a href="#"><div class="link">Support</div></a>
+            <a href="#"><div class="link">Trips</div></a>
+            <a href="./SignUp/index.html"><div class="link">Sign In</div></a>
+          </div>
+        </div>
+      </nav> -->
+
+
+
+
 
 
     <div class="search_stay text_styling text_gapping text-col">
@@ -35,15 +93,52 @@
         <div class="stay_header">
             <h1>Search stays</h1>
         </div>
-        <div class="stay_inputs">
-            <button <i class="fas fa-map-marker-alt" style="font-size: 20px; text-align: left;"></i></button>
-            <button aria-label="Check-in March 23, 2021" data-name="d1" id="d1-btn" data-stid="open-date-picker" type="button" class="uitk-faux-input uitk-form-field-trigger">Mar 23</button>
-            <button aria-label="Check-out March 24, 2021" data-name="d2" id="d2-btn" data-stid="open-date-picker" type="button" class="uitk-faux-input uitk-form-field-trigger">Mar 24</button>
-            <button aria-label="1 room, 2 travelers" data-testid="travelers-field-trigger" class="uitk-fake-input uitk-form-field-trigger" type="button">1 room, 2 travelers</button>
-            
-            
+        <div id="stay-booking">
+            <div onclick="changeNumbers()" class="no-of-people">
+              1 room, 2 travellers
+            </div>
+            <div class="add-people-modal">
+              <p class="nums-title">Travellers</p>
+              <p class="nums-title room-no">Room 1</p>
+              <div class="adults">
+                <div class="person-cat">Adult</div>
+                <div class="person-numbers numbers">
+                  <button onclick="subtract()">Minus</button>
+                  <div id="noOfAdults">2</div>
+                  <button onclick="add()">Add</button>
+                </div>
+              </div>
+              <div class="children">
+                <div class="person-cat">Children</div>
+                <div class="children-numbers numbers">
+                  <button>Minus</button>
+                  <div id="noOfChildren">2</div>
+                  <button>Add</button>
+                </div>
+              </div>
+              <button class="btn done" id="closeAddModal">Done</button>
+            </div>
+            <div class="place-and-date">
+              <input
+                class="place-search"
+                type="text"
+                placeholder="Going to"
+              />
+              <input style="border: none;"
+                class="date"
+                type="text"
+                placeholder="Check-in"
+                onfocus="(this.type = 'date')"
+              />
+              <input style="border: none;"
+                class="date"
+                type="text"
+                placeholder="Check-out"
+                onfocus="(this.type = 'date')"
+              />
+            </div>
+          </div>
 
-        </div>
         <div class="stay_checkboxes">
             <input type="checkbox" name="" id=""><label for="">Add a flight</label>
             <input type="checkbox" name="" id=""><label for="">Add a car</label>
@@ -226,33 +321,14 @@
 
 
 </body>
-<script>
-    function plusSlidesnext(){
-        // if(document.querySelector('.next_dest_box_calgary').style.display=="none"){
-            document.querySelector('.next_dest_box_toronto').style.display= "none"
-            document.querySelector('.next_dest_box_calgary').style.display= "block"
+<script src="index.js">
     
-        // }
- 
-    }
-    function plusSlidesprev(){
-            document.querySelector('.next_dest_box_toronto').style.display= "block"
-            document.querySelector('.next_dest_box_calgary').style.display= "none"
-        }
-
-
-        function weekprev(){
-            document.querySelector('.weekend_bhopal').style.display= "none"
-            document.querySelector('.weekend_guru').style.display= "block"
-       
-
-    }
-    function weeknext(){
-        document.querySelector('.weekend_bhopal').style.display= "block"
-        document.querySelector('.weekend_guru').style.display= "none"
-       
-    }
 </script>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+crossorigin="anonymous"
+></script>
 </html>
 
 
