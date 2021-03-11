@@ -1,0 +1,231 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* navbar */
+
+nav {
+  height: 80px;
+}
+a {
+  text-decoration: none !important;
+  color: #465280 !important;
+}
+a:hover {
+  color: #005aeb !important;
+}
+.container-fluid {
+  padding-left: 150px !important;
+  padding-right: 150px !important;
+}
+
+.logo {
+  height: 2rem;
+}
+
+.dropdown-nav {
+  color: #465280;
+  background-color: transparent !important;
+  border: none;
+  outline: none;
+}
+.dropdown-nav:hover,
+.dropdown-nav:focus {
+  color: #005aeb;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.dropdown-item {
+  color: #465280;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+/* navbar end  */
+
+.head {
+  height: 10vh;
+}
+#header {
+  background-color: rgb(237, 237, 237);
+  height: 70px;
+}
+#header > h1 {
+  margin-left: 14%;
+  color: #00355f;
+  font-size: 20px;
+  line-height: 1.35;
+  padding-top: 15px;
+}
+
+.box {
+  font-size: 1em;
+  line-height: 1.41176471;
+  display: block;
+  background-color: rgb(237, 237, 237);
+  margin-top: -15px;
+  height: 800px;
+}
+.form {
+  background-color: white;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-radius: 4px;
+  height: 700px;
+}
+.rewards {
+  padding-top: 4%;
+  padding-left: 3%;
+  color: #536d83;
+  font-weight: bold;
+  font-size: 1.3529411764705883em;
+}
+.para {
+  padding-top: 3%;
+  padding-left: 3%;
+  color: #3e6c94;
+  font-size: 13px;
+}
+.input {
+  padding-top: 1%;
+  padding-left: 3%;
+  font-size: 15px;
+  width: 50%;
+  float: left;
+}
+.input > div {
+  margin-left: 5px;
+  display: inline-block;
+}
+label {
+  font-size: 14px;
+
+  color: #616161;
+  font-weight: bold;
+}
+input {
+  height: 20px;
+  box-shadow: inset 0 1px 0 rgb(0 0 0 / 10%), inset 0 1px 1px rgb(0 0 0 / 5%);
+  border-radius: 3px;
+  border: 1px solid;
+  padding: 0.47058824rem 0.70588235rem;
+  border-color: #858585 #c2c2c2 #c2c2c2;
+  background: #fff;
+  font-size: 0.88235294rem;
+  line-height: 1.2;
+  cursor: text;
+  color: #1f1f1f;
+  margin-top: 5px;
+}
+#input1 {
+  width: 380px;
+  height: 20px;
+  box-shadow: inset 0 1px 0 rgb(0 0 0 / 10%), inset 0 1px 1px rgb(0 0 0 / 5%);
+  border-radius: 3px;
+  border: 1px solid;
+  padding: 0.47058824rem 0.70588235rem;
+  border-color: #858585 #c2c2c2 #c2c2c2;
+  background: #fff;
+  font-size: 0.88235294rem;
+  line-height: 1.2;
+  cursor: text;
+  color: #1f1f1f;
+  margin-top: 5px;
+}
+
+.form-inputs {
+  height: 35px !important;
+}
+.paras {
+  background-color: rgb(245, 245, 245);
+  padding: 20px;
+  margin-top: 30px;
+  padding-left: 20px;
+  width: 90%;
+  line-height: 0.7;
+}
+.checkbox {
+  width: 1.15384615em;
+  height: 1.15384615em;
+  cursor: pointer;
+  font-size: 0.76470588em;
+}
+.mkt {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #3e3e3e;
+  padding-left: 2px;
+}
+#check {
+  margin-top: 1%;
+}
+.privacy-checkbox-label {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #616161;
+  padding-left: 2px;
+  max-width: calc(100% - 2em);
+  display: inline-block;
+}
+a:link,
+a:visited {
+  color: #0065b8;
+  text-decoration: none;
+}
+.btn-primary {
+  width: 40%;
+  height: 50px;
+  margin: 0.70588235em 0.70588235em 0 0;
+  border: 1px solid transparent;
+  border-width: 1px 1px 2px;
+  border-radius: 0.23529412em;
+  font-size: 1em;
+  line-height: 1.45;
+  font-weight: 700;
+  cursor: pointer;
+  border-color: #d4a900 #aa8700 #aa8700;
+  background: #ffbe00;
+
+  color: #3d3100;
+}
+.google {
+  float: left;
+
+  margin-left: 100px;
+}
+.googleLogo {
+  margin-top: -10px;
+  margin-right: 10px;
+  margin-left: -15px;
+}
+.btn2 {
+  margin-bottom: 10px;
+  height: 40px;
+  background: #fff;
+  color: #000;
+  width: 225px;
+  border-radius: 4px;
+  border-color: gray;
+  border-width: thin;
+}
+.btn-label {
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-margin {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #3e3e3e;
+}

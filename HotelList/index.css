@@ -1,4 +1,23 @@
 /* --------------------Search Stay{Start}---------------------- */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+html, body, .main-container{
+    width: 100%;
+    height: 100%;
+}
+.welcom_bar{
+    background-color: #465280;
+    color: white;
+    height: 30px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+.welcom_bar>p>a{
+    color: white;
+}
 .search_stay{
     width: 92%;
     height: 500px;
@@ -7,9 +26,10 @@
   
 }
 .stay_top_blue{
+    padding-top: 20px;
     background-color: #465280;
     width: 100%;
-    height:20%;
+    height:15%;
     border-radius: 10px;
     display: flex;
     
@@ -22,7 +42,7 @@
 }
 .stay_warning>i{
     font-size: 30px;
-    padding: 30%;
+    padding:20% 0% 0% 40%;
 }
 .stay_right_p{
     font-size: 14px;
@@ -73,7 +93,7 @@
     font-size: 14px;
 }
 .stay_desc>p::before{
-    content: "✓";
+    content: "✓ ";
 }
 
 
@@ -194,10 +214,9 @@
     font-family: "Centra No1", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+/* _________________________________________________ */
 
-
-
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 992px) {
     .ideas_trip{
         width: 92%;
         margin: auto;
@@ -213,63 +232,29 @@
         height: 78%;
         /* background-color: aliceblue; */
     }
-    
-    
+
     .ideas_left{
-        width: 65%;
+        width: 100%;
         height: 100%;
     }
-    .ideas_left_long{
-        height: 70%;
-        background-color: antiquewhite;
-        border-top-right-radius: 10px;
-        border-top-left-radius: 10px;
-    
-    }
-    
-    .ideas_left_small{
-        height: 15%;
-    }
+
     .ideas_right{
-        
-        width: 35%;
+    
+        width: 100%;
         height: 100%;
     }
-    .ideas_right_top{
-        display: flex;
-        height: 47.25%;
-        margin: 0 3% 3% 3%;
-        /* margin-top: 0%; */
-    
-    }
-    .ideas_right_bottom{
-        display: flex;
-        height: 47.25%;
-        margin: 3% 3% 3% 3%;
-    }
-    .ideas_right_top_left{
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
-        background-color: burlywood;
-        width:30% ;
-    }
-    .text-col{
-        color:#001959;
-    }
-    
-    .bordering{
-        border: 0.5px solid#bed1ce;
-        border-radius: 10px;
-    }
-    
-    .ideas_gapping{
-        margin: 10px;
-    }
-    .text_styling{
-        font-family: "Centra No1", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    }
-    
-  }
+
+} 
+
+
+
+
+
+
+
+
+
+
 /* -----------------Ideas For Your Next Trip {Ended}----------- */
 
 
@@ -282,10 +267,12 @@
     width: 92%;
     height: 310px;
     margin: auto;
+    margin-bottom: 4%;
 }
 .weekend_header{
     height: 15%;
-    line-height: 5px;
+    /* line-height: 5px; */
+    margin-bottom: 2%;
 }
 .weekend_container{
     display: flex;
@@ -346,6 +333,15 @@
 
 } */
 
+.weekend_bhopal{
+    display: none;
+}
+.weekend_bhopal_top{
+
+    background-image: url('https://thumbnails.expedia.com/y7pk6yNP5VqmTfumLhHLk7dMPXg=/1280x720/images.trvl-media.com/media/content/expus/graphics/deals/TE_Clouds_card_r1.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
 
 /* ------------------Weekend Gateways{ End }---------------- */
 
@@ -363,6 +359,7 @@
     width: 92%;
     margin: auto;
     height: 266px;
+    margin-bottom: 2%;
 }
 .next_dest_header{
     width: 100%;
@@ -376,7 +373,7 @@
 .next_dest_box{
     height: 100%;
     width: 20%;
-    background-color: tomato;
+    /* background-color: tomato; */
     margin-left: 1%;
     border-radius: 10px;
     
@@ -384,55 +381,81 @@
 .next_dest_text{
     color: white;
     /* font-size: 20px; */
-    font-weight: 800;
+    font-weight: 600;
     padding: 40% 0 0 30%;
 }
 
 .next_dest_box_toronto{
-    background-color: blue;
-    opacity: 0.9;
-    background-image: url("https://thumbnails.trvl-media.com/lHm4ymOpabcmgHaMoAGLlDkZq2M=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/Toronto.png");
+
+    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("https://thumbnails.trvl-media.com/lHm4ymOpabcmgHaMoAGLlDkZq2M=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/Toronto.png");
     background-repeat: no-repeat;
+    position: relative;
     background-size: 100% 100%;
-    /* z-index: auto; */
+    
+    
 }
   
 .next_dest_box_las_vegas{
-    background-image: url("https://thumbnails.trvl-media.com/95Jes5CwByLClgIJ8LN9i-QmL9Y=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/LasVegas.png");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url("https://thumbnails.trvl-media.com/95Jes5CwByLClgIJ8LN9i-QmL9Y=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/LasVegas.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 .next_dest_box_new_york{
-    background-image: url("https://thumbnails.trvl-media.com/fLATJfEx9VWTkGBIqMz4lT_vqy8=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/NewYork.png");
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("https://thumbnails.trvl-media.com/fLATJfEx9VWTkGBIqMz4lT_vqy8=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/NewYork.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
  
 .next_dest_box_orlando{
-    background-image: url("https://thumbnails.trvl-media.com/NLd-Wi3Gvk2rD1AS-zOnqyvhzFk=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/Orlando_city.png");
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("https://thumbnails.trvl-media.com/NLd-Wi3Gvk2rD1AS-zOnqyvhzFk=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/Orlando_city.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
   
 .next_dest_box_vancouver{
-    background-image: url("https://thumbnails.trvl-media.com/VgH7A2g7lsSo7b3R3r0WqGKzqEM=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/Vancouver.png");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url("https://thumbnails.trvl-media.com/VgH7A2g7lsSo7b3R3r0WqGKzqEM=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/Vancouver.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 .next_dest_box_sanfrancisco{
-    background-image: url("https://thumbnails.trvl-media.com/-jSxauocuyn-3A3y7UBGiI6bv2Q=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/SanFrancisco.png");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url("https://thumbnails.trvl-media.com/-jSxauocuyn-3A3y7UBGiI6bv2Q=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/SanFrancisco.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 .next_dest_box_calgary{
-    background-image: url("https://thumbnails.trvl-media.com/x_EtuWvXhhf2VsfDana44a5QT9I=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/Calgary.png");
+    display: none;
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("https://thumbnails.trvl-media.com/x_EtuWvXhhf2VsfDana44a5QT9I=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/Calgary.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 16px;
+    margin-top: 5%;
+    color: transparent;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 15px;
+    user-select: none;
+  }
+  
+  .next {
+    right: 50px;
+  }
+  
+  .prev:hover, .next:hover {
+    color: blue;
+    background-color: #ffffff;
+  }
+  
 
 /* ------------------Find your next destination {end}-------------- */
 

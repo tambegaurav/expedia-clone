@@ -59,6 +59,104 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 40px;
+  display: flex;
+}
+
+.hero-cont {
+  width: 80%;
+  height: auto;
+  background-color: #fff;
+  margin: auto;
+  border: 3px solid #005aeb;
+  align-self: center;
+  margin-top: 70px;
+}
+
+#stay-booking {
+  display: flex;
+  flex-direction: column;
+}
+
+.no-of-people {
+  align-self: flex-end;
+  font-size: 15px;
+  color: #005aeb;
+  cursor: pointer;
+}
+
+.place-and-date {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.place-search {
+  width: 50%;
+  outline: none;
+  height: 40px;
+  border-radius: 10px !important;
+  border: 1px solid #465280;
+  padding-left: 20px;
+}
+.place-search:focus {
+  border: 2px solid #005aeb;
+}
+
+.add-people-modal {
+  position: absolute;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  color: #001959;
+  background-color: #ffffff;
+  margin-top: 25px;
+  align-self: flex-end;
+  display: none;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 5px 10px rgb(51, 51, 51);
+}
+.nums-title {
+  font-size: 18px;
+  color: #001959;
+  font-weight: 700;
+}
+.room-no {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.adults,
+.children {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.person-cat {
+  font-size: 15px;
+  font-weight: 400;
+  color: #001959;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  text-align: center;
+}
+
+.done {
+  background-color: #005aeb;
+  width: 100%;
+  margin-top: 20px;
+  color: #fff;
+  padding: 7px;
+}
+
+.done:hover {
+  background-color: #005aebcb;
+  color: #fff;
 }
 
 /* cont */
@@ -107,6 +205,10 @@ a:hover {
   width: 33%;
   height: 80px;
   border-radius: 5px;
+  padding-left: 20px;
+}
+.covid-card > .icon {
+  font-size: 30px;
 }
 
 .covid-text {
@@ -292,4 +394,26 @@ a:hover {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.qr-input {
+  width: 150px;
+  height: 40px;
+  padding-left: 5px;
+  outline: none;
+  border-radius: 7px;
+  border: 1px solid #465280;
+}
+.qr-input:focus {
+  border: 2px solid #005aeb;
+}
+.qr-button {
+  background-color: #005aeb;
+  color: white;
+  border: none;
+}
+.qr-end {
+  font-size: 10px;
+  margin-left: 2px;
+  margin-top: 5px;
 }
