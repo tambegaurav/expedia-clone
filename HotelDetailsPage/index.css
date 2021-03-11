@@ -137,14 +137,14 @@ margin-top: 20px;
     background-color: white;
 }
 .details-amenities{
-    flex-grow: 2;
+    flex-grow: 3;
     margin-left: 20px;
     display: grid;
     grid-template-rows: 14% 17% 12% 8% 30% 5% 10%;
-
 }
 .explore-area {
-    flex-grow: 5;
+   
+    flex-grow;2
 }
 .details-amenities div {
     background-color: white;
@@ -208,6 +208,9 @@ font-weight: bold;
      height: 40vh;
      display: flex;
      flex-direction: column;
+     margin-right: 0px;
+     margin-left: 50px;
+
  }
  #heading-text {
      font-size: 18px;
@@ -216,7 +219,6 @@ font-weight: bold;
  }
  .map {
      flex-grow: 1;
-
  }
 
  .map-loc-detail {
@@ -242,12 +244,13 @@ font-weight: bold;
     flex-direction: column;
     font-size: 15px;
     color: #001959;
+    margin-left: 50px;
  }
 .explore-text-h{
     flex-shrink: 2;
  }
  .explore-text{
-     flex-grow: 2;
+     flex-grow: 1;
      display: flex;
      flex-grow: row;
  }
@@ -255,8 +258,11 @@ font-weight: bold;
     flex-grow: 6;
 }
 .explore-text div {
-    flex-grow: 1;
+    flex-grow: 4;
     margin: 1px;
+}
+.explore-text div:nth-child(1) {
+    flex-grow: 1;
 }
 .address-text {
     width: 50%;
