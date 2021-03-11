@@ -88,32 +88,64 @@
                 :class="openTab === 1 ? activeClasses : inactiveClasses"
                 class="inline-block py-3 px-5 font-medium transition transition-colors duration-500"
                 href="#"
-                >Stays</a
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                "
               >
+                <i class="fas fa-hotel"></i>
+                <p>Stays</p>
+              </a>
             </li>
             <li @click="openTab = 2" :class="{ '-mb-px': openTab === 2  }">
               <a
                 :class="openTab === 2 ? activeClasses : inactiveClasses"
                 class="inline-block py-3 px-5 font-medium transition transition-colors duration-500"
                 href="#"
-                >Flights</a
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                "
               >
+                <i class="fas fa-plane-departure"></i>
+                <p>Flights</p>
+              </a>
             </li>
             <li @click="openTab = 3" :class="{ '-mb-px': openTab === 3 }">
               <a
                 :class="openTab === 3 ? activeClasses : inactiveClasses"
                 class="inline-block py-3 px-5 font-medium transition transition-colors duration-500"
                 href="#"
-                >Cars</a
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                "
               >
+                <i class="fas fa-car"></i>
+                <p>Cars</p>
+              </a>
             </li>
             <li @click="openTab = 4" :class="{ '-mb-px': openTab === 4 }">
               <a
                 :class="openTab === 4 ? activeClasses : inactiveClasses"
                 class="inline-block py-3 px-5 font-medium transition transition-colors duration-500"
                 href="#"
-                >Pakages</a
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                "
               >
+                <i class="fas fa-suitcase-rolling"></i>
+                <p>Pakages</p>
+              </a>
             </li>
 
             <li @click="openTab = 5" :class="{ '-mb-px': openTab === 5 }">
@@ -121,7 +153,15 @@
                 :class="openTab === 5 ? activeClasses : inactiveClasses"
                 class="inline-block py-3 px-4 font-medium transition transition-colors duration-500"
                 href="#"
-                >Things to do</a
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <i class="fas fa-ticket-alt"></i>
+                <p>Things to do</p></a
               >
             </li>
             <li @click="openTab = 6" :class="{ '-mb-px': openTab === 6 }">
@@ -129,8 +169,16 @@
                 :class="openTab === 6 ? activeClasses : inactiveClasses"
                 class="inline-block py-3 px-5 font-medium transition transition-colors duration-500"
                 href="#"
-                >Cruises</a
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                "
               >
+                <i class="fas fa-ship"></i>
+                <p>Cruises</p>
+              </a>
             </li>
           </ul>
           <div class="p-0 w-full text-black bg-white">
@@ -145,17 +193,21 @@
                   <div class="adults">
                     <div class="person-cat">Adult</div>
                     <div class="person-numbers numbers">
-                      <button onclick="subtract()">Minus</button>
+                      <button onclick="subtract()">
+                        <i class="fas fa-minus-circle fa-lg"></i>
+                      </button>
                       <div id="noOfAdults">2</div>
-                      <button onclick="add()">Add</button>
+                      <button onclick="add()">
+                        <i class="fas fa-plus-circle fa-lg"></i>
+                      </button>
                     </div>
                   </div>
                   <div class="children">
                     <div class="person-cat">Children</div>
                     <div class="children-numbers numbers">
-                      <button>Minus</button>
+                      <button><i class="fas fa-minus-circle fa-lg"></i></button>
                       <div id="noOfChildren">2</div>
-                      <button>Add</button>
+                      <button><i class="fas fa-plus-circle fa-lg"></i></button>
                     </div>
                   </div>
                   <button class="btn done" id="closeAddModal">Done</button>
@@ -179,22 +231,311 @@
                     onfocus="(this.type = 'date')"
                   />
                 </div>
+                <div class="add-flight-car">
+                  <input type="checkbox" /> <label for="">Add Flight</label>
+                  <input type="checkbox" /> <label for="">Add Car</label>
+                </div>
+
+                <a href="./SpecificCity/index.html" style="margin: auto"
+                  ><button class="search-btn">Search</button></a
+                >
               </div>
             </div>
             <div x-show="openTab === 2">
-              <div id="flight-booking">Flight</div>
+              <div id="stay-booking">
+                <div onclick="changeNumbers()" class="no-of-people">
+                  1 room, 2 travellers
+                </div>
+                <div class="add-people-modal">
+                  <p class="nums-title">Travellers</p>
+                  <p class="nums-title room-no">Room 1</p>
+                  <div class="adults">
+                    <div class="person-cat">Adult</div>
+                    <div class="person-numbers numbers">
+                      <button onclick="subtract()">
+                        <i class="fas fa-minus-circle fa-lg"></i>
+                      </button>
+                      <div id="noOfAdults">2</div>
+                      <button onclick="add()">
+                        <i class="fas fa-plus-circle fa-lg"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="children">
+                    <div class="person-cat">Children</div>
+                    <div class="children-numbers numbers">
+                      <button><i class="fas fa-minus-circle fa-lg"></i></button>
+                      <div id="noOfChildren">2</div>
+                      <button><i class="fas fa-plus-circle fa-lg"></i></button>
+                    </div>
+                  </div>
+                  <button class="btn done" id="closeAddModal">Done</button>
+                </div>
+                <div class="place-and-date">
+                  <input
+                    class="plane-search"
+                    type="text"
+                    placeholder="Leaving from"
+                  />
+                  <input
+                    class="plane-search"
+                    type="text"
+                    placeholder="Going to"
+                  />
+                  <input
+                    class="date"
+                    type="text"
+                    placeholder="Departing"
+                    onfocus="(this.type = 'date')"
+                  />
+                  <input
+                    class="date"
+                    type="text"
+                    placeholder="Returning"
+                    onfocus="(this.type = 'date')"
+                  />
+                </div>
+
+                <a href="./SpecificCity/index.html" style="margin: auto"
+                  ><button class="search-btn">Search</button></a
+                >
+              </div>
             </div>
             <div x-show="openTab === 3">
-              <div id="car-booking">Cars</div>
+              <div id="stay-booking">
+                <div onclick="changeNumbers()" class="no-of-people">
+                  1 room, 2 travellers
+                </div>
+                <div class="add-people-modal">
+                  <p class="nums-title">Travellers</p>
+                  <p class="nums-title room-no">Room 1</p>
+                  <div class="adults">
+                    <div class="person-cat">Adult</div>
+                    <div class="person-numbers numbers">
+                      <button onclick="subtract()">
+                        <i class="fas fa-minus-circle fa-lg"></i>
+                      </button>
+                      <div id="noOfAdults">2</div>
+                      <button onclick="add()">
+                        <i class="fas fa-plus-circle fa-lg"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="children">
+                    <div class="person-cat">Children</div>
+                    <div class="children-numbers numbers">
+                      <button><i class="fas fa-minus-circle fa-lg"></i></button>
+                      <div id="noOfChildren">2</div>
+                      <button><i class="fas fa-plus-circle fa-lg"></i></button>
+                    </div>
+                  </div>
+                  <button class="btn done" id="closeAddModal">Done</button>
+                </div>
+                <div class="place-and-date">
+                  <input
+                    class="place-search"
+                    type="text"
+                    placeholder="Going to"
+                  />
+                  <input
+                    class="date"
+                    type="text"
+                    placeholder="Check-in"
+                    onfocus="(this.type = 'date')"
+                  />
+                  <input
+                    class="date"
+                    type="text"
+                    placeholder="Check-out"
+                    onfocus="(this.type = 'date')"
+                  />
+                </div>
+                <div class="add-flight-car">
+                  <input type="checkbox" /> <label for="">Add Flight</label>
+                  <input type="checkbox" /> <label for="">Add Car</label>
+                </div>
+
+                <a href="./SpecificCity/index.html" style="margin: auto"
+                  ><button class="search-btn">Search</button></a
+                >
+              </div>
             </div>
             <div x-show="openTab === 4">
-              <div id="pakage-booking">Pakages</div>
+              <div id="stay-booking">
+                <div onclick="changeNumbers()" class="no-of-people">
+                  1 room, 2 travellers
+                </div>
+                <div class="add-people-modal">
+                  <p class="nums-title">Travellers</p>
+                  <p class="nums-title room-no">Room 1</p>
+                  <div class="adults">
+                    <div class="person-cat">Adult</div>
+                    <div class="person-numbers numbers">
+                      <button onclick="subtract()">
+                        <i class="fas fa-minus-circle fa-lg"></i>
+                      </button>
+                      <div id="noOfAdults">2</div>
+                      <button onclick="add()">
+                        <i class="fas fa-plus-circle fa-lg"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="children">
+                    <div class="person-cat">Children</div>
+                    <div class="children-numbers numbers">
+                      <button><i class="fas fa-minus-circle fa-lg"></i></button>
+                      <div id="noOfChildren">2</div>
+                      <button><i class="fas fa-plus-circle fa-lg"></i></button>
+                    </div>
+                  </div>
+                  <button class="btn done" id="closeAddModal">Done</button>
+                </div>
+                <div class="place-and-date">
+                  <input
+                    class="place-search"
+                    type="text"
+                    placeholder="Going to"
+                  />
+                  <input
+                    class="date"
+                    type="text"
+                    placeholder="Check-in"
+                    onfocus="(this.type = 'date')"
+                  />
+                  <input
+                    class="date"
+                    type="text"
+                    placeholder="Check-out"
+                    onfocus="(this.type = 'date')"
+                  />
+                </div>
+                <div class="add-flight-car">
+                  <input type="checkbox" /> <label for="">Add Flight</label>
+                  <input type="checkbox" /> <label for="">Add Car</label>
+                </div>
+
+                <a href="./SpecificCity/index.html" style="margin: auto"
+                  ><button class="search-btn">Search</button></a
+                >
+              </div>
             </div>
             <div x-show="openTab === 5">
-              <div id="things-booking">Things to do</div>
+              <div id="stay-booking">
+                <div onclick="changeNumbers()" class="no-of-people">
+                  1 room, 2 travellers
+                </div>
+                <div class="add-people-modal">
+                  <p class="nums-title">Travellers</p>
+                  <p class="nums-title room-no">Room 1</p>
+                  <div class="adults">
+                    <div class="person-cat">Adult</div>
+                    <div class="person-numbers numbers">
+                      <button onclick="subtract()">
+                        <i class="fas fa-minus-circle fa-lg"></i>
+                      </button>
+                      <div id="noOfAdults">2</div>
+                      <button onclick="add()">
+                        <i class="fas fa-plus-circle fa-lg"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="children">
+                    <div class="person-cat">Children</div>
+                    <div class="children-numbers numbers">
+                      <button><i class="fas fa-minus-circle fa-lg"></i></button>
+                      <div id="noOfChildren">2</div>
+                      <button><i class="fas fa-plus-circle fa-lg"></i></button>
+                    </div>
+                  </div>
+                  <button class="btn done" id="closeAddModal">Done</button>
+                </div>
+                <div class="place-and-date">
+                  <input
+                    class="place-search"
+                    type="text"
+                    placeholder="Going to"
+                  />
+                  <input
+                    class="date"
+                    type="text"
+                    placeholder="Check-in"
+                    onfocus="(this.type = 'date')"
+                  />
+                  <input
+                    class="date"
+                    type="text"
+                    placeholder="Check-out"
+                    onfocus="(this.type = 'date')"
+                  />
+                </div>
+                <div class="add-flight-car">
+                  <input type="checkbox" /> <label for="">Add Flight</label>
+                  <input type="checkbox" /> <label for="">Add Car</label>
+                </div>
+
+                <a href="./SpecificCity/index.html" style="margin: auto"
+                  ><button class="search-btn">Search</button></a
+                >
+              </div>
             </div>
             <div x-show="openTab === 6">
-              <div id="cruise-booking">Cruises</div>
+              <div id="stay-booking">
+                <div onclick="changeNumbers()" class="no-of-people">
+                  1 room, 2 travellers
+                </div>
+                <div class="add-people-modal">
+                  <p class="nums-title">Travellers</p>
+                  <p class="nums-title room-no">Room 1</p>
+                  <div class="adults">
+                    <div class="person-cat">Adult</div>
+                    <div class="person-numbers numbers">
+                      <button onclick="subtract()">
+                        <i class="fas fa-minus-circle fa-lg"></i>
+                      </button>
+                      <div id="noOfAdults">2</div>
+                      <button onclick="add()">
+                        <i class="fas fa-plus-circle fa-lg"></i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="children">
+                    <div class="person-cat">Children</div>
+                    <div class="children-numbers numbers">
+                      <button><i class="fas fa-minus-circle fa-lg"></i></button>
+                      <div id="noOfChildren">2</div>
+                      <button><i class="fas fa-plus-circle fa-lg"></i></button>
+                    </div>
+                  </div>
+                  <button class="btn done" id="closeAddModal">Done</button>
+                </div>
+                <div class="place-and-date">
+                  <input
+                    class="place-search"
+                    type="text"
+                    placeholder="Going to"
+                  />
+                  <input
+                    class="date"
+                    type="text"
+                    placeholder="Check-in"
+                    onfocus="(this.type = 'date')"
+                  />
+                  <input
+                    class="date"
+                    type="text"
+                    placeholder="Check-out"
+                    onfocus="(this.type = 'date')"
+                  />
+                </div>
+                <div class="add-flight-car">
+                  <input type="checkbox" /> <label for="">Add Flight</label>
+                  <input type="checkbox" /> <label for="">Add Car</label>
+                </div>
+
+                <a href="./SpecificCity/index.html" style="margin: auto"
+                  ><button class="search-btn">Search</button></a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -253,6 +594,23 @@
         </div>
       </div>
 
+      <div class="exp_disc text-col text_styling">
+        <div class="exp_disc_header">
+          <h1>Explore, discover, and save</h1>
+        </div>
+        <div class="exp_disc_cont">
+          <div class="exp_disc_box">
+            <div class="exp_disc_text text_gapping">
+              <h3>Road trip destination</h3>
+              <p>
+                Pack a bag and crank up your favourite playlist-- 's time to hit
+                the road
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Stay in the know with the Expedia app
  -->
 
@@ -293,6 +651,38 @@
           src="https://a.travel-assets.com/mad-service/footer/marquee/qrcode/qr_code_1.png"
           alt="qr-code"
           width="100%"
+        />
+      </div>
+
+      <div class="end-tag-line">
+        <p>Explore a world of travel with Expedia</p>
+        <a href="#wrapper"><p>See our travel options</p></a>
+      </div>
+
+      <div class="footer">
+        <div class="links">
+          <a href="" class="link">About Expedia</a>
+          <a href="" class="link">Jobs</a>
+          <a href="" class="link">Investor Relations</a>
+          <a href="" class="link">Advertising</a>
+          <a href="" class="link">Newsroom</a>
+          <a href="" class="link">About Our Ads</a>
+          <a href="" class="link">Privacy Policy</a>
+          <a href="" class="link">Terms of Use</a>
+          <a href="" class="link">Site Map</a>
+          <a href="" class="link">Accessibility</a>
+          <a href="" class="link">Support</a>
+          <a href="" class="link">Do Not Sell My Personal Information</a>
+        </div>
+
+        <div class="end-line">
+          Expedia, Inc. is not responsible for content on external Web sites. ©
+          2021 Expedia, Inc, an Expedia Group Company. All rights reserved.
+        </div>
+
+        <img
+          src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+          alt=""
         />
       </div>
     </div>
