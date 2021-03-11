@@ -1,13 +1,73 @@
-/* --------------------Search Stay{Start}---------------------- */
 *{
     padding: 0;
     margin: 0;
-    box-sizing: content-box;
+    /* box-sizing: content-box; */
+    font-family: "Centra No1", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 html, body, .main-container{
     width: 100%;
     height: 100%;
 }
+
+
+
+
+nav {
+    height: 80px;
+  }
+  nav>a {
+    text-decoration: none;
+    color: #465280;
+  }
+  nav> a:hover {
+    color: #005aeb;
+  }
+  nav>.container-fluid {
+    padding-left: 150px !important;
+    padding-right: 150px !important;
+    /* display: flex;  
+    gap: 400px; */
+  }
+  
+  nav>.logo {
+    height: 2rem;
+  }
+  
+  nav>.dropdown-nav {
+    color: #465280;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+  nav>.dropdown-nav:hover,
+  nav>.dropdown-nav:focus {
+    color: #005aeb;
+    background-color: transparent !important;
+    border: none !important;
+  }
+  
+  nav>.dropdown-item {
+    color: #465280;
+  }
+  
+  nav>.left,
+  nav>.right {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+  }
+  nav>.dropdown-menu{
+      /* display: none; */
+  }
+
+
+
+
+
+
+/* --------------------Search Stay{Start}---------------------- */
 .welcom_bar{
     background-color: #465280;
     color: white;
@@ -22,9 +82,100 @@ html, body, .main-container{
     width: 92%;
     height: 500px;
     margin: auto;
-    padding-top: 2%;
+    margin-top: 2%;
   
 }
+#stay-booking {
+    display: flex;
+    flex-direction: column;
+  }
+  #stay-booking button{
+    background: none;
+    border: none;
+  }
+  
+  .no-of-people {
+    align-self: flex-end;
+    font-size: 15px;
+    color: #005aeb;
+    cursor: pointer;
+  }
+  
+  .place-and-date {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .place-search {
+    width: 50%;
+    outline: none;
+    height: 40px;
+    border-radius: 10px !important;
+    border: 1px solid #465280;
+    padding-left: 20px;
+  }
+  .place-search:focus {
+    border: 2px solid #005aeb;
+  }
+  
+  .add-people-modal {
+    position: absolute;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    color: #001959;
+    background-color: #ffffff;
+    margin-top: 25px;
+    align-self: flex-end;
+    display: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 5px 10px rgb(51, 51, 51);
+  }
+  .nums-title {
+    font-size: 18px;
+    color: #001959;
+    font-weight: 700;
+  }
+  .room-no {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .adults,
+  .children {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .person-cat {
+    font-size: 15px;
+    font-weight: 400;
+    color: #001959;
+  }
+  
+  .numbers {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    text-align: center;
+  }
+  
+  .done {
+    background-color: #005aeb !important;
+    width: 100%;
+    margin-top: 20px;
+    color: #fff;
+    padding: 7px;
+  }
+  
+  .done:hover {
+    background-color: #005aebcb;
+    color: #fff;
+  }
+  
 .stay_top_blue{
     padding-top: 20px;
     background-color: #465280;
@@ -492,6 +643,11 @@ html, body, .main-container{
     padding-top: 13%;
 }
 /* ---------------------Explore Disc Save {End}------------------------ */
+
+
+
+
+
 
 
 
