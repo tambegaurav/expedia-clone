@@ -13,6 +13,8 @@ body{
    width: 75%;
    margin-left: 11.5%;
     border: 1px solid rgb(235,236,240);
+    background-position: center;
+    border-radius: 8px;
 }
 .imgtxt{
     color: aliceblue;
@@ -31,6 +33,7 @@ body{
     flex-direction: row;
     gap: 50px;
     justify-content: center;
+    border-radius: 8px;
     
 }
 .p1>div{
@@ -45,6 +48,7 @@ body{
     border: 1px solid rgb(235,236,240);
     height: 60%;
     display: flex;
+  
     
 }
 .leftcont{
@@ -52,18 +56,21 @@ body{
     margin-top: 25px;
     width: 25%;
     border: 1px solid rgb(235,236,240);
+   
 }
 .rightcont{
     margin-left: 30px;
     margin-top: 25px;
     width: 70%;
     border: 1px solid rgb(235,236,240);
+   
 }
 .date{
     height: 22%;
     border: 1px solid rgb(235,236,240);
     padding-left: 10px; 
     background-color: white;
+    border-radius: 8px;
 }
 .date>h3{
     color: rgb(0,25,89);
@@ -73,10 +80,14 @@ body{
     height: 20%;
     border: 1px solid rgb(235,236,240);
     background-color: white;
+    border-radius: 8px;
 }
 .filter{
-    height: 70%;
-    border: 1px solid rgb(235,236,240);
+    height: 60%;
+    border: 1px solid rgb(28, 68, 230);
+    margin-top: 6%;
+    background-color: white;
+
 }
 span{
    color:rgb(0,126,240) ; 
@@ -107,16 +118,16 @@ span{
 .content{
     height: 27%;
     display: flex;
-
+   
     
 }
 .img1{
     width: 33%;
-   
+    border-radius: 8px;
 }
 .detail{
     width: 67%;
-   
+    border-radius: 8px;
    background-color: white;
 }
 .wynn{
