@@ -1,6 +1,6 @@
 .mainCont {
     background-color:#ebecf0;
-    width: 102%;
+    width: 100%;
     height: 200vh
 }
 
@@ -276,4 +276,8 @@ font-weight: bold;
     color: #17337a;
     font-size: 15px;
     padding: 0px;
+}
+.locationCont {
+    width: 70%;
+    height: 600px
 }
