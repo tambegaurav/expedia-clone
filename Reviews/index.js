@@ -17,7 +17,6 @@ var newdata =
     Showreviews(arr)
 
 
-
 var x=0;
 function filterData(event){
    console.log(event.target.name)
