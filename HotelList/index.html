@@ -347,10 +347,69 @@
           <div></div>
         </div>
 
-        <div class="msg_bot_join">
-          <div><img src="https://www.expedia.com/favicon.ico" alt="" /></div>
-          <p>Virtual Agent has joined the conversation</p>
-        </div>
+        <div class="chatbox">
+            <div class="chatbox_header">
+                <p>How can we help?</p>
+                <i class="fa fa-times" aria-hidden="true" onclick="hidechatbox()"></i>
+                
+            </div>
+            <div class="chatbox_message">
+                <div><p>The very begining</p></div>
+                <div class="chatbox_message_line">
+                    <div></div>
+                    <h6>Today</h6>
+                    <div></div>
+                </div>
+        
+                <div class="msg_bot_join">
+                    <div><img src="https://www.expedia.com/favicon.ico" alt=""></div>
+                    <p>Virtual Agent has joined the conversation</p>
+                </div>
+
+                <div class="sent_side">
+                    <div><img src="https://www.expedia.com/favicon.ico" alt=""></div>
+                    
+                    <div class="text_message_sent">
+                        <p>Hey! Kamal, How are you today!,
+                            How may I help you?
+                        </p>    
+                    </div>
+                  
+
+                </div>
+                <!-- <div class="parent_text_message_recieved">
+                    <div class="text_message_recieved">
+                        
+                    </div>
+                </div> -->
+
+               
+        
+
+                
+        
+            </div>
+        
+            <div class="chat_buttons">
+                <div class="chat_button_top">
+                    <button onclick="showMessageRecieved(event,name)" name="Cancel booking">Cancel booking</button>
+                    <button onclick="showMessageRecieved(event,name)" name="Change booking">Change booking</button>
+                    <button onclick="showMessageRecieved(event,name)" name="Get refund status">Get refund status</button>
+                </div>
+                <div class="chat_button_bottom">
+                    <button onclick="showMessageRecieved(event,name)" name="Use airline credit">Use airline credit</button>
+                    <button onclick="showMessageRecieved(event,name)" name="Do something else">Do something else</button>
+                </div>
+                <div class="msg_type">
+                    <i class="fas fa-paperclip"></i>
+                    <input type="text" name="" id="" placeholder="Typing is disabled">
+            
+                    <i class="fas fa-reply"></i>
+                </div>
+            </div>
+        
+
+      
       </div>
 
       <div class="chat_buttons">
