@@ -150,7 +150,8 @@ body {
   }
   
   .form-inputs {
-    height: 35px !important;
+    height: 38px !important;
+    width: 370px !important;
   }
   .paras {
     background-color: rgb(245, 245, 245);
