@@ -277,7 +277,7 @@ function openWriteReview(){
 
     document.querySelector('.create_review_main_cont').style.display="flex"
     document.querySelector('.container_main').style.display="block"
-    document.querySelector('.main-container').style.display="block"
+    // document.querySelector('.main-container').style.display="block"
 }
 
 
@@ -286,6 +286,9 @@ var btn = document.querySelector('#createn_review')
 
 
 function getFeedback(){
+    document.querySelector('.create_review_main_cont').style.display="none"
+    document.querySelector('.container_main').style.display="none"
+    // document.querySelector('.main-container').style.display="none"
     var reviews = document.querySelector('#reviews').value;
     console.log(reviews)
 
@@ -350,6 +353,7 @@ function getFeedback(){
     old.push(newdata);
     localStorage.setItem('details', JSON.stringify(old));
     console.log(newdata)
+    location.href="index.html"
 
 }
 
