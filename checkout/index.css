@@ -1,0 +1,108 @@
+body{
+    width: 100%;
+    /* background-color: burlywood; */
+    height: 600px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: "Centra No1", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color:#001959;
+}
+
+.blank_space{
+    height: 10%;
+}
+.address{
+    border-radius: 30px;
+    /* background-color: #465280; */
+    height: 80%;
+    margin-top: 20%;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.address>input, .address button{
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    /* border: none; */
+    border:1px solid #465280;
+    color: #465280;
+}
+.address div{
+    display: flex;
+    gap: 10%;
+    margin: auto;
+    width: 50%;
+}
+.address>div input{
+    border: 1px solid #465280;
+    width: 45%;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+    /* border: none; */
+    
+}
+
+.address input:hover,.address button:hover{
+    border:2px solid #465280;
+   
+}
+
+
+.circle {
+    display: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    position: fixed;
+    right: 630px;
+    top: 10px;
+    background-color: #465280;
+    border-radius: 40px;
+    
+  }
+  .circle>p{
+      text-align: center;
+      color: white;
+      padding-top: 10px;
+  }
+
+
+  .suceess_msg{
+      display: none;
+      width: 300px;
+      height: 150px;
+      background-color: burlywood;
+      top: 100px;
+      left: 540px;
+      position: fixed;
+      border-radius: 10px;
+  }
+
+  .cross_msg{
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 100%;
+      height: 30px;
+      background-color: #ffd500;
+      
+  }
+  .cross_msg>i{
+      padding-top: 5px;
+      padding-left: 93%;
+      
+  }
+  .suceess_msg>p{
+      padding: 5% 0 0 5%;
+      font-weight: 700;
+
+  }
