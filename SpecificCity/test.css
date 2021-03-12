@@ -5,16 +5,30 @@
 details > summary {
     list-style-type: none;
     cursor: pointer;
+    color: rgb(0,25,89);
+    font-size: 18px;
+    font-weight: 900;
+    border-color: white;
+    outline:none;
+    
 }
 
 
 
 details > summary::before {
-  content: '+';
+  content: 'ᐯ';
+  color: rgb(0,25,89);
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 details[open] > summary::before {
-    content: '-';
+    content: 'ᐱ';
+    color: rgb(0,25,89);
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 details {
@@ -25,4 +39,22 @@ details {
 
 details[open] > summary {
     margin-bottom: 0.5rem;
+    color: rgb(0,25,89);
+    
 }
+fieldset{
+    border: 1px solid white;
+    color: rgb(108, 113, 126);
+    
+}
+fieldset>div{
+    margin-top: 10px;
+}
+.tick{
+  transform: scale(1.4);
+    
+}
+.tick+label{
+    margin-left: 10px;
+}
+
