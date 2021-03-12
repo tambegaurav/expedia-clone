@@ -6,8 +6,9 @@
 * {
   scroll-behavior: smooth;
 }
-.text-link-color, .visit-miami-text {
-    color: #005aeb
+.text-link-color,
+.visit-miami-text {
+  color: #005aeb;
 }
 #header {
   width: 100%;
@@ -96,7 +97,7 @@
 #covidCont > #bar2 {
   background-color: white;
 }
-.covid > p{
+.covid > p {
   font-size: 14px;
   margin-top: 11px;
 }
@@ -187,8 +188,8 @@
   background-color: white;
   margin-top: 12px;
 }
-.reserve-room-btn2{
-  margin-right: 10px
+.reserve-room-btn2 {
+  margin-right: 10px;
 }
 .reserve-room-btn2 > button {
   width: 100%;
@@ -219,8 +220,8 @@
 }
 
 .details-amenities div {
-    background-color: white;
-    color: #001959;
+  background-color: white;
+  color: #001959;
 }
 #sagamore-text {
   font-size: 28px;
@@ -349,7 +350,6 @@ a {
   padding: 0px;
 }
 .vip-access-cont {
-
   width: 100%;
   background-color: white;
   font-size: 14px;
@@ -363,101 +363,99 @@ a {
   background-color: white;
   margin-top: 15px;
 
-    width: 100%;
-    background-color: white;
-    margin-top: 15px;
-    height: 30vh;
-    display: grid;
-    grid-template-rows: 30% 70%;
+  width: 100%;
+  background-color: white;
+  margin-top: 15px;
+  height: 30vh;
+  display: grid;
+  grid-template-rows: 30% 70%;
 }
 .vip-access-title {
-    display:grid;
-    grid-template-rows: 40px;
-    grid-template-columns: 40px 35px;
-    margin-top: 10px;
+  display: grid;
+  grid-template-rows: 40px;
+  grid-template-columns: 40px 35px;
+  margin-top: 10px;
 }
 .vip + div {
-    padding-top: 5px;
-    color: #17337a;
-    font-weight: 500;
-    margin-left: 3px;
-    font-size: 20px;
+  padding-top: 5px;
+  color: #17337a;
+  font-weight: 500;
+  margin-left: 3px;
+  font-size: 20px;
 }
 .vip {
-    text-align: center;
-    padding-top: 8px;
-    font-weight: 500;
-    border-radius: 55px;
-    background-color: rgb(15, 15, 94) !important;
-    color: white;
-    font-size: 17px;
+  text-align: center;
+  padding-top: 8px;
+  font-weight: 500;
+  border-radius: 55px;
+  background-color: rgb(15, 15, 94) !important;
+  color: white;
+  font-size: 17px;
 }
 .vip-access-content {
-    display: grid;
-    grid-template-rows: 100%;
-    grid-template-columns: 33% 33% 33%;
-    color: #001959;
-    margin: 10px;
-   
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 33% 33% 33%;
+  color: #001959;
+  margin: 10px;
 }
 .vip-access-content + div {
   padding-top: 15px;
 }
 .vip-learn-more {
-    margin-left: 180px;
-    color: #005aeb
+  margin-left: 180px;
+  color: #005aeb;
 }
-.vip-icon{
-    font-size: 25px;
-    padding: 18px;
-    margin-right: 10px;
+.vip-icon {
+  font-size: 25px;
+  padding: 18px;
+  margin-right: 10px;
 }
 .sigin-signup-cont {
-    width: 100%;
-    height: 12vh;
-    background-color: white;
-    margin-top: 15px;
-    display:grid;
-    grid-template-rows: 10vh;
-    grid-template-columns: 40px 300px;
-    grid-gap: 20px;
-
+  width: 100%;
+  height: 12vh;
+  background-color: white;
+  margin-top: 15px;
+  display: grid;
+  grid-template-rows: 10vh;
+  grid-template-columns: 40px 300px;
+  grid-gap: 20px;
 }
 .sigin-signup-cont div {
-    margin-top: 18px;
-    color:#001959;
-    font-size: 18px
+  margin-top: 18px;
+  color: #001959;
+  font-size: 18px;
 }
 .sign-in {
-    margin-left: 20px;
-    line-height: 30px;
-    color: #005aeb;
+  margin-left: 20px;
+  line-height: 30px;
+  color: #005aeb;
 }
 
-.free-tag { 
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    border-radius: 30px;
-    background-color: yellow;
-    margin-top: 18px;
-    padding: 4px;
-    padding-top: 2px;
-    margin-left: 10px;
- }
- .free-tag + div {
-   font-size: 14px;
- }
- #signup {
-   font-size: 14px;
- }
- #signin {
-   font-size: 14px;
- }
-  .free-tag > i{
-     margin-top: 10px;
-     color: rgb(8, 8, 92)
- }
+.free-tag {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: yellow;
+  margin-top: 18px;
+  padding: 4px;
+  padding-top: 2px;
+  margin-left: 10px;
+}
+.free-tag + div {
+  font-size: 14px;
+}
+#signup {
+  font-size: 14px;
+}
+#signin {
+  font-size: 14px;
+}
+.free-tag > i {
+  margin-top: 10px;
+  color: rgb(8, 8, 92);
+}
 .locationCont {
   width: 100%;
   height: 150vh;
@@ -548,7 +546,7 @@ a {
 
 .choose-your-room-cont {
   width: 100%;
-  color:rgb(15, 15, 94);
+  color: rgb(15, 15, 94);
   height: 165vw;
   margin-top: 25px;
   display: grid;
@@ -562,40 +560,72 @@ a {
   padding: 10px;
   padding-top: 0px;
 }
-.choose-your-room-cont  div {
-font-size: 12px;
-line-height: 23px;
-padding: 10px;
-margin: 1px;
-background-color: white;
+.choose-your-room-cont div {
+  font-size: 12px;
+  line-height: 23px;
+  padding: 10px;
+  margin: 1px;
+  background-color: white;
 }
-.room-extras .per-night{
+.room-extras .per-night {
   font-size: 12px;
 }
-.room-extras > form > .dollar-price{
-font-weight: 10px;
-float: right;
+.room-extras > form > .dollar-price {
+  font-weight: 10px;
+  float: right;
 }
-.room-extras  button {
-margin-bottom: 100px;
-border-radius: 8px;
-margin-left: 90px;
-float: right;
-height: 38px;
-background-color: #005aeb;
-border: none;
-color: white;
-font-weight: 700;
-width: 100px
+.room-extras button {
+  margin-bottom: 100px;
+  border-radius: 8px;
+  margin-left: 90px;
+  float: right;
+  height: 38px;
+  background-color: #005aeb;
+  border: none;
+  color: white;
+  font-weight: 700;
+  width: 100px;
 }
-.per-off { 
-  background-color: #007864  !important;
-  color: white  !important;
-  width: 70px  !important;
-  padding: 2px  !important;
-  text-align: center  !important;
-  height: 26px  !important;
-  border-radius: 100px  !important;
-  margin-top: 10px  !important;
-  margin-bottom: 10px  !important;
+.per-off {
+  background-color: #007864 !important;
+  color: white !important;
+  width: 70px !important;
+  padding: 2px !important;
+  text-align: center !important;
+  height: 26px !important;
+  border-radius: 100px !important;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+/* footer  */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: -80px;
+  padding-bottom: 80px;
+}
+
+.footer > .links {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  justify-content: space-around;
+}
+
+.footer > .end-line {
+  font-size: 13px;
+  text-align: center;
+  max-width: 480px;
+  align-self: center;
+  line-height: 15px;
+  color: #465280;
+  margin-top: 40px;
+}
+
+.footer > img {
+  width: 150px;
+  margin: auto;
+  margin-top: 20px;
 }
