@@ -71,10 +71,14 @@ nav > .right {
   color: white;
 }
 .search_stay {
+  
   width: 92%;
   height: 500px;
   margin: auto;
   margin-top: 2%;
+}
+.stay_header{
+  margin-top: 3%;
 }
 #stay-booking {
   display: flex;
@@ -208,7 +212,7 @@ nav > .right {
   margin: 2% 0;
 }
 .stay_checkboxes > label {
-  margin-right: 10%;
+  margin:0 1%;
 }
 .stay_buttons {
   margin: 2% 0;
@@ -448,7 +452,7 @@ nav > .right {
   height: 100%;
   width: 20%;
   /* background-color: tomato; */
-  margin-left: 1%;
+  margin-right: 1%;
   border-radius: 10px;
 }
 .next_dest_text {
