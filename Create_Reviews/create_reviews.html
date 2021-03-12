@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="create_reviews.css">
+</head>
+<body> 
+    
+
+
+  <div class="container_main">
+    <div class="create_review_main_cont">
+
+
+
+        <div class="left">
+            
+        <div class="reviews">
+            <h4>Reviews</h4>
+            <select name="" id="reviews" >
+                <option value="5/5 Excellent">5/5 Excellent</option>
+                <option value="4/5 Very Good">4/5 Very Good</option>
+                <option value="3/5 Good">3/5 Good</option>
+                <option value="2/5 Bad">2/5 Bad</option>
+                <option value="1/5 Worst">1/5 Worst</option>
+            </select>
+        </div>
+    
+        <div class="Verify">
+            <h4>Verify</h4>
+            <div><input type="radio" value="Verified" name="verify" id="veri"><label for="">Verified</label></div>
+        <div><input type="radio" value="Non Verified" name="verify" id="notveri"><label for="">Non Verified</label></div>
+        </div>
+    
+       
+    
+        <div>
+            <h4>Date</h4>
+            <input type="date" name="" id="date" placeholder="Date">
+        </div>
+        
+    
+        <div>
+            <h4>Feedback</h4>
+        <div><input type="radio" name="feedback" id="lik"> <label for="">Liked</label></div>
+        <div><input type="radio" name="feedback" id="dis"> <label for="">Disliked</label></div>
+        </div>  
+        <div class="tags">
+            <h4>Tags</h4>
+         <div><input type="checkbox" name="cat_feed" id="" value="Cleanliness"> <label for="">Cleanliness</label></div>
+         <div><input type="checkbox" name="cat_feed" id="" value="staff & service"> <label for="">staff & service</label></div>
+         <div><input type="checkbox" name="cat_feed" id="" value="amenities"> <label for="">amenities</label> </div>
+         <div><input type="checkbox" name="cat_feed" id="" value="property conditions"> <label for=""> property conditions</label></div>
+         <div><input type="checkbox" name="cat_feed" id="" value="facilities"> <label for=""> facilities</label></div>
+        </div>  
+        </div>
+    
+    
+       <div class="right">
+        <div class="travel_type">
+            <h4>Travel Type</h4>
+         <select name="" id="category">
+             <option value="Couples">Couples</option>
+             <option value="Solo travelers">Solo travelers</option>
+             <option value="Business travelers">Business travelers</option>
+             <option value="Families">Families</option>
+             <option value="Families with small children">Families with small children</option>
+             <option value="Groups">Groups</option>
+             <option value="Travelers with pets"> Travelers with pets</option>
+         </select>
+        </div>
+        <div>
+            <h4>Month</h4>
+            <div><input type="month" name="" id="month"></div>
+        </div>
+         <div>
+             <h4>Comment</h4>
+             <div><textarea name="" id="comment" cols="30" rows="12" required></textarea></div>
+         </div>
+
+     
+         
+         
+     
+          <button id="createn_review">Submit</button>
+       </div>
+    </div>
+  </div>
+</body>
+
+<script src="create_reviews.js"></script>
+</html>

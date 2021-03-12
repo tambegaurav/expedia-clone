@@ -156,3 +156,36 @@ progress{
 /* ------------------reviews right{end}--------------- */
 
 
+
+
+
+
+.main-container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    /* position: fixed; */
+  }
+
+.container_main{
+    display: none;
+    top: 80px;
+    position: fixed;
+    width: 50%;
+    left: 300px;
+    background-color: rgba(128, 128, 128, 0.973);
+    height: 500px;
+    border-radius: 20px;
+}
+
+.create_review_main_cont{
+    display: none;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    gap: 20%;
+    /* position: fixed; */
+    
+   
+}
