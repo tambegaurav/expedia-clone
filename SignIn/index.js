@@ -14,4 +14,7 @@ function signup(el) {
     }
   }
 }
+
+
 document.getElementById("btn").addEventListener("click", signup);
+
