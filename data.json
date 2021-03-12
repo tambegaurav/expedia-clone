@@ -1,0 +1,73 @@
+{
+  "cities": [
+    {
+      "name": "Pune",
+      "hotels": [
+        {
+          "name": "Sheraton Grand Pune Bund Garden Hotel",
+          "place": "Pune",
+          "price": 89,
+          "img": "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/1000000/520000/519000/518997/da66353e_b.jpg"
+        },
+        {
+          "name": "Hyatt Pune",
+          "place": "Pune",
+          "price": 47,
+          "img": "https://images.trvl-media.com/hotels/4000000/3910000/3900400/3900351/f394192b.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium"
+        },
+        {
+          "name": "Spree Shivai Hotel",
+          "place": "Pimpri - Chinchwad",
+          "price": 40,
+          "img": "https://images.trvl-media.com/hotels/5000000/4550000/4548900/4548899/34bbb991.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium"
+        }
+      ]
+    },
+    {
+      "name": "Bengaluru",
+      "hotels": [
+        {
+          "name": "Hyatt Centric MG Road Bangalore",
+          "place": "Bengaluru",
+          "price": 47,
+          "img": "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/2000000/1540000/1531600/1531574/9aaf06e6_b.jpg"
+        },
+        {
+          "name": "Taj West End",
+          "place": "Bengaluru",
+          "price": 116,
+          "img": "https://images.trvl-media.com/hotels/1000000/470000/465100/465008/eb5aa034.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium"
+        },
+        {
+          "name": "The Oberoi, Bengaluru",
+          "place": "Ashok Nagar",
+          "price": 96,
+          "img": "https://images.trvl-media.com/hotels/1000000/30000/21700/21672/3b47de32.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium"
+        }
+      ]
+    },
+    {
+      "name": "Mumbai",
+      "hotels": [
+        {
+          "name": "JW Marriott Mumbai Sahar",
+          "place": "Mumbai",
+          "price": 66,
+          "img": "https://a.travel-assets.com/media/meso_cm/PAPI/Images/hotels/10000000/9790000/9784600/9784580/2a61cd38_b.jpg"
+        },
+        {
+          "name": "Taj Mahal Tower, Mumbai",
+          "place": "Mumbai",
+          "price": 79,
+          "img": "https://images.trvl-media.com/hotels/2000000/1360000/1351900/1351876/1ac59945.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium"
+        },
+        {
+          "name": "The Leela Mumbai",
+          "place": "Andheri",
+          "price": 62,
+          "img": "https://images.trvl-media.com/hotels/1000000/20000/17800/17773/7275694c.jpg?impolicy=fcrop&w=455&h=235&p=1&q=medium"
+        }
+      ]
+    }
+  ]
+}
