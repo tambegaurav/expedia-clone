@@ -671,9 +671,9 @@ nav {
       position: fixed;
       display: none;
       right: 100px;
-      bottom: 100px;
+      bottom: 200px;
       width: 400px;
-      height: 500px;
+      height: 400px;
       background-color: rgba(128, 128, 128, 0.041);
       border-radius: 10px;
       
@@ -709,6 +709,41 @@ nav {
       height: 300px;
   
     }
+    .sent_side{
+      display: flex;
+      align-items: center;
+    }
+
+    .text_message_sent{
+      background-color: #ebecf0;
+      width: 50%;
+      margin: 1% 1%;
+      min-height: 50px;
+      border-radius: 10px;
+      
+    }
+    .text_message_sent>p{
+      padding: 5px;
+      font-size: 14px;
+      font-weight: 600;
+
+    }
+    .text_message_recieved{
+      /* display: none; */
+      background-color: #465280;
+      width: 50%;
+      min-height: 50px;
+      margin: 1% 0 1% 48%;
+      border-radius: 10px;
+
+    }
+    .text_message_recieved p{
+      color:#ffffff;
+      padding: 10px 10px 10px 20px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
     .chatbox_message>div>p{
       text-align: center;
       margin: 3% 0;
@@ -737,30 +772,31 @@ nav {
   
     .chat_buttons{
       background-color: white;
-      height: 200px;
+      height: 160px;
       width: 100%;
     }
   
   
     .chat_buttons>div>button{
+      outline: none;
       margin-top: 3%;
       background:none;
       width: 120px;
       height: 30px;
-      border: 2px solid #465280;
-      color: #465280;
+      border: 1px solid #1d6ded;
+      color: #1d6ded;
       border-radius: 30px;
     }
     .chat_buttons>div>button:hover{
-      background-color: #465280;
-      color: white;
+      background-color: #1d6ded25;
+      
     }
   
     .msg_type{
       display: flex;
       align-items: center;
       gap: 2%;
-      margin-top: 15%;
+      margin-top: 5%;
       margin-left: 3%;
       color: rgb(63, 54, 54);
     }
