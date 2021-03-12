@@ -1,207 +1,226 @@
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
-.main{
-    height: 100vw ;
-    width: 100vw;
-    background-color: rgb(235,236,240);
+.main {
+  height: 100vw;
+  width: 100vw;
+  background-color: rgb(235, 236, 240);
 }
-.imgDiv{
-    background-image: url("https://a.travel-assets.com/findyours-php/viewfinder/images/res70/495000/495536-bellagio-casino.jpg");
-    margin-top: 13%;
-   height: 31%;
-   width: 75%;
-   margin-left: 11.5%;
-    border: 1px solid rgb(235,236,240);
+.imgDiv {
+  background-image: url("https://a.travel-assets.com/findyours-php/viewfinder/images/res70/495000/495536-bellagio-casino.jpg");
+  margin-top: 0;
+  height: 31%;
+  width: 75%;
+  margin-left: 11.5%;
+  border: 1px solid rgb(235, 236, 240);
 
-    border-radius: 8px;
-    background-size: cover;
-    
-    background-repeat: no-repeat;
-}
-.imgtxt{
-    color: aliceblue;
-    font-size: 3.4vw;
-    margin-left: 1vw;
-    margin-top: 12vw;
-}
-.p1{
-    background-color: rgb(255,255,255);
-    height: 4.5%;
-    width: 75%;
-    border: 1px solid rgb(235,236,240);
-    margin-left: 11.5%;
-    display: flex;
-    font-size: 14px;
-    flex-direction: row;
-    gap: 50px;
-    justify-content: center;
-    border-radius: 8px;
-    
-}
-.p1>div{
-    margin-top: 10px;
-   margin-left: 20px;
-   color: #00355f;
+  border-radius: 8px;
+  background-size: cover;
 
+  background-repeat: no-repeat;
 }
-.cont{
-    width: 75%;
-    margin-left: 11.5%;
-    border: 1px solid rgb(235,236,240);
-    height: 60%;
-    display: flex;
-  
-    
+.imgtxt {
+  color: aliceblue;
+  font-size: 3.4vw;
+  margin-left: 1vw;
+  margin-top: 12vw;
 }
-.leftcont{
-    margin-left: 20px;
-    margin-top: 25px;
-    width: 25%;
-    border: 1px solid rgb(235,236,240);
-   
+.p1 {
+  background-color: rgb(255, 255, 255);
+  height: 4.5%;
+  width: 75%;
+  border: 1px solid rgb(235, 236, 240);
+  margin-left: 11.5%;
+  display: flex;
+  font-size: 14px;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  border-radius: 8px;
 }
-.rightcont{
-    margin-left: 30px;
-    margin-top: 25px;
-    width: 70%;
-    border: 1px solid rgb(235,236,240);
-   
+.p1 > div {
+  margin-top: 10px;
+  margin-left: 20px;
+  color: #00355f;
 }
-.date{
-    height: 22%;
-    border: 1px solid rgb(235,236,240);
-    padding-left: 10px; 
-    background-color: white;
-    border-radius: 8px;
+.cont {
+  width: 75%;
+  margin-left: 11.5%;
+  border: 1px solid rgb(235, 236, 240);
+  height: 60%;
+  display: flex;
 }
-.date>h3{
-    color: rgb(0,25,89);
+.leftcont {
+  margin-left: 20px;
+  margin-top: 25px;
+  width: 26%;
+  border: 1px solid rgb(235, 236, 240);
 }
-.map{
-    margin-top: 20px;
-    height: 20%;
-    border: 1px solid rgb(235,236,240);
-    background-color: white;
-    border-radius: 8px;
+.rightcont {
+  margin-left: 30px;
+  margin-top: 25px;
+  width: 70%;
+  border: 1px solid rgb(235, 236, 240);
 }
-.filter{
-    height: 60%;
-    
-    margin-top: 6%;
-    background-color: white;
-    border-radius: 8px;
+.date {
+  height: 22%;
+  border: 1px solid rgb(235, 236, 240);
+  padding-left: 10px;
+  background-color: white;
+  border-radius: 8px;
+}
+.date > h3 {
+  color: rgb(0, 25, 89);
+}
+.map {
+  margin-top: 20px;
+  height: 20%;
+  border: 1px solid rgb(235, 236, 240);
+  background-color: white;
+  border-radius: 8px;
+}
+.filter {
+  height: 60%;
 
+  margin-top: 6%;
+  background-color: white;
+  border-radius: 8px;
 }
-.filtertxt{
-   
-   padding-top: 1px;
-   padding-left: 20px;
-   margin-bottom: -10px;
-    font-size: 14px;
-    font-weight: bolder;
-    color: rgb(0,25,89);
+.filtertxt {
+  padding-top: 1px;
+  padding-left: 20px;
+  margin-bottom: -10px;
+  font-size: 14px;
+  font-weight: bolder;
+  color: rgb(0, 25, 89);
 }
-span{
-   color:rgb(0,126,240) ; 
-    margin-left: 50px;
+span {
+  color: rgb(0, 126, 240);
+  margin-left: 50px;
 }
-.mapouter{
-    position:relative;
-    text-align:right;
-    height:100px;
-    width:100px;
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 100px;
+  width: 100px;
 }
 .gmap_canvas {
-    overflow:hidden;
-    background:none!important;
-    height:130px;
-    width:18.5vw;
-}
-.maptxt{
+  overflow: hidden;
+  background: none !important;
+  height: 130px;
   width: 18.5vw;
-   text-align: center;
-   margin-top: 20px;
-   
 }
-.maptxt>a{
-    color: rgb(0,126,240);
-    text-decoration: none;
+.maptxt {
+  width: 18.5vw;
+  text-align: center;
+  margin-top: 20px;
 }
-.content{
-    height: 27%;
-    display: flex;
-   
-    
+.maptxt > a {
+  color: rgb(0, 126, 240);
+  text-decoration: none;
 }
-.img1{
-    width: 33%;
-    border-radius: 8px;
+.content {
+  height: 27%;
+  display: flex;
 }
-.detail{
-    width: 67%;
-    border-radius: 8px;
-   background-color: white;
+.img1 {
+  width: 33%;
+  border-radius: 8px;
 }
-.wynn{
-    display: flex;
-    height: 150px;
-    
+.detail {
+  width: 67%;
+  border-radius: 8px;
+  background-color: white;
 }
-.wynn>div>h3{
-    color: rgb(0,25,89);
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 0;
-    font-size: 17px;
+.wynn {
+  display: flex;
+  height: 150px;
 }
-.wynn>div>i{
-   color: rgb(107,116,153);
+.wynn > div > h3 {
+  color: rgb(0, 25, 89);
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  font-size: 17px;
+}
+.wynn > div > i {
+  color: rgb(107, 116, 153);
   font-size: 11px;
 }
-.wynn>div>P{
-    color: rgb(107,116,153);
-    font-size: 14px;
-    margin-left: 10px;
-    margin-top: 5px;
+.wynn > div > P {
+  color: rgb(107, 116, 153);
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: 5px;
 }
-#wynn2{
-    padding-right: 5px;
-   text-align: right;
-   
-    width: 30%;
-    margin-left: 28%;
-    height: 100px;
-   
+#wynn2 {
+  padding-right: 5px;
+  text-align: right;
+
+  width: 30%;
+  margin-left: 28%;
+  height: 100px;
 }
-#wynn2>h3{
-    color: rgb(0,25,89);
-    font-size: 24px;
-    
+#wynn2 > h3 {
+  color: rgb(0, 25, 89);
+  font-size: 24px;
 }
-#wynn2>p{
-    font-size: 11px;
-    margin-top: -3px;
+#wynn2 > p {
+  font-size: 11px;
+  margin-top: -3px;
 }
-.review{
-  
-    margin-left: 10px;
+.review {
+  margin-left: 10px;
 }
-.review>h4{
-    margin-top: 5px;
-    color: rgb(0,25,89);
-    font-size: 14px;
+.review > h4 {
+  margin-top: 5px;
+  color: rgb(0, 25, 89);
+  font-size: 14px;
 }
-.review>h4>span{
-    color: rgb(107,116,153);
-    font-size: 14px;
-    margin-left: 10px;
+.review > h4 > span {
+  color: rgb(107, 116, 153);
+  font-size: 14px;
+  margin-left: 10px;
 }
-.review>p{
-    margin-top: -10px;
-    color: rgb(107,116,153);
-    font-size: 14px; 
+.review > p {
+  margin-top: -10px;
+  color: rgb(107, 116, 153);
+  font-size: 14px;
 }
-.date>p{
-    line-height: 0;
+.date > p {
+  line-height: 0;
+}
+
+/* footer  */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  width: 80%;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.footer > .links {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  justify-content: space-around;
+}
+
+.footer > .end-line {
+  font-size: 13px;
+  text-align: center;
+  max-width: 480px;
+  align-self: center;
+  line-height: 15px;
+  color: #465280;
+  margin-top: 40px;
+}
+
+.footer > img {
+  width: 150px;
+  margin: auto;
+  margin-top: 20px;
 }
