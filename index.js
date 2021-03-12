@@ -63,3 +63,9 @@ function hidechatbox() {
 setTimeout(() => {
   document.querySelector(".circle").style.display = "block";
 }, 1000);
+
+function searchSpecificCity() {
+  var city = document.getElementById("searchPlace").value;
+
+  location.href = `./SpecificCity/index.html?city=${city}`;
+}

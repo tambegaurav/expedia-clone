@@ -109,3 +109,75 @@ function hidechatbox(){
 setTimeout(()=>{
   document.querySelector('.circle').style.display="block"
 },1000)
+
+
+
+
+function showMessageRecieved(event,name){
+  var scroller =document.querySelector('.chatbox_message')
+  scroller.scrollBy(0,120)
+  
+  
+  var grand_parent = document.querySelector('.chatbox_message')
+  var parent =document.createElement('div')
+ 
+ parent.setAttribute('class','.parent_text_message_recieved')
+  var child = document.createElement('div')
+  child.setAttribute('class','text_message_recieved')
+ 
+  var child_p=document.createElement('p')
+
+  child_p.innerHTML=name
+  child.append(child_p)
+  parent.append(child)
+  grand_parent.append(parent)
+
+ 
+
+
+  scroller.scrollBy(0,120)
+
+
+  var parent_sent =document.createElement('div')
+  parent_sent.setAttribute('class','sent_side')
+  
+
+  var parent_img =document.createElement('div')
+  var parent_img_img = document.createElement('img')
+  parent_img_img.setAttribute('src','https://www.expedia.com/favicon.ico')
+  
+  
+  var parent_p =document.createElement('div')
+  parent_p.setAttribute('class','text_message_sent')
+  var parent_p_p=document.createElement('p')
+  
+  parent_p_p.innerHTML=`Hey! Kamal, ${name} is not allowed`
+  parent_p.append(parent_p_p)
+
+
+
+  parent_img.append(parent_img_img)
+  parent_sent.append(parent_img)
+  parent_sent.append(parent_p)
+
+
+
+
+
+ 
+  grand_parent.append(parent_sent)
+
+  
+
+
+ 
+
+
+
+
+
+
+
+
+
+}
