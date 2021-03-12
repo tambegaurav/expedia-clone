@@ -1,220 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "icon" href ="https://www.expedia.com/favicon.ico">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://www.expedia.com/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
     <title>Reviews</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="reviews_head">
-        <a href="../HotelDetailsPage/index.html"><i class="fa fa-times" aria-hidden="true"></i></a><p>Guest Reviews</p>
+      <a href="../HotelDetailsPage/index.html"
+        ><i class="fa fa-times" aria-hidden="true"></i
+      ></a>
+      <p>Guest Reviews</p>
     </div>
 
-<div class="reviews_main">
-
-
-
-    <div class="reviews_left">
+    <div class="reviews_main">
+      <div class="reviews_left">
         <div class="verified_reviews">
-            <div class="verified_header">
-                <h4>4.1/5 Very Good</h4>
-                <p>8,937 verified reviews <i class="fa fa-info-circle" aria-hidden="true"></i></p>
-            </div>
-            <div class="verified">
-                <div class="cleanliness_header">
-                    <p>Cleanliness</p>
-                    <p>
-                        4.3/5</p>
-                </div>
-                <progress id="file" value="86" max="100"> 32% </progress>
-
-            </div>
-
-
-
-            <div class="verified">
-                <div class="staff_header">
-                    <p>Staff & service</p>
-                    <p>
-                        4.3/5</p>
-                </div>
-                <progress id="file" value="86" max="100"> 32% </progress>
-
-            </div>
-            <div class="verified">
-                <div class="amenties_header">
-                    <p>Amenities
-                    </p>
-                    <p>
-                        4.3/5</p>
-                </div>
-                <progress id="file" value="86" max="100"> 32% </progress>
-
-            </div>
-            <div class="verified">
-                <div class="property_header">
-                    <p>Property conditions & facilities</p>
-                    <p>
-                        4.3/5</p>
-                </div>
-                <progress id="file" value="86" max="100"> 32% </progress>
-
-            </div>
-    
-    
-    
-    
-    
-    
-        </div>
-    
-        <div class="traveler_type">
-            <div><h4 id="traveler_h4">Traveler type</h4></div>
-            <div class="travel_type_check"><input type="checkbox" name="Couples" id="couple" onchange="filterData(event,name)">
-            <label for="">Couples</label></div>
-            <div class="travel_type_check"><input type="checkbox" name="Solo travelers" id="solo" onchange="filterData(event,name)">
-            <label for="">Solo travelers</label></div>
-            <div class="travel_type_check"><input type="checkbox" name="Business travelers" id="busi" onchange="filterData(event,name)">
-            <label for="">Business travelers</label></div>
-            <div class="travel_type_check"><input type="checkbox" name="Families" id="famil" onchange="filterData(event,name)">
-            <label for="">Families</label></div>
-            <div class="travel_type_check"><input type="checkbox" name="Families with small children" id="famil_child" onchange="filterData(event,name)">
-            <label for="">Families with small children</label></div>
-            <div class="travel_type_check"><input type="checkbox" name="Groups" id="group" onchange="filterData(event,name)">
-            <label for="">Groups</label></div>
-            <div class="travel_type_check"><input type="checkbox" name="Travelers with pets" id="travel_pet" onchange="filterData(event,name)">
-            <label for="">Travelers with pets</label></div>
-            <div class="traveler_type_button">
-                <button onclick="openWriteReview()">Write a review</button>
-            </div>
-        </div>
-    </div>
-    
-    
-<div class="reviews_right_cont">
-    <div class="reviews_right">
-        <div class="reviews_type">
-            <h5>5/5 Excellent</h5>
-        </div>
-        <div class="verified_traveller">
-            <h6>Verified traveler</h6>
+          <div class="verified_header">
+            <h4>4.1/5 Very Good</h4>
             <p>
-                Business traveler, Traveled with family</p>
+              8,937 verified reviews
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </p>
+          </div>
+          <div class="verified">
+            <div class="cleanliness_header">
+              <p>Cleanliness</p>
+              <p>4.3/5</p>
+            </div>
+            <progress id="file" value="86" max="100">32%</progress>
+          </div>
+
+          <div class="verified">
+            <div class="staff_header">
+              <p>Staff & service</p>
+              <p>4.3/5</p>
+            </div>
+            <progress id="file" value="86" max="100">32%</progress>
+          </div>
+          <div class="verified">
+            <div class="amenties_header">
+              <p>Amenities</p>
+              <p>4.3/5</p>
+            </div>
+            <progress id="file" value="86" max="100">32%</progress>
+          </div>
+          <div class="verified">
+            <div class="property_header">
+              <p>Property conditions & facilities</p>
+              <p>4.3/5</p>
+            </div>
+            <progress id="file" value="86" max="100">32%</progress>
+          </div>
         </div>
-        <div class="reviews_date"><p>2 Mar 2021</p> </div>
-        <div class="reviews_category"><i class="far fa-grin-hearts"></i><p>Liked: Cleanliness, staff & service, amenities, property conditions & facilities</p></div>
-        <div class="reviews_commet"><p>I loved the location, right in the middle of the strip. The parking garage is on the complete opposite side of the elevators leading to the rooms, so be prepared to walk aways before getting to your room. The rooms were clean, well maintained and the entire place was beautiful. We were there during Covid so there was no pool, buffet or the Beatles show.</p></div>
-        <div class="reviews_spent_time"><h6>Stayed 3 nights in Feb 2021</h6></div>
-    
-    
-    
-        <div class="reviews_thumbs"><i class="fas fa-thumbs-up"></i><p>0</p><i class="fa fa-flag" aria-hidden="true"></i><p>Report review</p></div>
-        <div class="reviews_line">
 
-            
+        <div class="traveler_type">
+          <div><h4 id="traveler_h4">Traveler type</h4></div>
+          <div class="travel_type_check">
+            <input
+              type="checkbox"
+              name="Couples"
+              id="couple"
+              onchange="filterData(event,name)"
+            />
+            <label for="">Couples</label>
+          </div>
+          <div class="travel_type_check">
+            <input
+              type="checkbox"
+              name="Solo travelers"
+              id="solo"
+              onchange="filterData(event,name)"
+            />
+            <label for="">Solo travelers</label>
+          </div>
+          <div class="travel_type_check">
+            <input
+              type="checkbox"
+              name="Business travelers"
+              id="busi"
+              onchange="filterData(event,name)"
+            />
+            <label for="">Business travelers</label>
+          </div>
+          <div class="travel_type_check">
+            <input
+              type="checkbox"
+              name="Families"
+              id="famil"
+              onchange="filterData(event,name)"
+            />
+            <label for="">Families</label>
+          </div>
+          <div class="travel_type_check">
+            <input
+              type="checkbox"
+              name="Families with small children"
+              id="famil_child"
+              onchange="filterData(event,name)"
+            />
+            <label for="">Families with small children</label>
+          </div>
+          <div class="travel_type_check">
+            <input
+              type="checkbox"
+              name="Groups"
+              id="group"
+              onchange="filterData(event,name)"
+            />
+            <label for="">Groups</label>
+          </div>
+          <div class="travel_type_check">
+            <input
+              type="checkbox"
+              name="Travelers with pets"
+              id="travel_pet"
+              onchange="filterData(event,name)"
+            />
+            <label for="">Travelers with pets</label>
+          </div>
+          <div class="traveler_type_button">
+            <button onclick="openWriteReview()">Write a review</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="reviews_right_cont">
+        <div class="reviews_right">
+          <div class="reviews_type">
+            <h5>5/5 Excellent</h5>
+          </div>
+          <div class="verified_traveller">
+            <h6>Verified traveler</h6>
+            <p>Business traveler, Traveled with family</p>
+          </div>
+          <div class="reviews_date"><p>2 Mar 2021</p></div>
+          <div class="reviews_category">
+            <i class="far fa-grin-hearts"></i>
+            <p>
+              Liked: Cleanliness, staff & service, amenities, property
+              conditions & facilities
+            </p>
+          </div>
+          <div class="reviews_commet">
+            <p>
+              I loved the location, right in the middle of the strip. The
+              parking garage is on the complete opposite side of the elevators
+              leading to the rooms, so be prepared to walk aways before getting
+              to your room. The rooms were clean, well maintained and the entire
+              place was beautiful. We were there during Covid so there was no
+              pool, buffet or the Beatles show.
+            </p>
+          </div>
+          <div class="reviews_spent_time">
+            <h6>Stayed 3 nights in Feb 2021</h6>
+          </div>
+
+          <div class="reviews_thumbs">
+            <i class="fas fa-thumbs-up"></i>
+            <p>0</p>
+            <i class="fa fa-flag" aria-hidden="true"></i>
+            <p>Report review</p>
+          </div>
+          <div class="reviews_line"></div>
         </div>
 
-    </div>
+        <!--                        DUmmy tag                                -->
+      </div>
 
-
-    <!--                        DUmmy tag                                -->
-
-
-</div>
-
-
-
-<div class="container_main">
-    <div class="cross_back">
-        <button onclick="backtoreview()" style="background: none; border: none; float: right; margin-right:30px; margin-top: 10px;"><i class="fa fa-times" aria-hidden="true"></i></button>
-    </div>
-    <div class="create_review_main_cont">
-
-        
-
-        <div class="left">
-            
-        <div class="reviews">
-            <h4>Reviews</h4>
-            <select name="" id="reviews" >
+      <div class="container_main">
+        <div class="cross_back">
+          <button
+            onclick="backtoreview()"
+            style="
+              background: none;
+              border: none;
+              float: right;
+              margin-right: 30px;
+              margin-top: 10px;
+              cursor: pointer;
+            "
+          >
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="create_review_main_cont">
+          <div class="left">
+            <div class="reviews">
+              <h4>Reviews</h4>
+              <select name="" id="reviews">
                 <option value="5/5 Excellent">5/5 Excellent</option>
                 <option value="4/5 Very Good">4/5 Very Good</option>
                 <option value="3/5 Good">3/5 Good</option>
                 <option value="2/5 Bad">2/5 Bad</option>
                 <option value="1/5 Worst">1/5 Worst</option>
-            </select>
-        </div>
-    
-        <div class="Verify">
-            <h4>Verify</h4>
-            <div><input type="radio" value="Verified" name="verify" id="veri"><label for="">Verified</label></div>
-        <div><input type="radio" value="Non Verified" name="verify" id="notveri"><label for="">Non Verified</label></div>
-        </div>
-    
-       
-    
-        <div>
-            <h4>Date</h4>
-            <input type="date" name="" id="date" placeholder="Date">
-        </div>
-        
-    
-        <div>
-            <h4>Feedback</h4>
-        <div><input type="radio" name="feedback" id="lik"> <label for="">Liked</label></div>
-        <div><input type="radio" name="feedback" id="dis"> <label for="">Disliked</label></div>
-        </div>  
-        <div class="tags">
-            <h4>Tags</h4>
-         <div><input type="checkbox" name="cat_feed" id="" value="Cleanliness"> <label for="">Cleanliness</label></div>
-         <div><input type="checkbox" name="cat_feed" id="" value="staff & service"> <label for="">staff & service</label></div>
-         <div><input type="checkbox" name="cat_feed" id="" value="amenities"> <label for="">amenities</label> </div>
-         <div><input type="checkbox" name="cat_feed" id="" value="property conditions"> <label for=""> property conditions</label></div>
-         <div><input type="checkbox" name="cat_feed" id="" value="facilities"> <label for=""> facilities</label></div>
-        </div>  
-        </div>
-    
-    
-       <div class="right">
-        <div class="travel_type">
-            <h4>Travel Type</h4>
-         <select name="" id="category">
-             <option value="Couples">Couples</option>
-             <option value="Solo travelers">Solo travelers</option>
-             <option value="Business travelers">Business travelers</option>
-             <option value="Families">Families</option>
-             <option value="Families with small children">Families with small children</option>
-             <option value="Groups">Groups</option>
-             <option value="Travelers with pets"> Travelers with pets</option>
-         </select>
-        </div>
-        <div>
-            <h4>Month</h4>
-            <div><input type="month" name="" id="month"></div>
-        </div>
-         <div>
-             <h4>Comment</h4>
-             <div><textarea name="" id="comment" cols="30" rows="12" required></textarea></div>
-         </div>
+              </select>
+            </div>
 
-     
-         
-         
-     
-          <button id="createn_review">Submit</button>
-       </div>
+            <div class="Verify">
+              <h4>Verify</h4>
+              <div>
+                <input
+                  type="radio"
+                  value="Verified"
+                  name="verify"
+                  id="veri"
+                /><label for="">Verified</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  value="Non Verified"
+                  name="verify"
+                  id="notveri"
+                /><label for="">Non Verified</label>
+              </div>
+            </div>
+
+            <div>
+              <h4>Date</h4>
+              <input type="date" name="" id="date" placeholder="Date" />
+            </div>
+
+            <div>
+              <h4>Feedback</h4>
+              <div>
+                <input type="radio" name="feedback" id="lik" />
+                <label for="">Liked</label>
+              </div>
+              <div>
+                <input type="radio" name="feedback" id="dis" />
+                <label for="">Disliked</label>
+              </div>
+            </div>
+            <div class="tags">
+              <h4>Tags</h4>
+              <div>
+                <input
+                  type="checkbox"
+                  name="cat_feed"
+                  id=""
+                  value="Cleanliness"
+                />
+                <label for="">Cleanliness</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="cat_feed"
+                  id=""
+                  value="staff & service"
+                />
+                <label for="">staff & service</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="cat_feed"
+                  id=""
+                  value="amenities"
+                />
+                <label for="">amenities</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="cat_feed"
+                  id=""
+                  value="property conditions"
+                />
+                <label for=""> property conditions</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="cat_feed"
+                  id=""
+                  value="facilities"
+                />
+                <label for=""> facilities</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="travel_type">
+              <h4>Travel Type</h4>
+              <select name="" id="category">
+                <option value="Couples">Couples</option>
+                <option value="Solo travelers">Solo travelers</option>
+                <option value="Business travelers">Business travelers</option>
+                <option value="Families">Families</option>
+                <option value="Families with small children">
+                  Families with small children
+                </option>
+                <option value="Groups">Groups</option>
+                <option value="Travelers with pets">Travelers with pets</option>
+              </select>
+            </div>
+            <div>
+              <h4>Month</h4>
+              <div><input type="month" name="" id="month" /></div>
+            </div>
+            <div>
+              <h4>Comment</h4>
+              <div>
+                <textarea
+                  name=""
+                  id="comment"
+                  cols="30"
+                  rows="12"
+                  required
+                ></textarea>
+              </div>
+            </div>
+
+            <button id="createn_review" style="cursor: pointer">Submit</button>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-
-
-
-
-</div>
-</body>
-<script src="index.js"></script>
+  </body>
+  <script src="index.js"></script>
 </html>
