@@ -1,3 +1,9 @@
+if (localStorage.getItem("activeUser")) {
+  document.getElementById("username").textContent = localStorage.getItem(
+    "activeUser"
+  );
+}
+
 const changeNumbers = () => {
   var text = document.querySelector(".no-of-people");
 
