@@ -13,9 +13,11 @@ body{
    width: 75%;
    margin-left: 11.5%;
     border: 1px solid rgb(235,236,240);
-    background-position: center;
+
     border-radius: 8px;
-    backdrop-filter: blur(8px);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
 }
 .imgtxt{
     color: aliceblue;
@@ -144,6 +146,7 @@ span{
 .wynn{
     display: flex;
     height: 150px;
+    
 }
 .wynn>div>h3{
     color: rgb(0,25,89);
@@ -167,8 +170,9 @@ span{
    text-align: right;
    
     width: 30%;
-    margin-left: 17%;
+    margin-left: 28%;
     height: 100px;
+   
 }
 #wynn2>h3{
     color: rgb(0,25,89);
@@ -177,7 +181,7 @@ span{
 }
 #wynn2>p{
     font-size: 11px;
-    margin-top: -5px;
+    margin-top: -3px;
 }
 .review{
   
