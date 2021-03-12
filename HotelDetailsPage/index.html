@@ -312,28 +312,35 @@
                     <h6>Extras</h6>
                     <p>
                     <form action="/action_page.php">
-                        <input type="checkbox" name="no extras" value="no extras">No Extras   <a class="dollar-price">+ $0</a><br>
-                        <input type="checkbox" name="continental breakfast" value="breakfast">Continental Breakfats
-                      
+
+                        <input type="radio" name="checkbox" value="no extras" id="no extras" onclick="showNoExtra()"> No
+                        extras <a class="dollar-price">+ $0</a><br>
+                        <input type="radio" name="checkbox" value=" breakfast" id="breakfast" onclick="showDiscount()">
+                        Continental Breakfats
+
                         <a class="dollar-price">+ $29</a>
                         <br>
                     </form>
 
-                    <div class="20%-off">20% off</div>
-                    <a href="">$215<i class="fas fa-info"></i>
+                    <div class="per-off">20% off</div>
+                    <a id="no discount" href="">
+                        <span id="actual-rate"> $215</span>
+
+
+                        <i class="fas fa-info"></i>
                     </a>
-                    <h4>$172</h4>
+                    <h4 id="discount">$172</h4>
 
-                    <a class="per-night">per night<br/>
-                        $691 for 3 nights<br/>
-                        Includes taxes & fees</a><br/>
+                    <a class="per-night">per night<br />
+                        $691 for 3 nights<br />
+                        Includes taxes & fees</a>
+                    <br />
 
-                        <a href="" class="per-night">Price Details
-                            <a href=""><i class="fas fa-chevron-down"></i>
-                                <div class="price-details"><button>Price Details</button></div>
-
-                            </a>
+                    <a href="" class="per-night">Price Details
+                        <a href=""><i class="fas fa-chevron-down"></i>
+                            <a><button>Reserve</button></a>
                         </a>
+                    </a>
                     </p>
                 </div>
                 <!-------------------------check box end-------------------------------->
@@ -370,27 +377,34 @@
                 <div class="room-extras">
                     <h6>Extras</h6>
                     <p>
-                    <form action="/action_page.php">
-                        <input type="checkbox" name="no extras" value="no extras">No Extras   <a class="dollar-price">+ $0</a><br>
-                        <input type="checkbox" name="continental breakfast" value="breakfast">Continental Breakfats
-                      
-                        <a class="dollar-price">+ $29</a>
-                        <br>
-                    </form>
+                        <form action="/action_page.php">
 
-                    <div class="20%-off">20% off</div>
-                    <a href="">$215<i class="fas fa-info"></i>
-                    </a>
-                    <h4>$172</h4>
-
-                    <a class="per-night">per night<br/>
-                        $691 for 3 nights<br/>
-                        Includes taxes & fees</a><br/>
-
+                            <input type="radio" name="checkbox" value="no extras" id="no extras" onclick="showNoExtra()"> No
+                            extras <a class="dollar-price">+ $0</a><br>
+                            <input type="radio" name="checkbox" value=" breakfast" id="breakfast" onclick="showDiscount()">
+                            Continental Breakfats
+    
+                            <a class="dollar-price">+ $29</a>
+                            <br>
+                        </form>
+    
+                        <div class="per-off">20% off</div>
+                        <a id="no discount" href="">
+                            <span id="actual-rate"> $215</span>
+    
+    
+                            <i class="fas fa-info"></i>
+                        </a>
+                        <h4 id="discount">$172</h4>
+    
+                        <a class="per-night">per night<br />
+                            $691 for 3 nights<br />
+                            Includes taxes & fees</a>
+                        <br />
+    
                         <a href="" class="per-night">Price Details
                             <a href=""><i class="fas fa-chevron-down"></i>
-                                <div class="price-details"><button>Price Details</button></div>
-
+                                <a><button>Reserve</button></a>
                             </a>
                         </a>
                     </p>
@@ -430,27 +444,34 @@
                 <div class="room-extras">
                     <h6>Extras</h6>
                     <p>
-                    <form action="/action_page.php">
-                        <input type="checkbox" name="no extras" value="no extras">No Extras   <a class="dollar-price">+ $0</a><br>
-                        <input type="checkbox" name="continental breakfast" value="breakfast">Continental Breakfats
-                      
-                        <a class="dollar-price">+ $29</a>
-                        <br>
-                    </form>
+                        <form action="/action_page.php">
 
-                    <div class="20%-off">20% off</div>
-                    <a href="">$215<i class="fas fa-info"></i>
-                    </a>
-                    <h4>$172</h4>
-
-                    <a class="per-night">per night<br/>
-                        $691 for 3 nights<br/>
-                        Includes taxes & fees</a><br/>
-
+                            <input type="radio" name="checkbox" value="no extras" id="no extras" onclick="showNoExtra()"> No
+                            extras <a class="dollar-price">+ $0</a><br>
+                            <input type="radio" name="checkbox" value=" breakfast" id="breakfast" onclick="showDiscount()">
+                            Continental Breakfats
+    
+                            <a class="dollar-price">+ $29</a>
+                            <br>
+                        </form>
+    
+                        <div class="per-off">20% off</div>
+                        <a id="no discount" href="">
+                            <span id="actual-rate"> $215</span>
+    
+    
+                            <i class="fas fa-info"></i>
+                        </a>
+                        <h4 id="discount">$172</h4>
+    
+                        <a class="per-night">per night<br />
+                            $691 for 3 nights<br />
+                            Includes taxes & fees</a>
+                        <br />
+    
                         <a href="" class="per-night">Price Details
                             <a href=""><i class="fas fa-chevron-down"></i>
-                                <div class="price-details"><button>Price Details</button></div>
-
+                                <a><button>Reserve</button></a>
                             </a>
                         </a>
                     </p>
@@ -490,27 +511,34 @@
                 <div class="room-extras">
                     <h6>Extras</h6>
                     <p>
-                    <form action="/action_page.php">
-                        <input type="checkbox" name="no extras" value="no extras">No Extras   <a class="dollar-price">+ $0</a><br>
-                        <input type="checkbox" name="continental breakfast" value="breakfast">Continental Breakfats
-                      
-                        <a class="dollar-price">+ $29</a>
-                        <br>
-                    </form>
+                        <form action="/action_page.php">
 
-                    <div class="20%-off">20% off</div>
-                    <a href="">$215<i class="fas fa-info"></i>
-                    </a>
-                    <h4>$172</h4>
-
-                    <a class="per-night">per night<br/>
-                        $691 for 3 nights<br/>
-                        Includes taxes & fees</a><br/>
-
+                            <input type="radio" name="checkbox" value="no extras" id="no extras" onclick="showNoExtra()"> No
+                            extras <a class="dollar-price">+ $0</a><br>
+                            <input type="radio" name="checkbox" value=" breakfast" id="breakfast" onclick="showDiscount()">
+                            Continental Breakfats
+    
+                            <a class="dollar-price">+ $29</a>
+                            <br>
+                        </form>
+    
+                        <div class="per-off">20% off</div>
+                        <a id="no discount" href="">
+                            <span id="actual-rate"> $215</span>
+    
+    
+                            <i class="fas fa-info"></i>
+                        </a>
+                        <h4 id="discount">$172</h4>
+    
+                        <a class="per-night">per night<br />
+                            $691 for 3 nights<br />
+                            Includes taxes & fees</a>
+                        <br />
+    
                         <a href="" class="per-night">Price Details
                             <a href=""><i class="fas fa-chevron-down"></i>
-                                <div class="price-details"><button>Price Details</button></div>
-
+                                <a><button>Reserve</button></a>
                             </a>
                         </a>
                     </p>
@@ -550,27 +578,34 @@
                 <div class="room-extras">
                     <h6>Extras</h6>
                     <p>
-                    <form action="/action_page.php">
-                        <input type="checkbox" name="no extras" value="no extras">No Extras   <a class="dollar-price">+ $0</a><br>
-                        <input type="checkbox" name="continental breakfast" value="breakfast">Continental Breakfats
-                      
-                        <a class="dollar-price">+ $29</a>
-                        <br>
-                    </form>
+                        <form action="/action_page.php">
 
-                    <div class="20%-off">20% off</div>
-                    <a href="">$215<i class="fas fa-info"></i>
-                    </a>
-                    <h4>$172</h4>
-
-                    <a class="per-night">per night<br/>
-                        $691 for 3 nights<br/>
-                        Includes taxes & fees</a><br/>
-
+                            <input type="radio" name="checkbox" value="no extras" id="no extras" onclick="showNoExtra()"> No
+                            extras <a class="dollar-price">+ $0</a><br>
+                            <input type="radio" name="checkbox" value=" breakfast" id="breakfast" onclick="showDiscount()">
+                            Continental Breakfats
+    
+                            <a class="dollar-price">+ $29</a>
+                            <br>
+                        </form>
+    
+                        <div class="per-off">20% off</div>
+                        <a id="no discount" href="">
+                            <span id="actual-rate"> $215</span>
+    
+    
+                            <i class="fas fa-info"></i>
+                        </a>
+                        <h4 id="discount">$172</h4>
+    
+                        <a class="per-night">per night<br />
+                            $691 for 3 nights<br />
+                            Includes taxes & fees</a>
+                        <br />
+    
                         <a href="" class="per-night">Price Details
                             <a href=""><i class="fas fa-chevron-down"></i>
-                                <div class="price-details"><button>Price Details</button></div>
-
+                                <a><button>Reserve</button></a>
                             </a>
                         </a>
                     </p>
@@ -610,27 +645,34 @@
                 <div class="room-extras">
                     <h6>Extras</h6>
                     <p>
-                    <form action="/action_page.php">
-                        <input type="checkbox" name="no extras" value="no extras">No Extras   <a class="dollar-price">+ $0</a><br>
-                        <input type="checkbox" name="continental breakfast" value="breakfast">Continental Breakfats
-                      
-                        <a class="dollar-price">+ $29</a>
-                        <br>
-                    </form>
+                        <form action="/action_page.php">
 
-                    <div class="20%-off">20% off</div>
-                    <a href="">$215<i class="fas fa-info"></i>
-                    </a>
-                    <h4>$172</h4>
-
-                    <a class="per-night">per night<br/>
-                        $691 for 3 nights<br/>
-                        Includes taxes & fees</a><br/>
-
+                            <input type="radio" name="checkbox" value="no extras" id="no extras" onclick="showNoExtra()"> No
+                            extras <a class="dollar-price">+ $0</a><br>
+                            <input type="radio" name="checkbox" value=" breakfast" id="breakfast" onclick="showDiscount()">
+                            Continental Breakfats
+    
+                            <a class="dollar-price">+ $29</a>
+                            <br>
+                        </form>
+    
+                        <div class="per-off">20% off</div>
+                        <a id="no discount" href="">
+                            <span id="actual-rate"> $215</span>
+    
+    
+                            <i class="fas fa-info"></i>
+                        </a>
+                        <h4 id="discount">$172</h4>
+    
+                        <a class="per-night">per night<br />
+                            $691 for 3 nights<br />
+                            Includes taxes & fees</a>
+                        <br />
+    
                         <a href="" class="per-night">Price Details
                             <a href=""><i class="fas fa-chevron-down"></i>
-                                <div class="price-details"><button>Price Details</button></div>
-
+                                <a><button>Reserve</button></a>
                             </a>
                         </a>
                     </p>
@@ -671,28 +713,29 @@
                     <h6>Extras</h6>
                     <p>
                     <form action="/action_page.php">
-                        <input type="checkbox" name="no extras" value="no extras">No Extras   <a class="dollar-price">+ $0</a><br>
-                        <input type="checkbox" name="continental breakfast" value="breakfast">Continental Breakfats
-                      
+                        <input type="radio" name="checkbox" value="no extras"> No extras <a class="dollar-price">+
+                            $0</a><br>
+                        <input type="radio" name="checkbox" value="breakfast"> Continental Breakfats
+
                         <a class="dollar-price">+ $29</a>
                         <br>
                     </form>
 
-                    <div class="20%-off">20% off</div>
-                    <a href="">$215<i class="fas fa-info"></i>
+                    <div class="per-off">20% off</div>
+                    <a href=""> $215 <i class="fas fa-info"></i>
                     </a>
                     <h4>$172</h4>
 
-                    <a class="per-night">per night<br/>
-                        $691 for 3 nights<br/>
-                        Includes taxes & fees</a><br/>
+                    <a class="per-night">per night<br />
+                        $691 for 3 nights<br />
+                        Includes taxes & fees</a><br />
 
-                        <a href="" class="per-night">Price Details
-                            <a href=""><i class="fas fa-chevron-down"></i>
-                                <div class="price-details"><button>Price Details</button></div>
+                    <a href="" class="per-night">Price Details
+                        <a href=""><i class="fas fa-chevron-down"></i>
+                            <a><button>Reserve</button></a>
 
-                            </a>
                         </a>
+                    </a>
                     </p>
                 </div>
             </div>
@@ -782,23 +825,29 @@
             </div>
         </div>
 
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
-                function myFunction() {
-                    var coffee = document.forms[0];
-                    var txt = "";
-                    var i;
-                    for (i = 0; i < coffee.length; i++) {
-                        if (coffee[i].checked) {
-                            txt = txt + coffee[i].value + " ";
-                        }
-                    }
-                    document.getElementById("order").value = "You ordered a coffee with: " + txt;
-                }
-
-            </script>
         <script>
+            function showNoExtra() {
+                var checkBox1 = document.getElementById("no extras");
+                var displayRate1 = document.getElementById("no discount");
+                var displayRate2 = document.getElementById("discount");
+                if (checkBox1.checked == true) {
+
+
+                    document.getElementById('actual-rate').innerHTML = "$215 - 72";
+                    displayRate2.innerHTML = "$143"
+                }
+            }
+
+            function showDiscount() {
+                var checkBox2 = document.getElementById("breakfast");
+                var displayRate1 = document.getElementById("no discount");
+                var displayRate2 = document.getElementById("discount");
+                if (checkBox2.checked == true) {
+
+                    document.getElementById('actual-rate').innerHTML = "$215 - 43";
+                    displayRate2.innerHTML = "$172"
+                }
+            }
         </script>
 </body>
 
