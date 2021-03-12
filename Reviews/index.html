@@ -90,7 +90,7 @@
             <div class="travel_type_check"><input type="checkbox" name="Travelers with pets" id="travel_pet" onchange="filterData(event,name)">
             <label for="">Travelers with pets</label></div>
             <div class="traveler_type_button">
-                <button>Write a review</button>
+                <button onclick="openWriteReview()">Write a review</button>
             </div>
         </div>
     </div>
@@ -129,7 +129,87 @@
 
 
 
+<div class="container_main">
+    <div class="cross_back">
+        <button onclick="backtoreview()" style="background: none; border: none; float: right; margin-right:30px; margin-top: 10px;"><i class="fa fa-times" aria-hidden="true"></i></button>
+    </div>
+    <div class="create_review_main_cont">
 
+        
+
+        <div class="left">
+            
+        <div class="reviews">
+            <h4>Reviews</h4>
+            <select name="" id="reviews" >
+                <option value="5/5 Excellent">5/5 Excellent</option>
+                <option value="4/5 Very Good">4/5 Very Good</option>
+                <option value="3/5 Good">3/5 Good</option>
+                <option value="2/5 Bad">2/5 Bad</option>
+                <option value="1/5 Worst">1/5 Worst</option>
+            </select>
+        </div>
+    
+        <div class="Verify">
+            <h4>Verify</h4>
+            <div><input type="radio" value="Verified" name="verify" id="veri"><label for="">Verified</label></div>
+        <div><input type="radio" value="Non Verified" name="verify" id="notveri"><label for="">Non Verified</label></div>
+        </div>
+    
+       
+    
+        <div>
+            <h4>Date</h4>
+            <input type="date" name="" id="date" placeholder="Date">
+        </div>
+        
+    
+        <div>
+            <h4>Feedback</h4>
+        <div><input type="radio" name="feedback" id="lik"> <label for="">Liked</label></div>
+        <div><input type="radio" name="feedback" id="dis"> <label for="">Disliked</label></div>
+        </div>  
+        <div class="tags">
+            <h4>Tags</h4>
+         <div><input type="checkbox" name="cat_feed" id="" value="Cleanliness"> <label for="">Cleanliness</label></div>
+         <div><input type="checkbox" name="cat_feed" id="" value="staff & service"> <label for="">staff & service</label></div>
+         <div><input type="checkbox" name="cat_feed" id="" value="amenities"> <label for="">amenities</label> </div>
+         <div><input type="checkbox" name="cat_feed" id="" value="property conditions"> <label for=""> property conditions</label></div>
+         <div><input type="checkbox" name="cat_feed" id="" value="facilities"> <label for=""> facilities</label></div>
+        </div>  
+        </div>
+    
+    
+       <div class="right">
+        <div class="travel_type">
+            <h4>Travel Type</h4>
+         <select name="" id="category">
+             <option value="Couples">Couples</option>
+             <option value="Solo travelers">Solo travelers</option>
+             <option value="Business travelers">Business travelers</option>
+             <option value="Families">Families</option>
+             <option value="Families with small children">Families with small children</option>
+             <option value="Groups">Groups</option>
+             <option value="Travelers with pets"> Travelers with pets</option>
+         </select>
+        </div>
+        <div>
+            <h4>Month</h4>
+            <div><input type="month" name="" id="month"></div>
+        </div>
+         <div>
+             <h4>Comment</h4>
+             <div><textarea name="" id="comment" cols="30" rows="12" required></textarea></div>
+         </div>
+
+     
+         
+         
+     
+          <button id="createn_review">Submit</button>
+       </div>
+    </div>
+  </div>
 
 
 
