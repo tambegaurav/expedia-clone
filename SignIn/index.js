@@ -15,4 +15,4 @@ function signup(el) {
     }
    
 }
-document.getElementById("submit").addEventListener("click", signup)
+document.getElementById("btn").addEventListener("click", signup)
