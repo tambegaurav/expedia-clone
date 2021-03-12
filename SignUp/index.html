@@ -18,7 +18,7 @@
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
           <div class="left">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
               <img
                 src="https://www.expedia.com/_dms/header/logo.svg"
                 alt=""
@@ -59,7 +59,7 @@
             <a href="#"><div class="link">List your property</div></a>
             <a href="#"><div class="link">Support</div></a>
             <a href="#"><div class="link">Trips</div></a>
-            <a href="./SignUp/index.html"><div class="link">Sign In</div></a>
+            <a href="../SignIn/index.html"><div class="link">Sign In</div></a>
           </div>
         </div>
       </nav>
@@ -71,6 +71,7 @@
          
             <div class="para">Create an account with your Email</div>
             <div class="input">
+              
                 <div><label for="">Given/First Name</label><br>
                     <input class="form-inputs" type="text"></div>
                 <div><label for="">Surname/Last Name</label><br>
@@ -78,7 +79,7 @@
                     <br>
                     <div id="check">
                         <label id="label1" for="">Email Address</label><br>
-                        <input  class="form-inputs" id="input1" type="text">  
+                        <input  class="form-input" id="email" type="email">  
                        
                     </div>
                     
@@ -86,13 +87,14 @@
 
                     <div id="check">
                         <label id="label1" for="">Password</label><br>
-                        <input  class="form-inputs" id="input1" type="text">
+                        <input  class="form-input" id="pwd" type="password">
                     </div>
                     <br>
                     <div id="check">
                         <label id="label1" for="">Confirm Password</label><br>
-                    <input  class="form-inputs" id="input1" type="text">
+                    <input   class="form-input" id="input1" type="password">
                     </div>
+                  
                      <br>
                     <div class="paras">
                         <p>Expedia Rewards members get even more!</p>
@@ -115,7 +117,9 @@
                             
                         </a>.
                     </div>
-                    <button  type="submit" class="btn-primary" id="create-account-submit-button">
+                    <button style=" cursor: pointer;
+                    border-color: #d4a900 #aa8700 #aa8700;
+                    background-color: #ffbe00; color:rgb(51, 45, 45)"  type="submit" class="btn-primary" id="submit">
                         <span class="btn-label">Create free account</span>
                     </button>
                     
@@ -159,7 +163,7 @@
     integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
     crossorigin="anonymous"
   ></script>
-    <script src="1.js">
+    <script src="index.js">
     </script>
     
 </body>

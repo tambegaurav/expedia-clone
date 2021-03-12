@@ -1,461 +1,398 @@
-*{
-    padding: 0;
-    margin: 0;
-    /* box-sizing: content-box; */
-    font-family: "Centra No1", -apple-system, BlinkMacSystemFont, "Segoe UI",
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: content-box; */
+  font-family: "Centra No1", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
 }
-html, body, .main-container{
-    width: 100%;
-    height: 100%;
+html,
+body,
+.main-container {
+  width: 100%;
+  height: 100%;
 }
-
-
-
 
 nav {
-    height: 80px;
-  }
-  nav>a {
-    text-decoration: none;
-    color: #465280;
-  }
-  nav> a:hover {
-    color: #005aeb;
-  }
-  nav>.container-fluid {
-    padding-left: 150px !important;
-    padding-right: 150px !important;
-    /* display: flex;  
+  height: 80px;
+}
+nav > a {
+  text-decoration: none;
+  color: #465280;
+}
+nav > a:hover {
+  color: #005aeb;
+}
+nav > .container-fluid {
+  padding-left: 150px !important;
+  padding-right: 150px !important;
+  /* display: flex;  
     gap: 400px; */
-  }
-  
-  nav>.logo {
-    height: 2rem;
-  }
-  
-  nav>.dropdown-nav {
-    color: #465280;
-    background-color: transparent;
-    border: none;
-    outline: none;
-  }
-  nav>.dropdown-nav:hover,
-  nav>.dropdown-nav:focus {
-    color: #005aeb;
-    background-color: transparent !important;
-    border: none !important;
-  }
-  
-  nav>.dropdown-item {
-    color: #465280;
-  }
-  
-  nav>.left,
-  nav>.right {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
-  }
-  nav>.dropdown-menu{
-      /* display: none; */
-  }
+}
 
+nav > .logo {
+  height: 2rem;
+}
 
+nav > .dropdown-nav {
+  color: #465280;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+nav > .dropdown-nav:hover,
+nav > .dropdown-nav:focus {
+  color: #005aeb;
+  background-color: transparent !important;
+  border: none !important;
+}
 
+nav > .dropdown-item {
+  color: #465280;
+}
 
-
+nav > .left,
+nav > .right {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+nav > .dropdown-menu {
+  /* display: none; */
+}
 
 /* --------------------Search Stay{Start}---------------------- */
-.welcom_bar{
-    background-color: #465280;
-    color: white;
-    height: 30px;
-    padding-top: 10px;
-    font-size: 14px;
+.welcom_bar {
+  background-color: #465280;
+  color: white;
+  height: 30px;
+  padding-top: 10px;
+  font-size: 14px;
 }
-.welcom_bar>p>a{
-    color: white;
+.welcom_bar > p > a {
+  color: white;
 }
-.search_stay{
-    width: 92%;
-    height: 500px;
-    margin: auto;
-    margin-top: 2%;
-  
+.search_stay {
+  width: 92%;
+  height: 500px;
+  margin: auto;
+  margin-top: 2%;
 }
 #stay-booking {
-    display: flex;
-    flex-direction: column;
-  }
-  #stay-booking button{
-    background: none;
-    border: none;
-  }
-  
-  .no-of-people {
-    align-self: flex-end;
-    font-size: 15px;
-    color: #005aeb;
-    cursor: pointer;
-  }
-  
-  .place-and-date {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2%;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .place-search {
-    width: 50%;
-    outline: none;
-    height: 40px;
-    border-radius: 10px !important;
-    border: 1px solid #465280;
-    padding-left: 20px;
-  }
-  .place-search:focus {
-    border: 2px solid #005aeb;
-  }
-  
-  .add-people-modal {
-    position: absolute;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    color: #001959;
-    background-color: #ffffff;
-    margin-top: 25px;
-    align-self: flex-end;
-    display: none;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 1px 5px 10px rgb(51, 51, 51);
-  }
-  .nums-title {
-    font-size: 18px;
-    color: #001959;
-    font-weight: 700;
-  }
-  .room-no {
-    font-size: 12px;
-    margin-bottom: 10px;
-  }
-  .adults,
-  .children {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .person-cat {
-    font-size: 15px;
-    font-weight: 400;
-    color: #001959;
-  }
-  
-  .numbers {
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-    text-align: center;
-  }
-  
-  .done {
-    background-color: #005aeb !important;
-    width: 100%;
-    margin-top: 20px;
-    color: #fff;
-    padding: 7px;
-  }
-  
-  .done:hover {
-    background-color: #005aebcb;
-    color: #fff;
-  }
-  
-.stay_top_blue{
-    padding-top: 20px;
-    background-color: #465280;
-    width: 100%;
-    height:15%;
-    border-radius: 10px;
-    display: flex;
-    
-    color: white;
-    
+  display: flex;
+  flex-direction: column;
 }
-.stay_warning{
-    width: 10%;
-
-}
-.stay_warning>i{
-    font-size: 30px;
-    padding:20% 0% 0% 40%;
-}
-.stay_right_p{
-    font-size: 14px;
-    line-height: 18px;
-    padding-top: 0%;
-    padding-bottom: 8px;
+#stay-booking button {
+  background: none;
+  border: none;
 }
 
-.stay_right_p>a{
-    color: white;
-    margin-right: 5%;
+.no-of-people {
+  align-self: flex-end;
+  font-size: 15px;
+  color: #005aeb;
+  cursor: pointer;
 }
 
-
-.stay_inputs>button{
-    background: none;
-    border: 1px solid #8d94b0;
-    width: 300px;
-    height: 40px;
-    border-radius: 5px;
-    color: #6b7499;
-
-}
-.stay_checkboxes{
-    margin: 2% 0;
-
-}
-.stay_checkboxes>label{
-    margin-right: 10%;
-
-}
-.stay_buttons{
-    margin: 2% 0;
+.place-and-date {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-.stay_buttons>button{
-    background-color: #005aeb;
-    border-radius: 5px;
-    color: white;
-    border: none;
-    width: 200px;
-    height: 46px;
+.place-search {
+  width: 50%;
+  outline: none;
+  height: 40px;
+  border-radius: 10px !important;
+  border: 1px solid #465280;
+  padding-left: 20px;
 }
-.stay_desc{
-    width: 60%;
-    margin: auto;
-    text-align: center;
-    font-size: 14px;
-}
-.stay_desc>p::before{
-    content: "✓ ";
+.place-search:focus {
+  border: 2px solid #005aeb;
 }
 
+.add-people-modal {
+  position: absolute;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  color: #001959;
+  background-color: #ffffff;
+  margin-top: 25px;
+  align-self: flex-end;
+  display: none;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 5px 10px rgb(51, 51, 51);
+}
+.nums-title {
+  font-size: 18px;
+  color: #001959;
+  font-weight: 700;
+}
+.room-no {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+.adults,
+.children {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.person-cat {
+  font-size: 15px;
+  font-weight: 400;
+  color: #001959;
+}
 
+.numbers {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  text-align: center;
+}
+
+.done {
+  background-color: #005aeb !important;
+  width: 100%;
+  margin-top: 20px;
+  color: #fff;
+  padding: 7px;
+}
+
+.done:hover {
+  background-color: #005aebcb;
+  color: #fff;
+}
+
+.stay_top_blue {
+  padding-top: 20px;
+  background-color: #465280;
+  width: 100%;
+  height: 15%;
+  border-radius: 10px;
+  display: flex;
+
+  color: white;
+}
+.stay_warning {
+  width: 10%;
+}
+.stay_warning > i {
+  font-size: 30px;
+  padding: 20% 0% 0% 40%;
+}
+.stay_right_p {
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 0%;
+  padding-bottom: 8px;
+}
+
+.stay_right_p > a {
+  color: white;
+  margin-right: 5%;
+}
+
+.stay_inputs > button {
+  background: none;
+  border: 1px solid #8d94b0;
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  color: #6b7499;
+}
+.stay_checkboxes {
+  margin: 2% 0;
+}
+.stay_checkboxes > label {
+  margin-right: 10%;
+}
+.stay_buttons {
+  margin: 2% 0;
+}
+
+.stay_buttons > button {
+  background-color: #005aeb;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  width: 200px;
+  height: 46px;
+}
+.stay_desc {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  font-size: 14px;
+}
+.stay_desc > p::before {
+  content: "✓ ";
+}
 
 /* --------------------Search Stay{End}---------------------- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* -----------------Ideas For Your Next Trip {Started} ----------- */
 
-.ideas_trip{
-    width: 92%;
-    margin: auto;
-    height: 400px;
+.ideas_trip {
+  width: 92%;
+  margin: auto;
+  height: 400px;
 }
 
-.ideas_heading{
-    width: 100%;
+.ideas_heading {
+  width: 100%;
 }
-.ideas_cont{
-    display: flex;
-    width: 100%;
-    height: 78%;
-    /* background-color: aliceblue; */
-}
-
-
-.ideas_left{
-    width: 65%;
-    height: 100%;
-}
-.ideas_left_long{
-    height: 70%;
-    background-color: antiquewhite;
-    background-image: url('https://a.travel-assets.com/travel-assets-manager/gmvd-1715-staycations-pwa/US_PWA_562x240.jpg');
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-
+.ideas_cont {
+  display: flex;
+  width: 100%;
+  height: 78%;
+  /* background-color: aliceblue; */
 }
 
-.ideas_left_small{
-    height: 15%;
+.ideas_left {
+  width: 65%;
+  height: 100%;
 }
-.ideas_right{
-    
-    width: 35%;
-    height: 100%;
-}
-.ideas_right_top{
-    display: flex;
-    height: 47.25%;
-    margin: 0 3% 3% 3%;
-    /* margin-top: 0%; */
-
-}
-.ideas_right_bottom{
-    display: flex;
-    height: 47.25%;
-    margin: 3% 3% 3% 3%;
-}
-.ideas_right_top_left{
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    background-color: burlywood;
-    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/07/17/resort_pool_overlook__343365916__150.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh');
-    width:30% ;
-    background-size: 170% 100%;
-}
-.ideas_right_bottom_left{
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-    background-color: burlywood;
-    background-image: url('https://forever.travel-assets.com/flex/flexmanager/images/2020/07/17/vacation_family__206331239__150.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh');
-    width:30% ;
-    background-size: 180% 100%;
-    background-repeat: no-repeat;
-    
+.ideas_left_long {
+  height: 70%;
+  background-color: antiquewhite;
+  background-image: url("https://a.travel-assets.com/travel-assets-manager/gmvd-1715-staycations-pwa/US_PWA_562x240.jpg");
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-
-
-.text-col{
-    color:#001959;
+.ideas_left_small {
+  height: 15%;
+}
+.ideas_right {
+  width: 35%;
+  height: 100%;
+}
+.ideas_right_top {
+  display: flex;
+  height: 47.25%;
+  margin: 0 3% 3% 3%;
+  /* margin-top: 0%; */
+}
+.ideas_right_bottom {
+  display: flex;
+  height: 47.25%;
+  margin: 3% 3% 3% 3%;
+}
+.ideas_right_top_left {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: burlywood;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/07/17/resort_pool_overlook__343365916__150.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+  width: 30%;
+  background-size: 170% 100%;
+}
+.ideas_right_bottom_left {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: burlywood;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/07/17/vacation_family__206331239__150.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+  width: 30%;
+  background-size: 180% 100%;
+  background-repeat: no-repeat;
 }
 
-.bordering{
-    border: 0.5px solid#bed1ce;
-    border-radius: 10px;
+.text-col {
+  color: #001959;
 }
 
-.text_gapping{
-    padding: 10px;
+.bordering {
+  border: 0.5px solid#bed1ce;
+  border-radius: 10px;
 }
-.text_styling{
-    font-family: "Centra No1", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+.text_gapping {
+  padding: 10px;
+}
+.text_styling {
+  font-family: "Centra No1", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 /* _________________________________________________ */
 
 @media only screen and (max-width: 992px) {
-    .ideas_trip{
-        width: 92%;
-        margin: auto;
-        height: 400px;
-    }
-    
-    .ideas_heading{
-        width: 100%;
-    }
-    .ideas_cont{
-        /* display: flex; */
-        width: 100%;
-        height: 78%;
-        /* background-color: aliceblue; */
-    }
+  .ideas_trip {
+    width: 92%;
+    margin: auto;
+    height: 400px;
+  }
 
-    .ideas_left{
-        width: 100%;
-        height: 100%;
-    }
+  .ideas_heading {
+    width: 100%;
+  }
+  .ideas_cont {
+    /* display: flex; */
+    width: 100%;
+    height: 78%;
+    /* background-color: aliceblue; */
+  }
 
-    .ideas_right{
-    
-        width: 100%;
-        height: 100%;
-    }
+  .ideas_left {
+    width: 100%;
+    height: 100%;
+  }
 
-} 
-
-
-
-
-
-
-
-
-
+  .ideas_right {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 /* -----------------Ideas For Your Next Trip {Ended}----------- */
 
-
-
-
-
 /* ------------------Weekend Gateways{ Start }---------------- */
 
-.weekend_gateways{
-    width: 92%;
-    height: 310px;
-    margin: auto;
-    margin-bottom: 4%;
+.weekend_gateways {
+  width: 92%;
+  height: 310px;
+  margin: auto;
+  margin-bottom: 4%;
 }
-.weekend_header{
-    height: 15%;
-    /* line-height: 5px; */
-    margin-bottom: 2%;
+.weekend_header {
+  height: 15%;
+  /* line-height: 5px; */
+  margin-bottom: 2%;
 }
-.weekend_container{
-    display: flex;
-    height: 85%;
+.weekend_container {
+  display: flex;
+  height: 85%;
 }
-.weekend_box{
-    width: 32%;
-    margin: 0.5% 1% 1% 0%;
+.weekend_box {
+  width: 32%;
+  margin: 0.5% 1% 1% 0%;
 }
-.weekend_box_image{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: rgb(65, 62, 52);
-    height: 65%;
-    
-    
+.weekend_box_image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgb(65, 62, 52);
+  height: 65%;
 }
-.weekend_box_image_text{
-    color: white;
-    padding-top: 30%;
-    font-weight: 600;
+.weekend_box_image_text {
+  color: white;
+  padding-top: 30%;
+  font-weight: 600;
 }
 /* .weekend_guru{
 
 } */
-.weekend_guru_top{
-        background-image: url('https://mediaim.expedia.com/destination/1/c5e8a35bf065066b4559d4680f616851.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh');
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        /* object-fit: cover; */
-        
-        
+.weekend_guru_top {
+  background-image: url("https://mediaim.expedia.com/destination/1/c5e8a35bf065066b4559d4680f616851.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* object-fit: cover; */
 }
 /* .weekend_guru_bottom{
 
@@ -463,10 +400,10 @@ nav {
 /* .weekend_agra{
 
 } */
-.weekend_agra_top{
-    background-image: url('https://a.travel-assets.com/findyours-php/viewfinder/images/res70/124000/124012-Agra.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+.weekend_agra_top {
+  background-image: url("https://a.travel-assets.com/findyours-php/viewfinder/images/res70/124000/124012-Agra.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 /* .weekend_agra_bottom{
 
@@ -474,184 +411,324 @@ nav {
 .weekend_agra_district{
 
 } */
-.weekend_agra_district_top{
-
-    background-image: url('https://a.travel-assets.com/findyours-php/viewfinder/images/res70/89000/89526-Taj-Mahal.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+.weekend_agra_district_top {
+  background-image: url("https://a.travel-assets.com/findyours-php/viewfinder/images/res70/89000/89526-Taj-Mahal.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 /* .weekend_agra_district_bottom{
 
 } */
 
-.weekend_bhopal{
-    display: none;
+.weekend_bhopal {
+  display: none;
 }
-.weekend_bhopal_top{
-
-    background-image: url('https://thumbnails.expedia.com/y7pk6yNP5VqmTfumLhHLk7dMPXg=/1280x720/images.trvl-media.com/media/content/expus/graphics/deals/TE_Clouds_card_r1.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+.weekend_bhopal_top {
+  background-image: url("https://thumbnails.expedia.com/y7pk6yNP5VqmTfumLhHLk7dMPXg=/1280x720/images.trvl-media.com/media/content/expus/graphics/deals/TE_Clouds_card_r1.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 /* ------------------Weekend Gateways{ End }---------------- */
 
-
-
-
-
-
-
-
-
-
 /* ------------------Find your next destination {start}-------------- */
-.next_dest{
-    width: 92%;
-    margin: auto;
-    height: 266px;
-    margin-bottom: 2%;
+.next_dest {
+  width: 92%;
+  margin: auto;
+  height: 266px;
+  margin-bottom: 2%;
 }
-.next_dest_header{
-    width: 100%;
-    height: 20%;
+.next_dest_header {
+  width: 100%;
+  height: 20%;
 }
-.next_dest_cont{
-    display: flex;
-    height: 70%;
-    
+.next_dest_cont {
+  display: flex;
+  height: 70%;
 }
-.next_dest_box{
-    height: 100%;
-    width: 20%;
-    /* background-color: tomato; */
-    margin-left: 1%;
-    border-radius: 10px;
-    
+.next_dest_box {
+  height: 100%;
+  width: 20%;
+  /* background-color: tomato; */
+  margin-left: 1%;
+  border-radius: 10px;
 }
-.next_dest_text{
-    color: white;
-    /* font-size: 20px; */
-    font-weight: 600;
-    padding: 40% 0 0 30%;
+.next_dest_text {
+  color: white;
+  /* font-size: 20px; */
+  font-weight: 600;
+  padding: 40% 0 0 30%;
 }
 
-.next_dest_box_toronto{
-
-    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("https://thumbnails.trvl-media.com/lHm4ymOpabcmgHaMoAGLlDkZq2M=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/Toronto.png");
-    background-repeat: no-repeat;
-    position: relative;
-    background-size: 100% 100%;
-    
-    
-}
-  
-.next_dest_box_las_vegas{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url("https://thumbnails.trvl-media.com/95Jes5CwByLClgIJ8LN9i-QmL9Y=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/LasVegas.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.next_dest_box_toronto {
+  background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5) 100%),
+    url("https://thumbnails.trvl-media.com/lHm4ymOpabcmgHaMoAGLlDkZq2M=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/Toronto.png");
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 100% 100%;
 }
 
-.next_dest_box_new_york{
-    background-image:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("https://thumbnails.trvl-media.com/fLATJfEx9VWTkGBIqMz4lT_vqy8=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/NewYork.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
- 
-.next_dest_box_orlando{
-    background-image:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("https://thumbnails.trvl-media.com/NLd-Wi3Gvk2rD1AS-zOnqyvhzFk=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/Orlando_city.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-  
-.next_dest_box_vancouver{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url("https://thumbnails.trvl-media.com/VgH7A2g7lsSo7b3R3r0WqGKzqEM=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/Vancouver.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.next_dest_box_las_vegas {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5) 100%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("https://thumbnails.trvl-media.com/95Jes5CwByLClgIJ8LN9i-QmL9Y=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/LasVegas.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-.next_dest_box_sanfrancisco{
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url("https://thumbnails.trvl-media.com/-jSxauocuyn-3A3y7UBGiI6bv2Q=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/SanFrancisco.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.next_dest_box_new_york {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5) 100%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("https://thumbnails.trvl-media.com/fLATJfEx9VWTkGBIqMz4lT_vqy8=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/NewYork.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-.next_dest_box_calgary{
-    display: none;
-    background-image:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("https://thumbnails.trvl-media.com/x_EtuWvXhhf2VsfDana44a5QT9I=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/Calgary.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.next_dest_box_orlando {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5) 100%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("https://thumbnails.trvl-media.com/NLd-Wi3Gvk2rD1AS-zOnqyvhzFk=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/Orlando_city.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
+.next_dest_box_vancouver {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5) 100%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("https://thumbnails.trvl-media.com/VgH7A2g7lsSo7b3R3r0WqGKzqEM=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/Vancouver.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    width: auto;
-    padding: 16px;
-    margin-top: 5%;
-    color: transparent;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 15px;
-    user-select: none;
-  }
-  
-  .next {
-    right: 50px;
-  }
-  
-  .prev:hover, .next:hover {
-    color: blue;
-    background-color: #ffffff;
-  }
-  
+.next_dest_box_sanfrancisco {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5) 100%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("https://thumbnails.trvl-media.com/-jSxauocuyn-3A3y7UBGiI6bv2Q=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/SanFrancisco.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.next_dest_box_calgary {
+  display: none;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5) 100%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("https://thumbnails.trvl-media.com/x_EtuWvXhhf2VsfDana44a5QT9I=/1040x580/smart/filters:no_upscale():quality(60)/a.travel-assets.com/flex/flexmanager/images/2019/11/27/Calgary.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  margin-top: 5%;
+  color: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 15px;
+  user-select: none;
+}
+
+.next {
+  right: 50px;
+}
+
+.prev:hover,
+.next:hover {
+  color: blue;
+  background-color: #ffffff;
+}
 
 /* ------------------Find your next destination {end}-------------- */
 
-
-
-
-
-
 /* ---------------------Explore Disc Save {Start}------------------------ */
-.exp_disc{
-    width: 92%;
-    height: 300px;
-    margin: auto;
+.exp_disc {
+  width: 92%;
+  height: 300px;
+  margin: auto;
 }
-.exp_disc_header{
-    width: 100%;
+.exp_disc_header {
+  width: 100%;
 }
-.exp_disc_cont{
-    width: 100%;
-    height: 90%;
+.exp_disc_cont {
+  width: 100%;
+  height: 90%;
 }
-.exp_disc_box{
-    width: 100%;
-    height: 100%;
-    background-image: url('https://a.travel-assets.com/travel-assets-manager/a032eb45-943c-4892-acac-d93f9cbeec4b/PWA_Spotlight_Medium_667x320_US_under80.jpg');
-    
-    overflow: hidden;
-    background-size:100% 160%;
-    
-    border-radius: 10px;
+.exp_disc_box {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://a.travel-assets.com/travel-assets-manager/a032eb45-943c-4892-acac-d93f9cbeec4b/PWA_Spotlight_Medium_667x320_US_under80.jpg");
+
+  overflow: hidden;
+  background-size: 100% 160%;
+
+  border-radius: 10px;
 }
-.exp_disc_text{
-    color: white;
-    padding-top: 13%;
+.exp_disc_text {
+  color: white;
+  padding-top: 13%;
 }
 /* ---------------------Explore Disc Save {End}------------------------ */
 
+.circle {
+  display: none;
+  width: 100px;
+  height: 45px;
+  border-radius: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: #465280;
+  background-color: white;
+  border-radius: 35px;
+  text-align: center;
+  align-items: center;
+}
+.circle:hover {
+  background-color: #465280;
+  color: white;
+}
+.chatbox {
+  position: fixed;
+  display: none;
+  right: 100px;
+  bottom: 100px;
+  width: 400px;
+  height: 500px;
+  background-color: rgba(128, 128, 128, 0.041);
+  border-radius: 10px;
+}
+.circle > p {
+  padding-top: 10px;
+}
 
+.chatbox_header {
+  align-items: center;
+  display: flex;
+  gap: 60%;
+  padding-top: 0;
+  padding-left: 0;
+  background-color: #ffd500;
+  width: 100%;
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.chatbox_header > p {
+  padding-left: 10px;
+}
 
+.chatbox_message {
+  background-color: white;
+  overflow-y: scroll;
+  width: 100%;
+  height: 300px;
+}
+.chatbox_message > div > p {
+  text-align: center;
+  margin: 3% 0;
+  font-weight: 600;
+  font-size: 14px;
+}
 
+.chatbox_message_line {
+  display: flex;
+  margin-bottom: 5%;
+}
+.chatbox_message_line > div {
+  margin: auto;
+  height: 2px;
+  background-color: gainsboro;
+  width: 40%;
+}
+.msg_bot_join > div {
+  margin-left: 45%;
+}
+.msg_bot_join > p {
+  margin: top 0% !important;
+}
 
+.chat_buttons {
+  background-color: white;
+  height: 200px;
+  width: 100%;
+}
 
+.chat_buttons > div > button {
+  margin-top: 3%;
+  background: none;
+  width: 120px;
+  height: 30px;
+  border: 2px solid #465280;
+  color: #465280;
+  border-radius: 30px;
+}
+.chat_buttons > div > button:hover {
+  background-color: #465280;
+  color: white;
+}
 
+.msg_type {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  margin-top: 15%;
+  margin-left: 3%;
+  color: rgb(63, 54, 54);
+}
+.msg_type > input {
+  background: none;
+  border-radius: 5px;
+  width: 80%;
+  height: 40px;
+  text-align: center;
+}
 
+/* footer  */
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  width: 80%;
+  margin: auto;
+  margin-top: 60px;
+}
 
+.footer > .links {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  justify-content: space-around;
+}
 
+.footer > .end-line {
+  font-size: 13px;
+  text-align: center;
+  max-width: 480px;
+  align-self: center;
+  line-height: 15px;
+  color: #465280;
+  margin-top: 40px;
+}
 
+.footer > img {
+  width: 150px;
+  margin: auto;
+  margin-top: 20px;
+}

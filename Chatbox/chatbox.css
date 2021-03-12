@@ -6,23 +6,26 @@
     color:#001959;
 }
 
-.circle {
-    display: none;
-    width: 100px;
-    height: 45px;
-    border-radius: 50px;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    color: teal;
-    background-color: wheat;
-    border-radius: 35px;
-    text-align: center;
-    align-items: center;
-  }
+
 
 body{
     width: 100%;
+}
+
+
+.circle {
+  display: none;
+  width: 100px;
+  height: 45px;
+  border-radius: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: teal;
+  background-color: wheat;
+  border-radius: 35px;
+  text-align: center;
+  align-items: center;
 }
   .chatbox{
       margin-left: 65%;

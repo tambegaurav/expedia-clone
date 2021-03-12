@@ -1,0 +1,28 @@
+.dropdown{
+    height: 560px;
+    width: 300px;
+}
+details > summary {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+
+
+details > summary::before {
+  content: '+';
+}
+
+details[open] > summary::before {
+    content: '-';
+}
+
+details {
+  
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+
+details[open] > summary {
+    margin-bottom: 0.5rem;
+}
