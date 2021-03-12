@@ -24,7 +24,7 @@ for(var i=0;i<arr.length;i++){
     // arr[i].review_type
     // arr[i].verified_traveller
     // arr[i].travel_type
-    //arr[i].date
+    // arr[i].date
     // arr[i].feedback
     // arr[i].feedback_category
     // arr[i].feedback_comment
