@@ -7,7 +7,7 @@ function signup(el) {
         alert("Input field can't be blank")
     }else{
         if(pwd == localStorage[email]){
-            alert("login successful")
+            window.location.href = "../index.html"
         }
         else{
             alert("User not found")
