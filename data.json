@@ -2,6 +2,7 @@
   "cities": [
     {
       "name": "Pune",
+      "background": "https://pix10.agoda.net/geo/city/16854/1_16854_02.jpg?s=1920x822",
       "hotels": [
         {
           "name": "Sheraton Grand Pune Bund Garden Hotel",
@@ -25,6 +26,8 @@
     },
     {
       "name": "Bengaluru",
+      "background": "https://www.tajhotels.com/content/dam/luxury/hotels/old-Taj-Yeshwantpur/images/Quick_Peek/Facade_Night_Shot_16x7-01.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg",
+
       "hotels": [
         {
           "name": "Hyatt Centric MG Road Bangalore",
@@ -48,6 +51,8 @@
     },
     {
       "name": "Mumbai",
+      "background": "https://healinghotelsoftheworld.com/wp-content/uploads/2019/08/exterior-building-outside-city-healing-taj-mahal-palace-mumbai-hotel-india-1300x0-c-default.jpg",
+
       "hotels": [
         {
           "name": "JW Marriott Mumbai Sahar",
