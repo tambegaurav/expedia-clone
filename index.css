@@ -67,9 +67,11 @@ a:hover {
   height: auto;
   background-color: #fff;
   margin: auto;
-  border: 3px solid #005aeb;
+  /* border: 3px solid #005aeb; */
   align-self: center;
   margin-top: 70px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 20px rgba(24, 24, 24, 0.74);
 }
 
 #stay-booking {
@@ -95,6 +97,15 @@ a:hover {
 
 .place-search {
   width: 50%;
+  outline: none;
+  height: 40px;
+  border-radius: 10px !important;
+  border: 1px solid #465280;
+  padding-left: 20px;
+}
+
+.plane-search {
+  width: 24%;
   outline: none;
   height: 40px;
   border-radius: 10px !important;
@@ -133,6 +144,7 @@ a:hover {
 .children {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 15px;
 }
 .person-cat {
   font-size: 15px;
@@ -157,6 +169,39 @@ a:hover {
 .done:hover {
   background-color: #005aebcb;
   color: #fff;
+}
+
+.add-flight-car {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-top: 20px;
+  align-items: center;
+  margin-left: 2%;
+}
+
+.search-btn {
+  background-color: #005aeb;
+  color: #fff;
+  width: 200px;
+  align-self: center;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.date {
+  border: 1px solid #465280;
+  padding-left: 10px;
+  border-radius: 7px;
+  outline: none;
+}
+
+.date:focus {
+  border-color: #005aeb;
 }
 
 /* cont */
@@ -227,6 +272,10 @@ a:hover {
 
 .ideas_heading {
   width: 100%;
+  font-size: 28px;
+  font-family: 900 !important;
+  padding-left: 10px;
+  margin-bottom: 10px;
 }
 .ideas_cont {
   display: flex;
@@ -242,8 +291,11 @@ a:hover {
 .ideas_left_long {
   height: 70%;
   background-color: antiquewhite;
+  background-image: url("https://a.travel-assets.com/travel-assets-manager/gmvd-1715-staycations-pwa/US_PWA_562x240.jpg");
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .ideas_left_small {
@@ -268,8 +320,20 @@ a:hover {
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
   background-color: burlywood;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/07/17/resort_pool_overlook__343365916__150.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
   width: 30%;
+  background-size: 170% 100%;
 }
+.ideas_right_bottom_left {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: burlywood;
+  background-image: url("https://forever.travel-assets.com/flex/flexmanager/images/2020/07/17/vacation_family__206331239__150.jpg?impolicy=fcrop&w=900&h=506&q=mediumHigh");
+  width: 30%;
+  background-size: 180% 100%;
+  background-repeat: no-repeat;
+}
+
 .text-col {
   color: #001959;
 }
@@ -416,4 +480,213 @@ a:hover {
   font-size: 10px;
   margin-left: 2px;
   margin-top: 5px;
+}
+
+/* ---------------------Explore Disc Save {Start}------------------------ */
+.exp_disc {
+  width: 100%;
+  height: 300px;
+  margin: auto;
+}
+.exp_disc_header {
+  width: 100%;
+  font-size: 28px;
+  font-family: 900 !important;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.exp_disc_cont {
+  width: 100%;
+  height: 90%;
+}
+.exp_disc_box {
+  width: 100%;
+  height: 100%;
+  background-image: url("https://a.travel-assets.com/travel-assets-manager/a032eb45-943c-4892-acac-d93f9cbeec4b/PWA_Spotlight_Medium_667x320_US_under80.jpg");
+  overflow: hidden;
+  background-size: 100% 160%;
+  border-radius: 10px;
+}
+.exp_disc_text {
+  color: white;
+  padding-top: 18%;
+}
+.exp_disc_text > h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+h3,
+h1 {
+  font-size: 22px;
+  font-weight: 500;
+}
+/* ---------------------Explore Disc Save {End}------------------------ */
+
+.end-tag-line {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  margin-top: 50px;
+}
+.end-tag-line > a {
+  margin-top: -3px;
+  color: #005aeb;
+}
+
+/* footer  */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  padding-bottom: 100px;
+}
+
+.footer > .links {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+  justify-content: space-around;
+}
+
+.footer > .end-line {
+  font-size: 13px;
+  text-align: center;
+  max-width: 480px;
+  align-self: center;
+  line-height: 15px;
+  color: #465280;
+  margin-top: 40px;
+}
+
+.footer > img {
+  width: 150px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* chatbox */
+
+.circle {
+  display: none;
+  width: 100px;
+  height: 45px;
+  border-radius: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: #465280;
+  background-color: white;
+  border-radius: 35px;
+  text-align: center;
+  align-items: center;
+}
+.circle:hover {
+  background-color: #465280;
+  color: white;
+}
+.chatbox {
+  position: fixed;
+  display: none;
+  right: 50px;
+  bottom: 50px;
+  width: 400px;
+  background-color: rgba(128, 128, 128, 0.041);
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #1d1d1d;
+  padding-bottom: 10px;
+}
+.circle > p {
+  padding-top: 10px;
+}
+
+.chatbox_header {
+  align-items: center;
+  display: flex;
+  gap: 60%;
+  padding-top: 0;
+  padding-left: 0;
+  background-color: #ffd500;
+  width: 100%;
+  height: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.chatbox_header > p {
+  padding-left: 10px;
+}
+
+.chatbox_message {
+  background-color: white;
+  overflow-y: scroll;
+  width: 100%;
+  height: 300px;
+}
+.chatbox_message > div > p {
+  text-align: center;
+  margin: 3% 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.chatbox_message_line {
+  display: flex;
+  margin-bottom: 5%;
+}
+.chatbox_message_line > div {
+  margin: auto;
+  height: 2px;
+  background-color: gainsboro;
+  width: 40%;
+}
+.msg_bot_join > div {
+  margin-left: 45%;
+}
+.msg_bot_join > p {
+  margin: top 0% !important;
+}
+
+.chat_buttons {
+  background-color: white;
+  height: 200px;
+  width: 100%;
+}
+
+.chat_buttons > div > button {
+  margin-top: 3%;
+  background: none;
+  width: 120px;
+  height: 30px;
+  border: 2px solid #465280;
+  color: #465280;
+  border-radius: 30px;
+  margin-left: 5px;
+}
+.chat_buttons > div > button:hover {
+  background-color: #465280;
+  color: white;
+}
+
+.chat_buttons button {
+  font-size: 12px;
+}
+
+.msg_type {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  margin-top: 10%;
+  margin-left: 3%;
+  color: rgb(63, 54, 54);
+}
+.msg_type > input {
+  background: none;
+  border-radius: 5px;
+  width: 80%;
+  height: 40px;
+  text-align: center;
+  outline: none;
+  border: 1px solid #465280;
 }

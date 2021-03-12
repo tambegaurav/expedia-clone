@@ -1,3 +1,9 @@
+if (localStorage.getItem("activeUser")) {
+  document.getElementById("username").textContent = localStorage.getItem(
+    "activeUser"
+  );
+}
+
 const changeNumbers = () => {
   var text = document.querySelector(".no-of-people");
 
@@ -40,3 +46,26 @@ var closeAddMod = () => {
   document.querySelector(".add-people-modal").style.display = "none";
 };
 closeAddModal.addEventListener("click", closeAddMod);
+
+// chatbox
+
+function openChatbox() {
+  document.querySelector(".circle").style.display = "none";
+  document.querySelector(".chatbox").style.display = "block";
+}
+
+function hidechatbox() {
+  document.querySelector(".chatbox").style.display = "none";
+  document.querySelector(".circle").style.display = "block";
+}
+// document.querySelector('.circle').style.display="block"
+
+setTimeout(() => {
+  document.querySelector(".circle").style.display = "block";
+}, 1000);
+
+function searchSpecificCity() {
+  var city = document.getElementById("searchPlace").value;
+
+  location.href = `./SpecificCity/index.html?city=${city}`;
+}

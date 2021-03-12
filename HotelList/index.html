@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel List</title>
-    <link rel = "icon" href ="https://www.expedia.com/favicon.ico" type = "logo.svg"> 
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link
+      rel="icon"
+      href="https://www.expedia.com/favicon.ico"
+      type="logo.svg"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     /> -->
-    
-</head>
-<body>
+  </head>
+  <body>
     <div class="welcom_bar text_gapping text_styling">
-        <p>Welcome to Expedia.com. Continue to the India site at <a href="../index.html"> Expedia.co.in.</a></p>
+      <p>
+        Welcome to Expedia.com. Continue to the India site at
+        <a href="../index.html"> Expedia.co.in.</a>
+      </p>
     </div>
-
 
     <!-- <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
@@ -70,257 +80,272 @@
         </div>
       </nav> -->
 
-
-
-
-
-
     <div class="search_stay text_styling text_gapping text-col">
-        <div class="stay_top_blue">
-            <div class="stay_warning">
-                <i class="fas fa-exclamation-triangle"></i>
-            </div>
-            <div class="stay_top_right">
-                <div class="stay_right_p">
-                    <p>Need help with travel plans impacted by COVID-19? Your online itinerary is the best place to cancel your trip. For more information about refund timelines or other help, visit the Customer Support Portal.</p>
-                
-                    <a href="">Go to your itinerary</a>
-                    <a href="">Visit Customer Support</a>
-                </div>
-            </div>
+      <div class="stay_top_blue">
+        <div class="stay_warning">
+          <i class="fas fa-exclamation-triangle"></i>
+        </div>
+        <div class="stay_top_right">
+          <div class="stay_right_p">
+            <p>
+              Need help with travel plans impacted by COVID-19? Your online
+              itinerary is the best place to cancel your trip. For more
+              information about refund timelines or other help, visit the
+              Customer Support Portal.
+            </p>
 
+            <a href="">Go to your itinerary</a>
+            <a href="">Visit Customer Support</a>
+          </div>
         </div>
-        <div class="stay_header">
-            <h1>Search stays</h1>
+      </div>
+      <div class="stay_header">
+        <h1>Search stays</h1>
+      </div>
+      <div id="stay-booking">
+        <div onclick="changeNumbers()" class="no-of-people">
+          1 room, 2 travellers
         </div>
-        <div id="stay-booking">
-            <div onclick="changeNumbers()" class="no-of-people">
-              1 room, 2 travellers
-            </div>
-            <div class="add-people-modal">
-              <p class="nums-title">Travellers</p>
-              <p class="nums-title room-no">Room 1</p>
-              <div class="adults">
-                <div class="person-cat">Adult</div>
-                <div class="person-numbers numbers">
-                  <button onclick="subtract()">Minus</button>
-                  <div id="noOfAdults">2</div>
-                  <button onclick="add()">Add</button>
-                </div>
-              </div>
-              <div class="children">
-                <div class="person-cat">Children</div>
-                <div class="children-numbers numbers">
-                  <button>Minus</button>
-                  <div id="noOfChildren">2</div>
-                  <button>Add</button>
-                </div>
-              </div>
-              <button class="btn done" id="closeAddModal">Done</button>
-            </div>
-            <div class="place-and-date">
-              <input
-                class="place-search"
-                type="text"
-                placeholder="Going to"
-              />
-              <input style="border: none;"
-                class="date"
-                type="text"
-                placeholder="Check-in"
-                onfocus="(this.type = 'date')"
-              />
-              <input style="border: none;"
-                class="date"
-                type="text"
-                placeholder="Check-out"
-                onfocus="(this.type = 'date')"
-              />
+        <div class="add-people-modal">
+          <p class="nums-title">Travellers</p>
+          <p class="nums-title room-no">Room 1</p>
+          <div class="adults">
+            <div class="person-cat">Adult</div>
+            <div class="person-numbers numbers">
+              <button onclick="subtract()">Minus</button>
+              <div id="noOfAdults">2</div>
+              <button onclick="add()">Add</button>
             </div>
           </div>
+          <div class="children">
+            <div class="person-cat">Children</div>
+            <div class="children-numbers numbers">
+              <button>Minus</button>
+              <div id="noOfChildren">2</div>
+              <button>Add</button>
+            </div>
+          </div>
+          <button class="btn done" id="closeAddModal">Done</button>
+        </div>
+        <div class="place-and-date">
+          <input class="place-search" type="text" placeholder="Going to" />
+          <input
+            style="border: none"
+            class="date"
+            type="text"
+            placeholder="Check-in"
+            onfocus="(this.type = 'date')"
+          />
+          <input
+            style="border: none"
+            class="date"
+            type="text"
+            placeholder="Check-out"
+            onfocus="(this.type = 'date')"
+          />
+        </div>
+      </div>
 
-        <div class="stay_checkboxes">
-            <input type="checkbox" name="" id=""><label for="">Add a flight</label>
-            <input type="checkbox" name="" id=""><label for="">Add a car</label>
-            
-        </div>
-        <div class="stay_buttons">
-            <button>Search</button>
-        </div>
-        <div class="stay_desc">
-            <p>Free cancellation on most hotels. Because flexibility matters.</p>
-        </div>
-
+      <div class="stay_checkboxes">
+        <input type="checkbox" name="" id="" /><label for=""
+          >Add a flight</label
+        >
+        <input type="checkbox" name="" id="" /><label for="">Add a car</label>
+      </div>
+      <div class="stay_buttons">
+        <button>Search</button>
+      </div>
+      <div class="stay_desc">
+        <p>Free cancellation on most hotels. Because flexibility matters.</p>
+      </div>
     </div>
 
-
-
-
-
-
-        <div class="ideas_trip  text-col">
-            <div class="ideas_heading text_styling">
-                <h1>Ideas for your next trip</h1>
+    <div class="ideas_trip text-col">
+      <div class="ideas_heading text_styling">
+        <h1>Ideas for your next trip</h1>
+      </div>
+      <div class="ideas_cont">
+        <div class="ideas_left bordering">
+          <div class="ideas_left_long"></div>
+          <div class="ideas_left_small text_gapping text_styling">
+            <h3>Book now, travel whenever</h3>
+            <p>Stays worth booking right now.</p>
+          </div>
+        </div>
+        <div class="ideas_right">
+          <div class="ideas_right_top bordering">
+            <div class="ideas_right_top_left"></div>
+            <div class="text_gapping text_styling">
+              <h3>Time to get away?</h3>
+              <p>Grab a deal on last-minute travel</p>
             </div>
-            <div class="ideas_cont ">
-                <div class="ideas_left bordering">
-                    <div class="ideas_left_long"></div>
-                    <div class="ideas_left_small text_gapping text_styling">
-                        <h3>Book now, travel whenever</h3>
-                        <p>Stays worth booking right now.</p>
-                    </div>
-                </div>
-                <div class="ideas_right">
-                    <div class="ideas_right_top bordering">
-                        <div class="ideas_right_top_left">
-
-                        </div>
-                        <div class="text_gapping text_styling">
-                            
-                        <h3>Time to get away?</h3>
-                        <p>Grab  a deal on last-minute travel</p>
-                        </div>
-                    </div>
-                    <div class="ideas_right_bottom bordering">
-                        <div class="ideas_right_bottom_left">
-
-                        </div>
-                        <div class="text_gapping text_styling">
-                            <h3>Stay with flexibility</h3>
-                        <p>See hotels with free cancellation</p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="ideas_right_bottom bordering">
+            <div class="ideas_right_bottom_left"></div>
+            <div class="text_gapping text_styling">
+              <h3>Stay with flexibility</h3>
+              <p>See hotels with free cancellation</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="weekend_gateways text-col">
+      <div class="weekend_header text_styling">
+        <h1>Weekend gateways</h1>
+        <p>Two nights for two travelers near New Delhi in March</p>
+      </div>
+      <div class="weekend_container">
+        <div class="weekend_box bordering weekend_guru">
+          <div class="weekend_box_image weekend_guru_top">
+            <div class="weekend_box_image_text text_gapping text_styling">
+              Gurugram, India
+            </div>
+          </div>
+          <div class="weekend_guru_bottom text_styling text_gapping">
+            <p>
+              Get away to relaxing Gurugram! Enjoy the musicals, jungle and spas
+            </p>
+          </div>
+        </div>
+        <div class="weekend_box bordering weekend_agra">
+          <div class="weekend_box_image weekend_agra_top">
+            <div class="weekend_box_image_text text_gapping text_styling">
+              Agra, India
+            </div>
+          </div>
+          <div class="weekend_agra_bottom text_styling text_gapping">
+            <p>
+              Scheduled Agra awaits: its museams, monuments, gardens, and more
+            </p>
+          </div>
+        </div>
+        <div class="weekend_box bordering weekend_agra_district">
+          <div class="weekend_box_image weekend_agra_district_top">
+            <div class="weekend_box_image_text text_gapping text_styling">
+              Agra District, India
+            </div>
+          </div>
+          <div class="weekend_agra_district_bottom text_gapping text_styling">
+            <p>Trip time! Discover something new on your weekend gateway</p>
+          </div>
         </div>
 
-
-        <div class="weekend_gateways text-col">
-            <div class="weekend_header text_styling">
-                <h1>Weekend gateways</h1>
-                <p>Two nights for two travelers near New Delhi in March</p>
+        <div class="weekend_box bordering weekend_bhopal">
+          <div class="weekend_box_image weekend_bhopal_top">
+            <div class="weekend_box_image_text text_gapping text_styling">
+              Bhopal, India
             </div>
-            <div class="weekend_container">
-                <div class="weekend_box bordering weekend_guru">
-                    <div class="weekend_box_image weekend_guru_top">
-                        <div class="weekend_box_image_text text_gapping text_styling">
-                            Gurugram, India
-                        </div>
-                    </div>
-                    <div class=" weekend_guru_bottom text_styling text_gapping">
-                        <p>Get away to relaxing Gurugram! Enjoy the musicals,
-                            jungle and spas
-                        </p>
-                    </div>
-                </div>
-                <div class="weekend_box bordering weekend_agra">
-                    <div class="weekend_box_image weekend_agra_top">
-                        
-                        <div class="weekend_box_image_text text_gapping text_styling">
-                            Agra, India
-                        </div>
-                    </div>
-                    <div class=" weekend_agra_bottom text_styling text_gapping">
-                        <p>
-                            Scheduled Agra awaits: its museams, monuments,
-                            gardens, and more
-                        </p>
-                    </div>
-                </div>
-                <div class="weekend_box bordering weekend_agra_district">
-                    <div class="weekend_box_image weekend_agra_district_top">
-                        
-                        <div class="weekend_box_image_text text_gapping text_styling">
-                            Agra District, India
-                        </div>
-                    </div>
-                    <div class=" weekend_agra_district_bottom text_gapping text_styling">
-                        <p>Trip time! Discover something new on your 
-                            weekend gateway
-                        </p>
-                    </div>
-                </div>
-
-
-                <div class="weekend_box bordering weekend_bhopal">
-                    <div class="weekend_box_image weekend_bhopal_top">
-                        
-                        <div class="weekend_box_image_text text_gapping text_styling">
-                            Bhopal, India
-                        </div>
-                    </div>
-                    <div class=" weekend_bhopal_bottom text_gapping text_styling">
-                        <p>
-                            Come to Bhopal and enjoy its temples, lake views, and
-                            culture.
-                        </p>
-                    </div>
-                </div>
-
-
-                <a class="prev" onclick="weekprev()">&#10094;</a>
-                <a class="next" onclick="weeknext()">&#10095;</a>
-           
-            </div>
+          </div>
+          <div class="weekend_bhopal_bottom text_gapping text_styling">
+            <p>
+              Come to Bhopal and enjoy its temples, lake views, and culture.
+            </p>
+          </div>
         </div>
 
+        <a class="prev" onclick="weekprev()">&#10094;</a>
+        <a class="next" onclick="weeknext()">&#10095;</a>
+      </div>
+    </div>
 
-
-        <div class="next_dest text_styling text-col">
-            <div class="next_dest_header">
-                <h1>Find your next destination</h1>
-            </div>
-            <div class="next_dest_cont">
-                <div class="next_dest_box next_dest_box_toronto">
-                    <div class="next_dest_text">Toronto</div>
-                </div>
-                <div class="next_dest_box next_dest_box_las_vegas">
-                    <div class="next_dest_text">Las Vegas</div>
-                </div>
-                <div class="next_dest_box next_dest_box_new_york">
-                    <div class="next_dest_text">New York</div>
-                </div>
-                <div class="next_dest_box next_dest_box_orlando">
-                    <div class="next_dest_text">Orlando</div>
-                </div>
-                <div class="next_dest_box next_dest_box_vancouver">
-                    <div class="next_dest_text">Vancouver</div>
-                </div>
-                <div class="next_dest_box next_dest_box_sanfrancisco">
-                    <div class="next_dest_text">Sanfrancisco</div>
-                </div>
-                <div class="next_dest_box next_dest_box_calgary">
-                    <div class="next_dest_text">Calgary</div>
-                </div>
-                <a class="prev" onclick="plusSlidesprev()">&#10094;</a>
-                <a class="next" onclick="plusSlidesnext()">&#10095;</a>
-            </div>
+    <div class="next_dest text_styling text-col">
+      <div class="next_dest_header">
+        <h1>Find your next destination</h1>
+      </div>
+      <div class="next_dest_cont">
+        <div class="next_dest_box next_dest_box_toronto">
+          <div class="next_dest_text">Toronto</div>
         </div>
-
-
-
-        <div class="exp_disc text-col text_styling">
-            <div class="exp_disc_header">
-                <h1>Explore, discover, and save</h1>
-            </div>
-            <div class="exp_disc_cont">
-                <div class="exp_disc_box">
-                    <div class="exp_disc_text text_gapping">
-                        <h3>Road trip destination</h3>
-                        <p>Pack a bag and crank up your favourite playlist--
-                            's time to hit the road
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="next_dest_box next_dest_box_las_vegas">
+          <div class="next_dest_text">Las Vegas</div>
         </div>
+        <div class="next_dest_box next_dest_box_new_york">
+          <div class="next_dest_text">New York</div>
+        </div>
+        <div class="next_dest_box next_dest_box_orlando">
+          <div class="next_dest_text">Orlando</div>
+        </div>
+        <div class="next_dest_box next_dest_box_vancouver">
+          <div class="next_dest_text">Vancouver</div>
+        </div>
+        <div class="next_dest_box next_dest_box_sanfrancisco">
+          <div class="next_dest_text">Sanfrancisco</div>
+        </div>
+        <div class="next_dest_box next_dest_box_calgary">
+          <div class="next_dest_text">Calgary</div>
+        </div>
+        <a class="prev" onclick="plusSlidesprev()">&#10094;</a>
+        <a class="next" onclick="plusSlidesnext()">&#10095;</a>
+      </div>
+    </div>
 
+    <div class="exp_disc text-col text_styling">
+      <div class="exp_disc_header">
+        <h1>Explore, discover, and save</h1>
+      </div>
+      <div class="exp_disc_cont">
+        <div class="exp_disc_box">
+          <div class="exp_disc_text text_gapping">
+            <h3>Road trip destination</h3>
+            <p>
+              Pack a bag and crank up your favourite playlist-- 's time to hit
+              the road
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-        <div data-aos="fade-up"
-        data-aos-anchor-placement="bottom-bottom" class="circle" onclick="openChatbox()">
-        <p><i class="far fa-envelope"></i> Help</p>
-   </div>
+    <div class="footer">
+      <div class="links">
+        <a href="" class="link">About Expedia</a>
+        <a href="" class="link">Jobs</a>
+        <a href="" class="link">Investor Relations</a>
+        <a href="" class="link">Advertising</a>
+        <a href="" class="link">Newsroom</a>
+        <a href="" class="link">About Our Ads</a>
+        <a href="" class="link">Privacy Policy</a>
+        <a href="" class="link">Terms of Use</a>
+        <a href="" class="link">Site Map</a>
+        <a href="" class="link">Accessibility</a>
+        <a href="" class="link">Support</a>
+        <a href="" class="link">Do Not Sell My Personal Information</a>
+      </div>
 
+      <div class="end-line">
+        Expedia, Inc. is not responsible for content on external Web sites. ©
+        2021 Expedia, Inc, an Expedia Group Company. All rights reserved.
+      </div>
+
+      <img
+        src="https://a.travel-assets.com/globalcontrols-service/content/f285fb631b0a976202ef57611c7050e9ef5ca51a/images/EG_Wordmark_blue_RGB.svg"
+        alt=""
+      />
+    </div>
+
+    <div
+      data-aos="fade-up"
+      data-aos-anchor-placement="bottom-bottom"
+      class="circle"
+      onclick="openChatbox()"
+    >
+      <p><i class="far fa-envelope"></i> Help</p>
+    </div>
+
+    <div class="chatbox">
+      <div class="chatbox_header">
+        <p>How can we help?</p>
+        <i class="fa fa-times" aria-hidden="true" onclick="hidechatbox()"></i>
+      </div>
+      <div class="chatbox_message">
+        <div><p>The very begining</p></div>
+        <div class="chatbox_message_line">
+          <div></div>
+          <h6>Today</h6>
+          <div></div>
+        </div>
 
         <div class="chatbox">
             <div class="chatbox_header">
@@ -383,23 +408,37 @@
                 </div>
             </div>
         
-          
-        </div>
 
-</body>
-<script src="index.js">
-    
-</script>
-<script
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-crossorigin="anonymous"
-></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
+      
+      </div>
+
+      <div class="chat_buttons">
+        <div class="chat_button_top">
+          <button>Cancel booking</button>
+          <button>Change booking</button>
+          <button>Get refund status</button>
+        </div>
+        <div class="chat_button_bottom">
+          <button>Use airline credit</button>
+          <button>Do something else</button>
+        </div>
+        <div class="msg_type">
+          <i class="fas fa-paperclip"></i>
+          <input type="text" name="" id="" placeholder="Typing is disabled" />
+
+          <i class="fas fa-reply"></i>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
     AOS.init();
   </script>
 </html>
-
-
-
