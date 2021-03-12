@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-   
-</head>
-<body>
-    
-
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
     <!-- <p style="float: right; margin-right: 100px;"></p> -->
-    <div class="blank_space"></div>
-    <div class="address">
-        <input type="text" name="" id="" placeholder="Card Number">
-        <div><input type="text" name="" id="" placeholder="CVV"> <input type="text" name="" id="" placeholder="MM/YY"></div>
-        <input type="text" name="" id="" placeholder="FULL NAME">
-        <input type="text" name="" id="" placeholder="ADDRESS">
-        <input type="text" name="" id="" placeholder="OTP">
-        <input type="number" name="" id="" placeholder="Guest Count">
+    <div class="container">
+      <div class="title">Confirm & Checkout</div>
+      <div class="blank_space"></div>
+      <div class="address">
+        <input type="text" name="" id="" placeholder="Card Number" />
+        <div>
+          <input type="text" name="" id="" placeholder="CVV" />
+          <input type="text" name="" id="" placeholder="MM/YY" />
+        </div>
+        <input type="text" name="" id="" placeholder="FULL NAME" />
+        <input type="text" name="" id="" placeholder="OTP" />
         <button>MAKE PAYMENT</button>
-
+      </div>
     </div>
     <div class="circle">
-        <p></p>
+      <p></p>
     </div>
 
     <div class="suceess_msg">
+
         <div class="cross_msg">
             <i class="fa fa-times" aria-hidden="true" onclick="hidechatbox()"></i>
         </div>
         <p>Your booking is successfully processed</p>
         <p id="boking_id"></p>
+
     </div>
+  </body>
 
-</body>
-
-<script src="index.js"></script>
+  <script src="index.js"></script>
 </html>
