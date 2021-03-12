@@ -3,6 +3,9 @@
   width: 100%;
   height: 350vw;
 }
+* {
+  scroll-behavior: smooth;
+}
 .text-link-color, .visit-miami-text {
     color: #005aeb
 }
@@ -78,8 +81,12 @@
   border: none;
   background-color: #465280;
   color: white;
-  line-height: 0px;
   font-weight: lighter;
+  font-size: 13px;
+}
+#dismiss {
+  font-weight: 600;
+  line-height: 3px;
 }
 #covidCont > #bar1 {
   background-color: #465280;
@@ -88,6 +95,10 @@
 }
 #covidCont > #bar2 {
   background-color: white;
+}
+.covid > p{
+  font-size: 14px;
+  margin-top: 11px;
 }
 #bar1,
 #bar2 {
@@ -175,6 +186,9 @@
   flex-grow: 1;
   background-color: white;
   margin-top: 12px;
+}
+.reserve-room-btn2{
+  margin-right: 10px
 }
 .reserve-room-btn2 > button {
   width: 100%;
@@ -265,7 +279,7 @@
   height: 40vh;
   display: flex;
   flex-direction: column;
-  margin-right: 0px;
+  margin-right: 10px;
   margin-left: 50px;
 }
 #heading-text {
@@ -338,8 +352,10 @@ a {
 
   width: 100%;
   background-color: white;
+  font-size: 14px;
   margin-top: 15px;
   height: 30vh;
+  padding: 10px;
 }
 .sigin-signup-cont {
   width: 100%;
@@ -361,23 +377,31 @@ a {
     margin-top: 10px;
 }
 .vip + div {
-    padding-top: 10px;
+    padding-top: 5px;
+    color: #17337a;
+    font-weight: 500;
+    margin-left: 3px;
     font-size: 20px;
 }
 .vip {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 8px;
+    font-weight: 500;
     border-radius: 55px;
     background-color: rgb(15, 15, 94) !important;
     color: white;
-    font-size: 19px;
+    font-size: 17px;
 }
 .vip-access-content {
     display: grid;
     grid-template-rows: 100%;
     grid-template-columns: 33% 33% 33%;
     color: #001959;
-
+    margin: 10px;
+   
+}
+.vip-access-content + div {
+  padding-top: 15px;
 }
 .vip-learn-more {
     margin-left: 180px;
@@ -385,6 +409,7 @@ a {
 }
 .vip-icon{
     font-size: 25px;
+    padding: 18px;
     margin-right: 10px;
 }
 .sigin-signup-cont {
@@ -401,20 +426,33 @@ a {
 .sigin-signup-cont div {
     margin-top: 18px;
     color:#001959;
-    font-size: 16px
+    font-size: 18px
 }
 .sign-in {
     margin-left: 20px;
     line-height: 30px;
-    color: #005aeb
+    color: #005aeb;
 }
+
 .free-tag { 
     width: 40px;
     height: 40px;
     text-align: center;
     border-radius: 30px;
     background-color: yellow;
-    margin-top: 18px
+    margin-top: 18px;
+    padding: 4px;
+    padding-top: 2px;
+    margin-left: 10px;
+ }
+ .free-tag + div {
+   font-size: 14px;
+ }
+ #signup {
+   font-size: 14px;
+ }
+ #signin {
+   font-size: 14px;
  }
   .free-tag > i{
      margin-top: 10px;
@@ -423,7 +461,7 @@ a {
 .locationCont {
   width: 100%;
   height: 150vh;
-  margin-top: 35px;
+  margin-top: 0px;
   display: grid;
   grid-template-rows: 50% 50%;
   grid-template-columns: 35% 65%;
@@ -510,7 +548,8 @@ a {
 
 .choose-your-room-cont {
   width: 100%;
-  height: 175vw;
+  color:rgb(15, 15, 94);
+  height: 165vw;
   margin-top: 25px;
   display: grid;
   grid-template-rows: 23vw 23vw 23vw 23vw 23vw 23vw 23vw;
