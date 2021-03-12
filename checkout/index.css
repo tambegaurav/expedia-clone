@@ -127,7 +127,7 @@ body {
 }
 
 input {
-  background-color: #e1e5f8c2;
+  background-color: #a8a8a8c2;
   color: rgb(238, 238, 238) !important;
   outline: none;
   border: 2px solid #465280 !important;
@@ -135,6 +135,12 @@ input {
   width: 90% !important;
   font-weight: 500;
   font-size: 16px;
+}
+
+input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(238, 238, 238) !important;
+  opacity: 1; /* Firefox */
 }
 
 button {
